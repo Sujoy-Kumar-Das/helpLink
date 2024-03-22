@@ -6,7 +6,7 @@ export const registerContainer = {
 };
 
 export const registerBox = {
-  backgroundColor: "whitesmoke",
+  backgroundColor: "background.paper",
   paddingX: { xs: 2, sm: 5 },
   paddingY: 8,
   boxShadow: 4,

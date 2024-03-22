@@ -1,11 +1,11 @@
 import { Box, ThemeProvider, createTheme } from "@mui/material";
+import { useContext } from "react";
 import { RouterProvider } from "react-router-dom";
+import { TThemeValue, ThemeContext } from "./contexts/ThemeContextProvider";
 import { routes } from "./routes/routes";
 
 export default function App() {
-  const theme = createTheme({
-    palette: { mode: "dark" },
-  });
+  const { mode } = useContext(ThemeContext) as TThemeValue;
   const darkTheme = createTheme({
     palette: {
       mode: "dark",
@@ -36,7 +36,7 @@ export default function App() {
         main: "#ff9800", // Amber
       },
       text: {
-        primary: "#ffff", // Dark grey text color
+        primary: "#000", // Dark grey text color
         secondary: "#666", // Light grey text color
       },
       background: {
@@ -46,7 +46,7 @@ export default function App() {
     },
   });
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={mode === "dark" ? darkTheme : lightTheme}>
       <Box sx={{ backgroundColor: "background.default" }}>
         <RouterProvider router={routes} />
       </Box>

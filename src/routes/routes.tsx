@@ -22,7 +22,7 @@ export const routes = createBrowserRouter([
     element: <RegistrationLayout />,
     children: [
       { path: "login", element: <Login /> },
-      { path: "create-account", element: <Register /> },
+      { path: "register", element: <Register /> },
     ],
   },
   {

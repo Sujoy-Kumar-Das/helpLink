@@ -3,7 +3,8 @@ import { Container } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ThemeContext } from "../../../../contexts/ThemeContextProvider";
 import { useAppSelector } from "../../../../redux/redux.hooks";
 import navLinkGenerator from "../../../../utils/navLinkGenarator";
 import NavDrawer from "./NavDrawer";
@@ -29,6 +30,7 @@ export default function Navbar(props: Props) {
   };
   const container =
     window !== undefined ? () => window().document.body : undefined;
+
   return (
     <Box>
       <AppBar

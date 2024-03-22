@@ -1,7 +1,13 @@
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { Box } from "@mui/material";
+import { useContext } from "react";
+import {
+  TThemeValue,
+  ThemeContext,
+} from "../../../../contexts/ThemeContextProvider";
 
-export default function ToggleButton({ mode, hide }) {
+export default function ToggleButton({ hide }) {
+  const { handleTheme, mode } = useContext(ThemeContext) as TThemeValue;
   return (
     <Box
       sx={{ color: "text.primary" }}
@@ -10,7 +16,15 @@ export default function ToggleButton({ mode, hide }) {
         md: `${hide ? "block" : "none"}`,
       }}
     >
-      {mode === "dark" ? <LightMode /> : <DarkMode />}
+      {mode === "dark" ? (
+        <p onClick={() => handleTheme("light")}>
+          <LightMode />
+        </p>
+      ) : (
+        <p onClick={() => handleTheme("dark")}>
+          <DarkMode />
+        </p>
+      )}
     </Box>
   );
 }

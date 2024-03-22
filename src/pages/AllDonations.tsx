@@ -9,7 +9,7 @@ export default function AllDonations() {
     return <Loader />;
   }
   return (
-    <Container data-aos="fade-up" component={"section"}>
+    <Container data-aos="fade-up" component={"section"} sx={{ mt: 5 }}>
       <DonationGrid data={data.data} />
     </Container>
   );

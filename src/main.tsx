@@ -10,12 +10,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import App from "./App.tsx";
+import ThemeContextProvider from "./contexts/ThemeContextProvider.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <App />
+        <ThemeContextProvider>
+          <App />
+        </ThemeContextProvider>
       </PersistGate>
     </Provider>
     <Toaster />
