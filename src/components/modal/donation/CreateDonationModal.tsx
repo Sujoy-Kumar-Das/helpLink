@@ -29,6 +29,7 @@ export default function CreateDonationModal({
   const handleCreateDonation = async (data: FieldValues) => {
     const imageURL = await uploadImage(data.image);
     data.image = imageURL;
+    data.amount = Number(data.amount);
 
     const res = await createDonation(data).unwrap();
     if (res.success) {

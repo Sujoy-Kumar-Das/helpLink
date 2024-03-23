@@ -1,6 +1,7 @@
 import { Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { TAdditionalData } from "../../types/addtionaldata.type";
 
-export default function PieChartCompo({ data }) {
+export default function PieChartCompo({ data }: { data: TAdditionalData[] }) {
   return (
     <ResponsiveContainer>
       <PieChart>

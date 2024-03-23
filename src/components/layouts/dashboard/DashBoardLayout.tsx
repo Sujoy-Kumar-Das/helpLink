@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { useAppSelector } from "../../../redux/redux.hooks";
+import { dashboardPaths } from "../../../routes/dashboard.routes";
 import navLinkGenerator from "../../../utils/navLinkGenarator";
 import NavDrawer from "../../ui/shared/navbar/NavDrawer";
 import DashboardNavbar from "./DashboardNavbar";
@@ -15,11 +16,6 @@ export default function DashBoardLayout(props: Props) {
   const token = useAppSelector((state) => state.auth.token);
   // generate navLinks based on user
   const navItems = navLinkGenerator(token);
-  const dashboardPaths = [
-    { name: "Dashboard", path: "/dashboard" },
-    { name: "All Donations", path: "/dashboard/all-donations" },
-    { name: "create donation", path: "/dashboard/create-donation" },
-  ];
 
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);

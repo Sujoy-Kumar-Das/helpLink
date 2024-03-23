@@ -31,7 +31,7 @@ export default function EditDonationModal({
       title: data?.title ? data.title : donation?.title,
       category: data?.category ? data.category : donation?.category,
       description: data?.description ? data.desorption : donation?.description,
-      amount: data?.amount ? data.amount : donation?.amount,
+      amount: Number(data?.amount ? data.amount : donation?.amount),
     };
 
     const res = await updateDonation({

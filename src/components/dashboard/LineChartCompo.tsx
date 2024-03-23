@@ -8,8 +8,9 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { TAdditionalData } from "../../types/addtionaldata.type";
 
-export default function LineChartCompo({ data }) {
+export default function LineChartCompo({ data }: { data: TAdditionalData[] }) {
   return (
     <ResponsiveContainer>
       <LineChart data={data}>

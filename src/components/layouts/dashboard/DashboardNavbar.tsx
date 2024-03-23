@@ -49,7 +49,7 @@ export default function DashboardNavbar({
         <Box>
           <Box display={"flex"} alignItems={"center"}>
             <NavTitle />
-            <ToggleButton hide={"true"} />
+            <ToggleButton hide={true} />
           </Box>
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {" "}

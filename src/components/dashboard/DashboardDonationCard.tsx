@@ -1,6 +1,11 @@
 import { Card, Grid, Typography } from "@mui/material";
+import { TAdditionalData } from "../../types/addtionaldata.type";
 
-export default function DashboardDonationCard({ data }) {
+export default function DashboardDonationCard({
+  data,
+}: {
+  data: TAdditionalData;
+}) {
   return (
     <Grid item xs={6} md={3}>
       <Card

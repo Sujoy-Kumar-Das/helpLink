@@ -39,7 +39,7 @@ export default function NavToggleButton() {
           Logout
         </Button>
       )}
-      <ToggleButton mode={"light"} hide={true} />
+      <ToggleButton hide={true} />
     </Box>
   );
 }

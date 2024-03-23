@@ -1,12 +1,20 @@
 import { Box, Button } from "@mui/material";
 import { FieldValues } from "react-hook-form";
 import { IoSend } from "react-icons/io5";
+import { z } from "zod";
 import image from "../../assets/contact.png";
 import From from "../from/From";
 import FromTextArea from "../from/FromTextArea";
 import InputField from "../from/InputField";
 import CustomContainer from "../ui/shared/CustomContainer";
 import Header from "../ui/shared/Header";
+
+const contactSchema = z.object({
+  name: z.string(),
+  email: z.string().email(),
+  subject: z.string(),
+  message: z.string(),
+});
 
 export default function ContactHome() {
   const handleContactFrom = (data: FieldValues) => {
@@ -35,7 +43,7 @@ export default function ContactHome() {
           component={"div"}
           sx={{ width: { xs: "100%", md: "50%" } }}
         >
-          <From handler={handleContactFrom}>
+          <From handler={handleContactFrom} schema={contactSchema}>
             <InputField label="Name" type="text" name="name" />
             <InputField label="Email" type="email" name="email" />
             <InputField label="Subject" type="text" name="subject" />

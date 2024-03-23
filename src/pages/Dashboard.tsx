@@ -5,6 +5,7 @@ import LineChartCompo from "../components/dashboard/LineChartCompo";
 import PieChartCompo from "../components/dashboard/PieChartCompo";
 import { useGetAllDashboardDonationQuery } from "../redux/features/allDonations/dashboardDonation.api";
 import { TDonationItem } from "../types";
+import { TAdditionalData } from "../types/addtionaldata.type";
 
 export default function Dashboard() {
   const { data, isLoading } = useGetAllDashboardDonationQuery(undefined);
@@ -14,7 +15,7 @@ export default function Dashboard() {
     value: Number(item.amount),
   }));
 
-  const LineData = data?.categoryTotals?.map((item) => ({
+  const LineData = data?.categoryTotals?.map((item: TAdditionalData) => ({
     name: item.title,
     Total: Number(item.value),
   }));
@@ -36,7 +37,7 @@ export default function Dashboard() {
     >
       <Box width={"100%"}>
         <Grid spacing={2} container my={5}>
-          {data?.additionalData.map((item) => (
+          {data?.additionalData.map((item: TAdditionalData) => (
             <DashboardDonationCard key={item.id} data={item} />
           ))}
         </Grid>

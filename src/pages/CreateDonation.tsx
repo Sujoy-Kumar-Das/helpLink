@@ -15,6 +15,7 @@ export default function CreateDonation() {
   const handleCreateDonation = async (data: FieldValues) => {
     const imageURL = await uploadImage(data.image);
     data.image = imageURL;
+    data.amount = Number(data.amount);
 
     const donationData = {
       user,

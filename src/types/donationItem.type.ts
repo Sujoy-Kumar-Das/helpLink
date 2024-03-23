@@ -5,4 +5,8 @@ export type TDonationItem = {
   description: string;
   amount: string;
   category: string;
+  user: {
+    name: string;
+    email: string;
+  };
 };

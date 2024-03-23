@@ -6,7 +6,7 @@ import {
   ThemeContext,
 } from "../../../../contexts/ThemeContextProvider";
 
-export default function ToggleButton({ hide }) {
+export default function ToggleButton({ hide }: { hide: boolean }) {
   const { handleTheme, mode } = useContext(ThemeContext) as TThemeValue;
   return (
     <Box

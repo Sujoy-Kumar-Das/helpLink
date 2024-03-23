@@ -60,7 +60,7 @@ export default function NavDrawer({
         }}
       >
         <NavTitle />
-        <ToggleButton mode={"light"} hide={false} />
+        <ToggleButton hide={false} />
       </Box>
 
       <Divider />
