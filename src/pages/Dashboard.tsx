@@ -1,24 +1,22 @@
-import {
-  Box,
-  Container,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from "@mui/material";
-import { Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { Box, Container, Grid } from "@mui/material";
 import Loader from "../components/Loader";
-import { useGetAllDonationQuery } from "../redux/features/allDonations/allDonations.api";
+import DashboardDonationCard from "../components/dashboard/DashboardDonationCard";
+import LineChartCompo from "../components/dashboard/LineChartCompo";
+import PieChartCompo from "../components/dashboard/PieChartCompo";
+import { useGetAllDashboardDonationQuery } from "../redux/features/allDonations/dashboardDonation.api";
 import { TDonationItem } from "../types";
 
 export default function Dashboard() {
-  const { data, isLoading } = useGetAllDonationQuery(5);
+  const { data, isLoading } = useGetAllDashboardDonationQuery(undefined);
 
   const pieData = data?.data?.map((item: TDonationItem) => ({
     name: item.title,
     value: Number(item.amount),
+  }));
+
+  const LineData = data?.categoryTotals?.map((item) => ({
+    name: item.title,
+    Total: Number(item.value),
   }));
 
   if (isLoading) {
@@ -26,56 +24,36 @@ export default function Dashboard() {
   }
 
   return (
-    <Container>
-      <Box
-        height={"100vh"}
-        width={"100%"}
-        component={"div"}
-        display={"flex"}
-        justifyContent={{ xs: "center", md: "space-between" }}
-        alignItems={{ xs: "flex-start", md: "center" }}
-        flexDirection={{ xs: "column", md: "row" }}
-      >
-        <TableContainer component={"table"} sx={{ overflow: "auto" }}>
-          <Table sx={{ minWidth: "100%" }} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                <TableCell>Title</TableCell>
-                <TableCell align="center">Category</TableCell>
-                <TableCell align="center">Amount</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {data?.data.map((item: TDonationItem) => (
-                <TableRow
-                  key={item._id}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {item.title}
-                  </TableCell>
-                  <TableCell align="center">{item.category}</TableCell>
-                  <TableCell align="center">{item.amount}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <ResponsiveContainer width={"100%"} height={"100%"}>
-          <PieChart>
-            <Pie
-              dataKey="value"
-              data={pieData}
-              isAnimationActive={true}
-              cx="50%"
-              cy="50%"
-              outerRadius={80}
-              fill="#8884d8"
-              label
-            />
-            <Tooltip />
-          </PieChart>
-        </ResponsiveContainer>
+    <Container
+      sx={{
+        minHeight: "100vh",
+        overflow: "hidden",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: { xs: "flex-start", md: "center" },
+        width: "100%",
+      }}
+    >
+      <Box width={"100%"}>
+        <Grid spacing={2} container my={5}>
+          {data?.additionalData.map((item) => (
+            <DashboardDonationCard key={item.id} data={item} />
+          ))}
+        </Grid>
+
+        <Box
+          display={"flex"}
+          justifyContent={{ xs: "center", md: "space-between" }}
+          alignItems={{ xs: "flex-start", md: "center" }}
+          flexDirection={{ xs: "column", md: "row" }}
+          height={"300px"}
+        >
+          {/* line chart */}
+          <LineChartCompo data={LineData} />
+
+          {/* pie chart  */}
+          <PieChartCompo data={pieData} />
+        </Box>
       </Box>
     </Container>
   );
