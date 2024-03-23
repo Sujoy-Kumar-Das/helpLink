@@ -12,8 +12,12 @@ export const publicRoutes = [
     path: "/all-donations",
   },
   {
-    name: "Blog",
-    path: "/blog",
+    name: "Volunteer",
+    path: "/volunteer",
+  },
+  {
+    name: "Community",
+    path: "/community",
   },
   {
     name: "Contact",

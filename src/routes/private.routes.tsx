@@ -13,8 +13,12 @@ export const userRoutes = [
     path: "/all-donations",
   },
   {
-    name: "Blog",
-    path: "/blog",
+    name: "Volunteer",
+    path: "/volunteer",
+  },
+  {
+    name: "Community",
+    path: "/community",
   },
   {
     name: "Contact",

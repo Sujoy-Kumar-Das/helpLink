@@ -1,9 +1,10 @@
 import About from "../pages/About";
 import AllDonations from "../pages/AllDonations";
-import Blog from "../pages/Blog";
+import Community from "../pages/Community";
 import Contact from "../pages/Contact";
 import DonationDetail from "../pages/DonationDetail";
 import Home from "../pages/Home";
+import Volunteer from "../pages/Volunteer";
 
 export const routesPath = [
   {
@@ -19,12 +20,16 @@ export const routesPath = [
     element: <AllDonations />,
   },
   {
+    path: "/volunteer",
+    element: <Volunteer />,
+  },
+  {
     path: "/donation/:id",
     element: <DonationDetail />,
   },
   {
-    path: "/blog",
-    element: <Blog />,
+    path: "/community",
+    element: <Community />,
   },
   {
     path: "/contact",
