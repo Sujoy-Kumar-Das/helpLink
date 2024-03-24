@@ -4,7 +4,9 @@ import Community from "../pages/Community";
 import Contact from "../pages/Contact";
 import DonationDetail from "../pages/DonationDetail";
 import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 import Volunteer from "../pages/Volunteer";
+import VolunteerDetail from "../pages/VolunteerDetail";
 
 export const routesPath = [
   {
@@ -24,6 +26,14 @@ export const routesPath = [
     element: <Volunteer />,
   },
   {
+    path: "/volunteer",
+    element: <Volunteer />,
+  },
+  {
+    path: "/volunteer/:id",
+    element: <VolunteerDetail />,
+  },
+  {
     path: "/donation/:id",
     element: <DonationDetail />,
   },
@@ -34,5 +44,9 @@ export const routesPath = [
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ];

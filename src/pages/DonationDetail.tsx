@@ -14,13 +14,12 @@ export default function DonationDetail() {
   const { id } = useParams();
 
   const { isLoading, data } = useGetDonationDetailQuery(id);
-  console.log(data);
 
   if (isLoading) {
     return <Loader />;
   }
 
-  const { title, image, description, category, amount } = data.data;
+  const { title, image, description, category, amount } = data?.data;
 
   return (
     <Container

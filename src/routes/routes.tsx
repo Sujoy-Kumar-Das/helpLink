@@ -4,6 +4,7 @@ import ProtectedRoute from "../components/layouts/ProtectedRoute";
 import RegistrationLayout from "../components/layouts/RegistrationLayout";
 import DashBoardLayout from "../components/layouts/dashboard/DashBoardLayout";
 import Login from "../pages/Login";
+import NotFound from "../pages/NotFound";
 import Register from "../pages/Register";
 import { dashboardRoutes } from "./dashboard.routes";
 import { routesPath } from "./routes.path";
@@ -30,5 +31,9 @@ export const routes = createBrowserRouter([
       </ProtectedRoute>
     ),
     children: dashboardRoutes,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
