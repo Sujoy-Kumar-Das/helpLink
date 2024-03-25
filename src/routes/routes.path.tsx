@@ -1,3 +1,4 @@
+import ProtectedRoute from "../components/layouts/ProtectedRoute";
 import About from "../pages/About";
 import AllDonations from "../pages/AllDonations";
 import Community from "../pages/Community";
@@ -23,11 +24,11 @@ export const routesPath = [
   },
   {
     path: "/volunteer",
-    element: <Volunteer />,
-  },
-  {
-    path: "/volunteer",
-    element: <Volunteer />,
+    element: (
+      <ProtectedRoute>
+        <Volunteer />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/volunteer/:id",

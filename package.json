@@ -22,6 +22,7 @@
     "aos": "^2.3.4",
     "apexcharts": "^3.47.0",
     "axios": "^1.6.7",
+    "firebase": "^10.9.0",
     "framer-motion": "^11.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

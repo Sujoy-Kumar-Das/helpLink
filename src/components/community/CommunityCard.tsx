@@ -18,7 +18,7 @@ export default function CommunityCard({ item }: { item: TCommunityPost }) {
   return (
     <Card variant="outlined" style={{ margin: "20px" }}>
       <CardContent>
-        <Box sx={{ border: "1px solid", p: 2, borderRadius: "8px", mb: 5 }}>
+        <Box sx={{ border: "1px solid", p: 2, borderRadius: "8px" }}>
           <Typography variant="body1" className="message">
             {message}
           </Typography>
@@ -35,12 +35,12 @@ export default function CommunityCard({ item }: { item: TCommunityPost }) {
             </div>
           </Box>
         </Box>
+        <AddComment id={_id} />
         <Grid container spacing={1}>
           {comments.map((comment, index) => (
             <CommunityCommentCard comment={comment} key={index} />
           ))}
         </Grid>
-        <AddComment id={_id} />
       </CardContent>
     </Card>
   );

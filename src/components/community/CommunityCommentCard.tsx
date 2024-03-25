@@ -1,4 +1,5 @@
 import { Avatar, Box, Button, Divider, Grid, Typography } from "@mui/material";
+import { useAppSelector } from "../../redux/redux.hooks";
 import { TComment } from "../../types/comment.type";
 
 export default function CommunityCommentCard({
@@ -6,6 +7,7 @@ export default function CommunityCommentCard({
 }: {
   comment: TComment;
 }) {
+  const user = useAppSelector((state) => state.auth.user);
   return (
     <Grid
       item
@@ -34,10 +36,20 @@ export default function CommunityCommentCard({
         </Box>
 
         <Box component={"div"} sx={{ display: "flex", gap: 2, mt: 2 }}>
-          <Button variant="contained" color="error" size="small">
+          <Button
+            disabled={!user}
+            variant="contained"
+            color="error"
+            size="small"
+          >
             Delete
           </Button>
-          <Button variant="contained" color="info" size="small">
+          <Button
+            disabled={!user}
+            variant="contained"
+            color="info"
+            size="small"
+          >
             Update
           </Button>
         </Box>

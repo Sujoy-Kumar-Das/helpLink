@@ -3,7 +3,6 @@ import {
   Card,
   CardActions,
   CardContent,
-  CardMedia,
   Grid,
   Typography,
 } from "@mui/material";
@@ -12,6 +11,7 @@ import { TVolunteerItem } from "../../types";
 
 export default function VolunteerCard({ item }: { item: TVolunteerItem }) {
   const { name, image, summery, _id } = item;
+  console.log(item);
   return (
     <Grid item xs={12} md={4}>
       <Card
@@ -21,7 +21,11 @@ export default function VolunteerCard({ item }: { item: TVolunteerItem }) {
           height: "100%",
         }}
       >
-        <CardMedia sx={{ height: 220 }} image={image} title={name} />
+        <img
+          src={image}
+          alt={`${name} image`}
+          style={{ height: "100%", width: "100%" }}
+        />
         <CardContent sx={{ flexGrow: 1 }}>
           <Typography gutterBottom variant="h5" component="div">
             {name}
