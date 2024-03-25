@@ -3,6 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 type TUser = {
   name: string;
   email: string;
+  location: string;
+  image: string;
 };
 
 type TAuthInitialState = {
