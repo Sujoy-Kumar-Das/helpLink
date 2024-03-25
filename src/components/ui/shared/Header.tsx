@@ -3,14 +3,15 @@ import { Box, Typography } from "@mui/material";
 type THeader = {
   title: string;
   subTitle: string;
+  animation?: boolean;
 };
 
-export default function Header({ title, subTitle }: THeader) {
+export default function Header({ title, subTitle, animation = true }: THeader) {
   return (
     <Box
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-duration="1200"
+      data-aos={animation && "fade-up"}
+      data-aos-easing={animation && "linear"}
+      data-aos-duration={animation && "1200"}
       component={"header"}
       sx={{ textAlign: "center", mb: 8 }}
     >

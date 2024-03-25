@@ -19,6 +19,7 @@ export default function Community() {
       <Header
         title="Community Gratitude Wall"
         subTitle="Expressing Appreciation and Support Amidst Adversity"
+        animation={false}
       />
 
       <Grid container spacing={4}>

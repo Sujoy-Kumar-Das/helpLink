@@ -16,6 +16,7 @@ export default function About() {
       <Header
         title="Meet Our Dedicated Volunteers"
         subTitle=" Discover the Heart and Soul Behind Our Mission"
+        animation={false}
       />
       <Grid container spacing={4}>
         {data.data.map((item: TVolunteerItem) => (

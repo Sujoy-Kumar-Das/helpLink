@@ -3,6 +3,7 @@ import { FieldValues } from "react-hook-form";
 import { z } from "zod";
 import { useCreateCommentMutation } from "../../redux/features/community/createComment.api";
 import { useAppSelector } from "../../redux/redux.hooks";
+import toastMessage from "../../utils/toastMessage";
 import From from "../from/From";
 import FromSubmit from "../from/FromSubmit";
 import FromTextArea from "../from/FromTextArea";
@@ -22,7 +23,8 @@ export default function AddComment({ id }: { id: string }) {
       comment: data.comment,
     };
 
-    await createComment({ commentData, id });
+    const res = await createComment({ commentData, id }).unwrap();
+    toastMessage(res);
   };
 
   const commentSchema = z.object({

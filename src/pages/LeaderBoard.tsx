@@ -15,6 +15,7 @@ export default function LeaderBoard() {
       <Header
         title="Leader Board"
         subTitle="Hero's who help to make some changes"
+        animation={false}
       />
 
       <LeaderBoardTable data={data.data} />
