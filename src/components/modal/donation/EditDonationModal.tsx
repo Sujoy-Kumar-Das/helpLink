@@ -66,7 +66,6 @@ export default function EditDonationModal({
           handler={handleEdit}
           isLoading={isLoading}
           schema={TEditDonation}
-          isCreate={false}
         />
       </Box>
     </Modal>

@@ -5,7 +5,6 @@ import { useCreateDonationMutation } from "../redux/features/allDonations/create
 import { useAppSelector } from "../redux/redux.hooks";
 import TCreateDonationSchema from "../types/createDonation.type";
 import toastMessage from "../utils/toastMessage";
-import { uploadImage } from "../utils/uploadImage";
 
 export default function CreateDonation() {
   //   redux hooks
@@ -13,12 +12,11 @@ export default function CreateDonation() {
   const user = useAppSelector((state) => state.auth.user);
 
   const handleCreateDonation = async (data: FieldValues) => {
-    const imageURL = await uploadImage(data.image);
-    data.image = imageURL;
     data.amount = Number(data.amount);
 
     const donationData = {
       user,
+      image: user?.image,
       ...data,
     };
 

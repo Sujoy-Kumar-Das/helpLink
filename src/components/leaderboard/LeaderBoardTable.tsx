@@ -62,11 +62,11 @@ export default function LeaderBoardTable({ data }: { data: TDonationItem[] }) {
                         <FaMedal />
                       </p>
                     )}
-                    <p>{item.user.name}</p>
+                    <p>{item?.user?.name}</p>
                   </p>
                 </TableCell>
-                <TableCell align="center">{item.user.email}</TableCell>{" "}
-                <TableCell align="center">${item.amount}</TableCell>
+                <TableCell align="center">{item?.user?.email}</TableCell>{" "}
+                <TableCell align="center">${item?.amount}</TableCell>
               </TableRow>
             ))}
           </TableBody>

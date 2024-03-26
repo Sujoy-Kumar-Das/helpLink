@@ -3,11 +3,11 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import { FieldValues } from "react-hook-form";
 import { useCreateDonationMutation } from "../../../redux/features/allDonations/createDonation.api";
+import { useAppSelector } from "../../../redux/redux.hooks";
 import { ModalStyle } from "../../../styles";
 import TCreateDonationSchema from "../../../types/createDonation.type";
-import toastMessage from "../../../utils/toastMessage";
-import { uploadImage } from "../../../utils/uploadImage";
 import DonationFrom from "../../from/donationFrom/DonationFrom";
+import toastMessage from "../../../utils/toastMessage";
 
 type TCreateDonationModal = {
   open: boolean;
@@ -20,6 +20,7 @@ export default function CreateDonationModal({
 }: TCreateDonationModal) {
   //   redux hooks
   const [createDonation, { isLoading }] = useCreateDonationMutation();
+  const user = useAppSelector((state) => state.auth.user);
 
   // event handler
   const handleClose = () => {
@@ -27,11 +28,15 @@ export default function CreateDonationModal({
   };
 
   const handleCreateDonation = async (data: FieldValues) => {
-    const imageURL = await uploadImage(data.image);
-    data.image = imageURL;
     data.amount = Number(data.amount);
 
-    const res = await createDonation(data).unwrap();
+    const donationData = {
+      user,
+      image: user?.image,
+      ...data,
+    };
+
+    const res = await createDonation(donationData).unwrap();
     if (res.success) {
       setOpen(false);
     }

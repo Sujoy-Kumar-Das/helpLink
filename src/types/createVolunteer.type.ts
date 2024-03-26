@@ -12,15 +12,17 @@ export const createVolunteerSchema = z.object({
     .string()
     .min(3, { message: "Location must be at least 3 characters." }),
   image: z
-    .array(z.any())
-    .nonempty({ message: "Image is required." })
-    .refine((files) => files[0].size <= MAX_FILE_SIZE, {
-      message: "Max file size is 5MB.",
-    })
-    .refine((files) => ACCEPTED_IMAGE_TYPES.includes(files[0].type), {
-      message: ".jpg, .jpeg, .png and .webp files are accepted.",
-    }),
-  summary: z
+    .any()
+    .refine((files) => files?.length == 1, "Image is required.")
+    .refine(
+      (files) => files?.[0]?.size <= MAX_FILE_SIZE,
+      `Max file size is 5MB.`
+    )
+    .refine(
+      (files) => ACCEPTED_IMAGE_TYPES.includes(files?.[0]?.type),
+      ".jpg, .jpeg, .png and .webp files are accepted."
+    ),
+  summery: z
     .string()
     .min(10, { message: "Summary must be at least 10 characters." }),
 });
