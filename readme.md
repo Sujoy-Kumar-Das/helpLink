@@ -1,15 +1,19 @@
 # HopeLink (A Charity App)
 
-## Live :- https://helplink-a2f5c.web.app/
+## Live :- https://shiny-palmier-504022.netlify.app/
 
-## Server :- https://backend-eta-eight.vercel.app/](https://l2-b2-frontend-path-assignment-6-server-starter-pack-hazel.vercel.app/api/v1
+## Server :-https://l2-b2-frontend-path-assignment-6-server-starter-pack-hazel.vercel.app/
 
 ## Features
 
 - Simple and minimalistic UI with fully responsive for all devices.
+- Custom authentication system.
+- Dark and Light theme.
+- Dashboard with full with dynamic analytics.
+- Implemented a Leader board.
 - Enhance UX with animations. Utilize animation with framer motion and AOS library.
 - Explore Material UI as a React UI library.
-- Implemented Requx and RTK query for data handling and state management.
+- Implemented Redux and RTK query for data handling and state management.
 - Implemented a Dashboard for CRUD operations of creating, updating, and deleting donations.
 - Implemented CRUD operation with Mongo and JavaScript.
 
@@ -27,7 +31,7 @@
 
 - Clone Project
   ```
-  https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-fronten-Sujoy-Kumar-Das/
+  https://github.com/Sujoy-Kumar-Das/helpLink
   ```
 - Install required npm packages
 
