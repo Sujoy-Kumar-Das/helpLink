@@ -4,7 +4,7 @@ import { useContext } from "react";
 import {
   TThemeValue,
   ThemeContext,
-} from "../../../../contexts/ThemeContextProvider";
+} from "../../../../provider/ThemeContextProvider";
 
 export default function ToggleButton({ hide }: { hide: boolean }) {
   const { handleTheme, mode } = useContext(ThemeContext) as TThemeValue;

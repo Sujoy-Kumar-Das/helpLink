@@ -1,7 +1,6 @@
 import { Box, ThemeProvider, createTheme } from "@mui/material";
 import { useContext } from "react";
 import { RouterProvider } from "react-router-dom";
-import { TThemeValue, ThemeContext } from "./contexts/ThemeContextProvider";
 import { routes } from "./routes/routes";
 
 export default function App() {
@@ -45,6 +44,7 @@ export default function App() {
       },
     },
   });
+
   return (
     <ThemeProvider theme={mode === "dark" ? darkTheme : lightTheme}>
       <Box sx={{ backgroundColor: "background.default" }}>

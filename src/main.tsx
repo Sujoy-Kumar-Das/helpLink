@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import App from "./App.tsx";
-import ThemeContextProvider from "./contexts/ThemeContextProvider.tsx";
+import ThemeContextProvider from "./provider/ThemeContextProvider.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
