@@ -1,14 +1,8 @@
 "use client";
 
-import { ThemeProvider } from "@emotion/react";
-import { ReactNode } from "react";
+import { ReactElement } from "react";
+import { ThemeContextProvider } from "./ThemeContextProvider";
 
-export default function Provider({ children }: { children: ReactNode }) {
-  return (
-    <ThemeProvider theme={mode === "dark" ? darkTheme : lightTheme}>
-      <Box sx={{ backgroundColor: "background.default" }}>
-        <RouterProvider router={routes} />
-      </Box>
-    </ThemeProvider>
-  );
+export function Provider({ children }: { children: ReactElement }) {
+  return <ThemeContextProvider>{children}</ThemeContextProvider>;
 }

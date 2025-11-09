@@ -1,0 +1,988 @@
+[00:00:01.745] Server  LOG      ✓ Ready in 1085ms
+[00:00:09.172] Server  LOG      ○ Compiling /campaigns/[id] ...
+[00:00:16.732] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:00:16.742] Server  LOG     {}
+[00:00:20.015] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.840] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+-                               cz-shortcut-listen="true"
+                              >
+                ...
+
+[00:02:30.949] Server  LOG      ✓ Compiled in 32ms
+[00:02:31.549] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:02:31.577] Server  LOG     {}
+[00:03:08.351] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:03:08.366] Server  LOG     {}
+[00:03:09.738] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <p> p 
+
+  ...
+    <List>
+      <MuiList-root as="ul" className="MuiList-ro..." ref={null} ownerState={{children:[...], ...}}>
+        <Insertion>
+        <ul className="MuiList-ro..." ref={null}>
+          <ListItem alignItems="flex-start" sx={{px:0}}>
+            <MuiListItem-root as="li" ref={function useForkRef.useMemo} ownerState={{...}} className="MuiListIte..." ...>
+              <Insertion>
+              <li className="MuiListIte..." disabled={false} ref={function useForkRef.useMemo}>
+                <ListItemAvatar>
+                <ListItemText primary={<ForwardRef(Box)>} secondary={<Fragment>}>
+                  <MuiListItemText-root className="MuiListIte..." ownerState={{primary:true, ...}} ref={null}>
+                    <Insertion>
+                    <div className="MuiListIte..." ref={null}>
+                      <Typography>
+                      <Typography variant="body2" className="MuiListIte..." color="text.secon..." display="block">
+                        <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                          <Insertion>
+>                         <p
+>                           className="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1iak8ko-Mu..."
+>                           ref={null}
+>                         >
+                            <Typography variant="body1" sx={{mb:1}}>
+                              <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                                <Insertion>
+>                               <p
+>                                 className="MuiTypography-root MuiTypography-body1 css-8fdayk-MuiTypography-root"
+>                                 ref={null}
+>                               >
+                            ...
+          ...
+
+[00:03:09.738] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <p>
+[00:30:53.753] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:30:53.811] Server  LOG     {}
+[00:31:21.373] Server  LOG      ✓ Compiled in 1035ms
+[00:31:46.986] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:31:47.001] Server  LOG     {}
+[00:33:39.307] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:33:39.384] Server  ERROR    ⨯ ReferenceError: campaignData is not defined
+[00:33:40.275] Browser ERROR   uncaughtError: ReferenceError: campaignData is not defined
+[00:33:40.482] Server  LOG      ✓ Compiled in 42ms
+[00:34:04.568] Server  LOG      ✓ Compiled in 61ms
+[00:34:05.333] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:34:08.042] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:08.914] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               cz-shortcut-listen="true"
+                              >
+                ...
+
+[00:35:55.824] Server  LOG      ✓ Compiled in 256ms
+[00:35:56.783] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:36:54.735] Server  LOG      ✓ Compiled in 34ms
+[00:36:55.520] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:36:55.818] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:36:56.030] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:37:46.859] Server  LOG      ✓ Compiled in 25ms
+[00:37:47.054] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:01.015] Server  LOG      ✓ Compiled in 59ms
+[00:38:01.742] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:01.943] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:02.152] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:08.124] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:08.421] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:08.474] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:11.056] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:12.898] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               cz-shortcut-listen="true"
+                              >
+                ...
+
+[00:38:35.289] Server  LOG      ✓ Compiled in 43ms
+[00:38:35.729] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:38:35.755] Server  ERROR    ⨯ ReferenceError: Grid is not defined
+[00:38:36.326] Browser ERROR   uncaughtError: ReferenceError: Grid is not defined
+[00:39:00.522] Server  LOG      ✓ Compiled in 522ms
+[00:39:01.119] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:39:01.154] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:39:01.192] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:39:03.192] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:03.529] Browser ERROR   uncaughtError: ReferenceError: ImageCarousel is not defined
+[00:42:49.716] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:42:49.881] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:42:52.255] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:42:54.791] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:42:54.822] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:42:54.980] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:42:55.017] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:42:56.412] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:42:56.452] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:43:00.837] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:02.070] Browser ERROR   uncaughtError: ReferenceError: ImageCarousel is not defined
+[00:43:02.420] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:29.722] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:43:30.437] Server  LOG      ✓ Compiled in 2.2s
+[00:43:31.211] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:43:31.266] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:43:33.032] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:43:36.551] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:43:36.638] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:43:37.393] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:43:37.433] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:43:38.458] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:43:38.480] Server  ERROR    ⨯ ReferenceError: ImageCarousel is not defined
+[00:43:44.328] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:46.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:46.137] Browser ERROR   uncaughtError: ReferenceError: ImageCarousel is not defined
+[00:43:51.431] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+                              >
+                ...
+
+[00:44:23.854] Server  LOG      ✓ Compiled in 1639ms
+[00:44:24.523] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:44:24.569] Server  ERROR    ⨯ ReferenceError: ProgressRing is not defined
+[00:44:28.296] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:30.131] Browser ERROR   uncaughtError: ReferenceError: ProgressRing is not defined
+[00:45:30.412] Server  LOG      ✓ Compiled in 948ms
+[00:45:31.057] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:45:33.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:34.468] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               cz-shortcut-listen="true"
+                              >
+                ...
+
+[00:45:34.468] Browser LOG     {"__swiper__":true,"activeIndex":0,"allowClick":true,"allowSlideNext":true,"allowSlidePrev":true,"allowTouchMove":true,"animating":false,"browser":{"isSafari":false,"isWebView":false,"need3dFix":false,"needPerspectiveFix":false},"classNames":["swiper-initialized","swiper-horizontal"],"device":{"android":false,"ios":false},"el":{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":["useState","useState","useState","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useEffect","useEffect","useLayoutEffect","useLayoutEffect","useLayoutEffect"],"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"_debugStack":{},"_debugTask":{},"actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":{},"flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"memoizedState":{"baseQueue":null,"baseState":"swiper","memoizedState":"swiper","next":"[Object]","queue":"[Object]"},"mode":27,"pendingProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":{},"updateQueue":{"events":null,"lastEffect":"[Object]","memoCache":null,"stores":null}},"_debugStack":{},"_debugTask":{},"actualDuration":3.900000002235174,"actualStartTime":4443.199999999255,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":"[Object]","actualDuration":0,"actualStartTime":4443.400000002235,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":0,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":"[Object]","stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","value":"[Circular]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","value":"[Circular]"},"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":{"_owner":"[Object]","_store":{},"key":null,"props":"[Object]","type":"[Object]"},"className":"swiper","ref":{"current":"[Circular]"}},"memoizedState":null,"mode":27,"pendingProps":{"children":{"_owner":"[Object]","_store":{},"key":null,"props":"[Object]","type":"[Object]"},"className":"swiper","ref":{"current":"[Circular]"}},"ref":{"current":"[Circular]"},"refCleanup":null,"return":{"_debugHookTypes":["useState","useState","useState","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useEffect","useEffect","useLayoutEffect","useLayoutEffect","useLayoutEffect"],"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"_debugStack":{},"_debugTask":{},"actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":{},"flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"memoizedState":{"baseQueue":null,"baseState":"swiper","memoizedState":"swiper","next":"[Object]","queue":"[Object]"},"mode":27,"pendingProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":{},"updateQueue":{"events":null,"lastEffect":"[Object]","memoCache":null,"stores":null}},"selfBaseDuration":0.20000000298023224,"sibling":null,"stateNode":"[Circular]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.5000000037252903,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":{"_owner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":"[Object]","updateQueue":"[Object]"},"_store":{},"key":null,"props":{"children":"[Array]","value":"[Circular]"},"type":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0}},"className":"swiper","ref":{"current":"[Circular]"}},"swiper":"[Circular]"},"enabled":true,"eventsAnyListeners":[],"eventsListeners":{"_beforeBreakpoint":[null],"_containerClasses":[null],"_slideClass":[null,null,null,null],"destroy":[null,null],"init":[null,null],"observerUpdate":[null],"resize":[null],"slideChange":[null]},"height":19,"hostEl":{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":["useState","useState","useState","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useEffect","useEffect","useLayoutEffect","useLayoutEffect","useLayoutEffect"],"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"_debugStack":{},"_debugTask":{},"actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":{},"flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"memoizedState":{"baseQueue":null,"baseState":"swiper","memoizedState":"swiper","next":"[Object]","queue":"[Object]"},"mode":27,"pendingProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":{},"updateQueue":{"events":null,"lastEffect":"[Object]","memoCache":null,"stores":null}},"_debugStack":{},"_debugTask":{},"actualDuration":3.900000002235174,"actualStartTime":4443.199999999255,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":"[Object]","actualDuration":0,"actualStartTime":4443.400000002235,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":0,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":"[Object]","stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","value":"[Circular]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","value":"[Circular]"},"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":{"_owner":"[Object]","_store":{},"key":null,"props":"[Object]","type":"[Object]"},"className":"swiper","ref":{"current":"[Circular]"}},"memoizedState":null,"mode":27,"pendingProps":{"children":{"_owner":"[Object]","_store":{},"key":null,"props":"[Object]","type":"[Object]"},"className":"swiper","ref":{"current":"[Circular]"}},"ref":{"current":"[Circular]"},"refCleanup":null,"return":{"_debugHookTypes":["useState","useState","useState","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useEffect","useEffect","useLayoutEffect","useLayoutEffect","useLayoutEffect"],"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"_debugStack":{},"_debugTask":{},"actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":{},"flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"memoizedState":{"baseQueue":null,"baseState":"swiper","memoizedState":"swiper","next":"[Object]","queue":"[Object]"},"mode":27,"pendingProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":{},"updateQueue":{"events":null,"lastEffect":"[Object]","memoCache":null,"stores":null}},"selfBaseDuration":0.20000000298023224,"sibling":null,"stateNode":"[Circular]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.5000000037252903,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":{"_owner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":"[Object]","updateQueue":"[Object]"},"_store":{},"key":null,"props":{"children":"[Array]","value":"[Circular]"},"type":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0}},"className":"swiper","ref":{"current":"[Circular]"}},"swiper":"[Circular]"},"imagesLoaded":0,"imagesToLoad":[],"initialized":true,"isBeginning":true,"isEnd":false,"isLocked":false,"modules":[null,null],"mounted":true,"originalParams":{"_emitClasses":true,"allowSlideNext":true,"allowSlidePrev":true,"allowTouchMove":true,"autoHeight":false,"breakpointsBase":"window","centerInsufficientSlides":false,"centeredSlides":false,"centeredSlidesBounds":false,"containerModifierClass":"swiper-","createElements":false,"cssMode":false,"direction":"horizontal","edgeSwipeDetection":false,"edgeSwipeThreshold":20,"effect":"slide","enabled":true,"eventsPrefix":"swiper","focusableElements":"input, select, option, textarea, button, video, label","followFinger":true,"grabCursor":false,"height":null,"init":false,"initialSlide":0,"lazyPreloadPrevNext":0,"lazyPreloaderClass":"swiper-lazy-preloader","longSwipes":true,"longSwipesMs":300,"longSwipesRatio":0.5,"loop":false,"loopAddBlankSlides":true,"loopAdditionalSlides":0,"loopPreventsSliding":true,"maxBackfaceHiddenSlides":10,"nested":false,"noSwiping":true,"noSwipingClass":"swiper-no-swiping","noSwipingSelector":null,"normalizeSlideIndex":true,"observeParents":false,"observeSlideChildren":false,"observer":false,"on":{},"oneWayMovement":false,"passiveListeners":true,"preventClicks":true,"preventClicksPropagation":true,"preventInteractionOnTransition":false,"resistance":true,"resistanceRatio":0.85,"resizeObserver":true,"rewind":false,"roundLengths":false,"runCallbacksOnInit":true,"setWrapperSize":false,"shortSwipes":true,"simulateTouch":true,"slideActiveClass":"swiper-slide-active","slideBlankClass":"swiper-slide-blank","slideClass":"swiper-slide","slideFullyVisibleClass":"swiper-slide-fully-visible","slideNextClass":"swiper-slide-next","slidePrevClass":"swiper-slide-prev","slideToClickedSlide":false,"slideVisibleClass":"swiper-slide-visible","slidesOffsetAfter":0,"slidesOffsetBefore":0,"slidesPerGroup":1,"slidesPerGroupAuto":false,"slidesPerGroupSkip":0,"slidesPerView":3,"spaceBetween":50,"speed":300,"swipeHandler":null,"swiperElementNodeName":"SWIPER-CONTAINER","threshold":5,"touchAngle":45,"touchEventsTarget":"wrapper","touchMoveStopPropagation":false,"touchRatio":1,"touchReleaseOnEdges":false,"touchStartForcePreventDefault":false,"touchStartPreventDefault":true,"uniqueNavElements":true,"updateOnWindowResize":true,"url":null,"userAgent":null,"virtualTranslate":false,"watchOverflow":true,"watchSlidesProgress":false,"width":null,"wrapperClass":"swiper-wrapper"},"params":{"_emitClasses":true,"allowSlideNext":true,"allowSlidePrev":true,"allowTouchMove":true,"autoHeight":false,"breakpointsBase":"window","centerInsufficientSlides":false,"centeredSlides":false,"centeredSlidesBounds":false,"containerModifierClass":"swiper-","createElements":false,"cssMode":false,"direction":"horizontal","edgeSwipeDetection":false,"edgeSwipeThreshold":20,"effect":"slide","enabled":true,"eventsPrefix":"swiper","focusableElements":"input, select, option, textarea, button, video, label","followFinger":true,"grabCursor":false,"height":null,"init":false,"initialSlide":0,"lazyPreloadPrevNext":0,"lazyPreloaderClass":"swiper-lazy-preloader","longSwipes":true,"longSwipesMs":300,"longSwipesRatio":0.5,"loop":false,"loopAddBlankSlides":true,"loopAdditionalSlides":0,"loopPreventsSliding":true,"maxBackfaceHiddenSlides":10,"nested":false,"noSwiping":true,"noSwipingClass":"swiper-no-swiping","noSwipingSelector":null,"normalizeSlideIndex":true,"observeParents":false,"observeSlideChildren":false,"observer":false,"on":{},"oneWayMovement":false,"passiveListeners":true,"preventClicks":true,"preventClicksPropagation":true,"preventInteractionOnTransition":false,"resistance":true,"resistanceRatio":0.85,"resizeObserver":true,"rewind":false,"roundLengths":false,"runCallbacksOnInit":true,"setWrapperSize":false,"shortSwipes":true,"simulateTouch":true,"slideActiveClass":"swiper-slide-active","slideBlankClass":"swiper-slide-blank","slideClass":"swiper-slide","slideFullyVisibleClass":"swiper-slide-fully-visible","slideNextClass":"swiper-slide-next","slidePrevClass":"swiper-slide-prev","slideToClickedSlide":false,"slideVisibleClass":"swiper-slide-visible","slidesOffsetAfter":0,"slidesOffsetBefore":0,"slidesPerGroup":1,"slidesPerGroupAuto":false,"slidesPerGroupSkip":0,"slidesPerView":3,"spaceBetween":50,"speed":300,"swipeHandler":null,"swiperElementNodeName":"SWIPER-CONTAINER","threshold":5,"touchAngle":45,"touchEventsTarget":"wrapper","touchMoveStopPropagation":false,"touchRatio":1,"touchReleaseOnEdges":false,"touchStartForcePreventDefault":false,"touchStartPreventDefault":true,"uniqueNavElements":true,"updateOnWindowResize":true,"url":null,"userAgent":null,"virtualTranslate":false,"watchOverflow":true,"watchSlidesProgress":false,"width":null,"wrapperClass":"swiper-wrapper"},"passedParams":{"_emitClasses":true,"allowSlideNext":true,"allowSlidePrev":true,"allowTouchMove":true,"autoHeight":false,"breakpointsBase":"window","centerInsufficientSlides":false,"centeredSlides":false,"centeredSlidesBounds":false,"containerModifierClass":"swiper-","createElements":false,"cssMode":false,"direction":"horizontal","edgeSwipeDetection":false,"edgeSwipeThreshold":20,"effect":"slide","enabled":true,"eventsPrefix":"swiper","focusableElements":"input, select, option, textarea, button, video, label","followFinger":true,"grabCursor":false,"height":null,"init":false,"initialSlide":0,"lazyPreloadPrevNext":0,"lazyPreloaderClass":"swiper-lazy-preloader","longSwipes":true,"longSwipesMs":300,"longSwipesRatio":0.5,"loop":false,"loopAddBlankSlides":true,"loopAdditionalSlides":0,"loopPreventsSliding":true,"maxBackfaceHiddenSlides":10,"nested":false,"noSwiping":true,"noSwipingClass":"swiper-no-swiping","noSwipingSelector":null,"normalizeSlideIndex":true,"on":{},"oneWayMovement":false,"passiveListeners":true,"preventClicks":true,"preventClicksPropagation":true,"preventInteractionOnTransition":false,"resistance":true,"resistanceRatio":0.85,"resizeObserver":true,"rewind":false,"roundLengths":false,"runCallbacksOnInit":true,"setWrapperSize":false,"shortSwipes":true,"simulateTouch":true,"slideActiveClass":"swiper-slide-active","slideBlankClass":"swiper-slide-blank","slideClass":"swiper-slide","slideFullyVisibleClass":"swiper-slide-fully-visible","slideNextClass":"swiper-slide-next","slidePrevClass":"swiper-slide-prev","slideToClickedSlide":false,"slideVisibleClass":"swiper-slide-visible","slidesOffsetAfter":0,"slidesOffsetBefore":0,"slidesPerGroup":1,"slidesPerGroupAuto":false,"slidesPerGroupSkip":0,"slidesPerView":3,"spaceBetween":50,"speed":300,"swipeHandler":null,"swiperElementNodeName":"SWIPER-CONTAINER","threshold":5,"touchAngle":45,"touchEventsTarget":"wrapper","touchMoveStopPropagation":false,"touchRatio":1,"touchReleaseOnEdges":false,"touchStartForcePreventDefault":false,"touchStartPreventDefault":true,"uniqueNavElements":true,"updateOnWindowResize":true,"url":null,"userAgent":null,"virtualTranslate":false,"watchOverflow":true,"watchSlidesProgress":false,"width":null},"previousTranslate":0,"progress":0,"realIndex":0,"rtl":false,"rtlTranslate":false,"size":897,"slides":[{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":1.800000000745058,"actualStartTime":4443.5,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":0,"key":".0","lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":1.4000000022351742,"sibling":"[Object]","stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":1.6000000014901161,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":0.3999999985098839,"actualStartTime":4444.900000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.19999999925494194,"actualStartTime":4445,"alternate":null,"child":"[Object]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":1048576,"tag":10,"treeBaseDuration":0.10000000149011612,"type":"[Object]","updateQueue":null},"childLanes":0,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"ref":{"current":"[Circular]"},"refCleanup":null,"return":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":1.800000000745058,"actualStartTime":4443.5,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":0,"key":".0","lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":1.4000000022351742,"sibling":"[Object]","stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":1.6000000014901161,"type":"[Object]","updateQueue":"[Object]"},"selfBaseDuration":0.09999999776482582,"sibling":null,"stateNode":"[Circular]","subtreeFlags":1048576,"tag":5,"treeBaseDuration":0.19999999925494194,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":[null,"[Object]"],"className":"swiper-slide","ref":{"current":"[Circular]"}},"swiperSlideIndex":0,"swiperSlideSize":265.6666666666667},{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.6999999992549419,"actualStartTime":4445.300000000745,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":1,"key":".1","lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.3999999985098839,"sibling":"[Object]","stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":0.5,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":0.30000000074505806,"actualStartTime":4445.699999999255,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0,"actualStartTime":4445.800000000745,"alternate":null,"child":"[Object]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":1048576,"tag":10,"treeBaseDuration":0,"type":"[Object]","updateQueue":null},"childLanes":0,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"ref":{"current":"[Circular]"},"refCleanup":null,"return":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.6999999992549419,"actualStartTime":4445.300000000745,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":1,"key":".1","lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.3999999985098839,"sibling":"[Object]","stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":0.5,"type":"[Object]","updateQueue":"[Object]"},"selfBaseDuration":0.10000000149011612,"sibling":null,"stateNode":"[Circular]","subtreeFlags":1048576,"tag":5,"treeBaseDuration":0.10000000149011612,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":[null,"[Object]"],"className":"swiper-slide","ref":{"current":"[Circular]"}},"swiperSlideIndex":1,"swiperSlideSize":265.6666666666667},{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.5,"actualStartTime":4446,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":2,"key":".2","lanes":0,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.30000000074505806,"sibling":"[Object]","stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":0.5,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":0.19999999925494194,"actualStartTime":4446.300000000745,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0,"actualStartTime":4446.5,"alternate":null,"child":"[Object]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":1048576,"tag":10,"treeBaseDuration":0,"type":"[Object]","updateQueue":null},"childLanes":0,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"ref":{"current":"[Circular]"},"refCleanup":null,"return":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.5,"actualStartTime":4446,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":2,"key":".2","lanes":0,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.30000000074505806,"sibling":"[Object]","stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":0.5,"type":"[Object]","updateQueue":"[Object]"},"selfBaseDuration":0.19999999925494194,"sibling":null,"stateNode":"[Circular]","subtreeFlags":1048576,"tag":5,"treeBaseDuration":0.19999999925494194,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":[null,"[Object]"],"className":"swiper-slide","ref":{"current":"[Circular]"}},"swiperSlideIndex":2,"swiperSlideSize":265.6666666666667},{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.6000000014901161,"actualStartTime":4446.5,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":3,"key":".3","lanes":0,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.4000000022351742,"sibling":null,"stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":0.6000000014901161,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":0.19999999925494194,"actualStartTime":4446.900000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.10000000149011612,"actualStartTime":4447,"alternate":null,"child":"[Object]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0.10000000149011612,"sibling":null,"stateNode":null,"subtreeFlags":1048576,"tag":10,"treeBaseDuration":0.10000000149011612,"type":"[Object]","updateQueue":null},"childLanes":0,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","className":"swiper-slide","ref":"[Object]"},"ref":{"current":"[Circular]"},"refCleanup":null,"return":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":0.6000000014901161,"actualStartTime":4446.5,"alternate":null,"child":"[Circular]","childLanes":0,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":139460613,"index":3,"key":".3","lanes":0,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.4000000022351742,"sibling":null,"stateNode":null,"subtreeFlags":5243392,"tag":11,"treeBaseDuration":0.6000000014901161,"type":"[Object]","updateQueue":"[Object]"},"selfBaseDuration":0.09999999776482582,"sibling":null,"stateNode":"[Circular]","subtreeFlags":1048576,"tag":5,"treeBaseDuration":0.19999999925494194,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":[null,"[Object]"],"className":"swiper-slide","ref":{"current":"[Circular]"}},"swiperSlideIndex":3,"swiperSlideSize":265.6666666666667}],"slidesEl":{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":["useState","useState","useState","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useEffect","useEffect","useLayoutEffect","useLayoutEffect","useLayoutEffect"],"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"_debugStack":{},"_debugTask":{},"actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.900000002235174,"actualStartTime":4443.199999999255,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":"[Object]","refCleanup":null,"return":"[Circular]","selfBaseDuration":0.20000000298023224,"sibling":null,"stateNode":"[Object]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.5000000037252903,"type":"div","updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":{},"flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"memoizedState":{"baseQueue":null,"baseState":"swiper","memoizedState":"swiper","next":"[Object]","queue":"[Object]"},"mode":27,"pendingProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":{},"updateQueue":{"events":null,"lastEffect":"[Object]","memoCache":null,"stores":null}},"_debugStack":{},"_debugTask":{},"actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":{},"actualDuration":0,"actualStartTime":4443.5,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":0,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":"[Object]","actualDuration":3.600000001490116,"actualStartTime":4443.5,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":"[Array]","memoizedState":null,"mode":27,"pendingProps":"[Array]","ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":"[Object]","stateNode":null,"subtreeFlags":139461125,"tag":7,"treeBaseDuration":3.2000000029802322,"type":null,"updateQueue":null},"stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":{"children":[[],"[Array]",[]],"className":"swiper-wrapper"},"memoizedState":null,"mode":27,"pendingProps":{"children":[[],"[Array]",[]],"className":"swiper-wrapper"},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":"[Object]","actualDuration":0,"actualStartTime":4443.400000002235,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":0,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":"[Circular]","stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","value":"[Circular]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","value":"[Circular]"},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.900000002235174,"actualStartTime":4443.199999999255,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":"[Object]","refCleanup":null,"return":"[Object]","selfBaseDuration":0.20000000298023224,"sibling":null,"stateNode":"[Object]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.5000000037252903,"type":"div","updateQueue":null},"selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"updateQueue":null},"selfBaseDuration":0.09999999776482582,"sibling":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":"[Object]","updateQueue":null},"_debugStack":null,"_debugTask":{},"actualDuration":0,"actualStartTime":4447.10000000149,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":5,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":"[Object]","updateQueue":null},"selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"stateNode":"[Circular]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.300000000745058,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":[[],["[Object]","[Object]","[Object]","[Object]"],[]],"className":"swiper-wrapper"}},"slidesGrid":[0,315.6666666666667,631.3333333333334,947],"slidesSizesGrid":[265.6666666666667,265.6666666666667,265.6666666666667,265.6666666666667],"snapGrid":[0,315.6666666666667],"snapIndex":0,"support":{"smoothScroll":true,"touch":false},"touchEventsData":{"focusableElements":"input, select, option, textarea, button, video, label","lastClickTime":0,"pointerId":null,"touchId":null,"velocities":[]},"touches":{"currentX":0,"currentY":0,"diff":0,"startX":0,"startY":0},"translate":0,"velocity":0,"virtualSize":1212.6666666666667,"width":897,"wrapperEl":{"__reactFiber$zm3zxwhg9u9":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":["useState","useState","useState","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useRef","useEffect","useEffect","useLayoutEffect","useLayoutEffect","useLayoutEffect"],"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"_debugStack":{},"_debugTask":{},"actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.900000002235174,"actualStartTime":4443.199999999255,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":"[Object]","refCleanup":null,"return":"[Circular]","selfBaseDuration":0.20000000298023224,"sibling":null,"stateNode":"[Object]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.5000000037252903,"type":"div","updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":{},"flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"memoizedState":{"baseQueue":null,"baseState":"swiper","memoizedState":"swiper","next":"[Object]","queue":"[Object]"},"mode":27,"pendingProps":{"children":"[Array]","slidesPerView":3,"spaceBetween":50},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":11.800000000745058,"actualStartTime":4435.10000000149,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":1,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0.8999999985098839,"sibling":null,"stateNode":null,"subtreeFlags":416287237,"tag":0,"treeBaseDuration":11.400000002235174,"updateQueue":null},"selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":{},"updateQueue":{"events":null,"lastEffect":"[Object]","memoCache":null,"stores":null}},"_debugStack":{},"_debugTask":{},"actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":{},"actualDuration":0,"actualStartTime":4443.5,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":0,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":"[Object]","actualDuration":3.600000001490116,"actualStartTime":4443.5,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":"[Array]","memoizedState":null,"mode":27,"pendingProps":"[Array]","ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":"[Object]","stateNode":null,"subtreeFlags":139461125,"tag":7,"treeBaseDuration":3.2000000029802322,"type":null,"updateQueue":null},"stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":1048576,"index":1,"key":null,"lanes":0,"memoizedProps":{"children":[[],"[Array]",[]],"className":"swiper-wrapper"},"memoizedState":null,"mode":27,"pendingProps":{"children":[[],"[Array]",[]],"className":"swiper-wrapper"},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":"[Array]","_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":10.900000002235174,"actualStartTime":4436,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":415238149,"index":0,"key":null,"lanes":2,"memoizedProps":"[Object]","memoizedState":"[Object]","mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":7,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":11,"treeBaseDuration":10.50000000372529,"type":"[Object]","updateQueue":"[Object]"},"_debugStack":{},"_debugTask":{},"actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Circular]","_debugStack":null,"_debugTask":"[Object]","actualDuration":0,"actualStartTime":4443.400000002235,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":0,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":"[Circular]","selfBaseDuration":0,"sibling":"[Circular]","stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"childLanes":2,"deletions":null,"dependencies":null,"elementType":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":{"children":"[Array]","value":"[Circular]"},"memoizedState":null,"mode":27,"pendingProps":{"children":"[Array]","value":"[Circular]"},"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.900000002235174,"actualStartTime":4443.199999999255,"alternate":null,"child":"[Circular]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"div","flags":4194816,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":"[Object]","refCleanup":null,"return":"[Object]","selfBaseDuration":0.20000000298023224,"sibling":null,"stateNode":"[Object]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.5000000037252903,"type":"div","updateQueue":null},"selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":{"Consumer":"[Object]","Provider":"[Circular]","_currentRenderer":null,"_currentRenderer2":null,"_currentValue":null,"_currentValue2":null,"_threadCount":0},"updateQueue":null},"selfBaseDuration":0.09999999776482582,"sibling":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":"[Object]","updateQueue":null},"_debugStack":null,"_debugTask":{},"actualDuration":0,"actualStartTime":4447.10000000149,"alternate":null,"child":null,"childLanes":0,"deletions":null,"dependencies":null,"elementType":null,"flags":1048576,"index":5,"key":null,"lanes":0,"memoizedProps":[],"memoizedState":null,"mode":27,"pendingProps":[],"ref":null,"refCleanup":null,"return":{"_debugHookTypes":null,"_debugInfo":null,"_debugNeedsRemount":false,"_debugOwner":"[Object]","_debugStack":{},"_debugTask":"[Object]","actualDuration":3.699999999254942,"actualStartTime":4443.400000002235,"alternate":null,"child":"[Object]","childLanes":2,"deletions":null,"dependencies":null,"elementType":"[Object]","flags":0,"index":0,"key":null,"lanes":0,"memoizedProps":"[Object]","memoizedState":null,"mode":27,"pendingProps":"[Object]","ref":null,"refCleanup":null,"return":"[Object]","selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":139461125,"tag":10,"treeBaseDuration":3.300000000745058,"type":"[Object]","updateQueue":null},"selfBaseDuration":0,"sibling":null,"stateNode":null,"subtreeFlags":0,"tag":7,"treeBaseDuration":0,"type":null,"updateQueue":null},"stateNode":"[Circular]","subtreeFlags":139461125,"tag":5,"treeBaseDuration":3.300000000745058,"type":"div","updateQueue":null},"__reactProps$zm3zxwhg9u9":{"children":[[],["[Object]","[Object]","[Object]","[Object]"],[]],"className":"swiper-wrapper"}},"wrongRTL":false}
+[00:46:59.054] Server  LOG      ✓ Compiled in 110ms
+[00:47:00.077] Browser ERROR   uncaughtError: ReferenceError: Pagination is not defined
+[00:48:16.743] Server  LOG      ✓ Compiled in 1131ms
+[00:48:17.570] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:48:19.414] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:23.137] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/sylhet-flood-1.jpg" "received" null
+[00:48:23.141] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/sylhet-flood-2.jpg" "received" null
+[00:48:23.214] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/sylhet-flood-3.jpg" "received" null
+[00:48:23.988] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:24.590] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+                              >
+                ...
+
+[00:50:25.933] Server  LOG      ✓ Compiled in 21ms
+[00:50:26.305] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:50:26.802] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. .$https=2//encrypted-tbn0.gstatic.com/images?q=0tbn=2ANd9GcRsjQkIyTH5fTxU7yP7hbuzAOWNV4ANaGBTUg&s
+[00:50:26.802] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. .$https=2//encrypted-tbn0.gstatic.com/images?q=0tbn=2ANd9GcRsjQkIyTH5fTxU7yP7hbuzAOWNV4ANaGBTUg&s
+[00:50:55.640] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:02.676] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:52:04.069] Browser WARN    Image with src "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjQkIyTH5fTxU7yP7hbuzAOWNV4ANaGBTUg&s" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:52:59.149] Server  LOG      ✓ Compiled in 25ms
+[00:53:16.321] Browser ERROR   ./src/app/(common)/campaigns/[id]/page.tsx:66:5
+Parsing ecmascript source code failed
+  64 |
+  65 |       <
+> 66 |     </Box>
+     |     ^
+  67 |   );
+  68 | }
+  69 |
+
+Expression expected
+[00:53:16.321] Browser ERROR   ./src/app/(common)/campaigns/[id]/page.tsx:66:6
+Parsing ecmascript source code failed
+  64 |
+  65 |       <
+> 66 |     </Box>
+     |      ^^^^^
+  67 |   );
+  68 | }
+  69 |
+
+Unterminated regexp literal
+[00:53:27.746] Server  LOG      ✓ Compiled in 851ms
+[00:53:28.271] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:53:29.622] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <p> p 
+
+  ...
+    <List>
+      <MuiList-root as="ul" className="MuiList-ro..." ref={null} ownerState={{children:[...], ...}}>
+        <Insertion>
+        <ul className="MuiList-ro..." ref={null}>
+          <ListItem alignItems="flex-start" sx={{px:0}}>
+            <MuiListItem-root as="li" ref={function useForkRef.useMemo} ownerState={{...}} className="MuiListIte..." ...>
+              <Insertion>
+              <li className="MuiListIte..." disabled={false} ref={function useForkRef.useMemo}>
+                <ListItemAvatar>
+                <ListItemText primary={<ForwardRef(Box)>} secondary={<Fragment>}>
+                  <MuiListItemText-root className="MuiListIte..." ownerState={{primary:true, ...}} ref={null}>
+                    <Insertion>
+                    <div className="MuiListIte..." ref={null}>
+                      <Typography>
+                      <Typography variant="body2" className="MuiListIte..." color="text.secon..." display="block">
+                        <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                          <Insertion>
+>                         <p
+>                           className="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1iak8ko-Mu..."
+>                           ref={null}
+>                         >
+                            <Typography variant="body1" sx={{mb:1}}>
+                              <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                                <Insertion>
+>                               <p
+>                                 className="MuiTypography-root MuiTypography-body1 css-8fdayk-MuiTypography-root"
+>                                 ref={null}
+>                               >
+                            ...
+          ...
+
+[00:53:29.622] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <p>
+[00:53:54.879] Server  LOG      ✓ Compiled in 29ms
+[00:53:55.763] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:55:07.543] Server  LOG      ✓ Compiled in 17ms
+[00:55:27.182] Server  LOG      ✓ Compiled in 45ms
+[00:55:55.029] Server  LOG      ✓ Compiled in 30ms
+[00:56:48.933] Server  LOG      ✓ Compiled in 85ms
+[00:56:49.751] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:56:49.810] Server  ERROR    ⨯ ReferenceError: Card is not defined
+[00:56:50.267] Browser ERROR   uncaughtError: ReferenceError: Card is not defined
+[00:57:03.126] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:57:03.183] Server  ERROR    ⨯ ReferenceError: ProgressRing is not defined
+[00:57:04.274] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:57:05.235] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:05.305] Server  LOG      ✓ Compiled in 12ms
+[00:57:05.555] Browser ERROR   uncaughtError: ReferenceError: ProgressRing is not defined
+[00:57:43.380] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:57:46.169] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:48.662] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <p> p 
+
+  ...
+    <List>
+      <MuiList-root as="ul" className="MuiList-ro..." ref={null} ownerState={{children:[...], ...}}>
+        <Insertion>
+        <ul className="MuiList-ro..." ref={null}>
+          <ListItem alignItems="flex-start" sx={{px:0}}>
+            <MuiListItem-root as="li" ref={function useForkRef.useMemo} ownerState={{...}} className="MuiListIte..." ...>
+              <Insertion>
+              <li className="MuiListIte..." disabled={false} ref={function useForkRef.useMemo}>
+                <ListItemAvatar>
+                <ListItemText primary={<ForwardRef(Box)>} secondary={<Fragment>}>
+                  <MuiListItemText-root className="MuiListIte..." ownerState={{primary:true, ...}} ref={null}>
+                    <Insertion>
+                    <div className="MuiListIte..." ref={null}>
+                      <Typography>
+                      <Typography variant="body2" className="MuiListIte..." color="text.secon..." display="block">
+                        <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                          <Insertion>
+>                         <p
+>                           className="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1iak8ko-Mu..."
+>                           ref={null}
+>                         >
+                            <Typography variant="body1" sx={{mb:1}}>
+                              <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                                <Insertion>
+>                               <p
+>                                 className="MuiTypography-root MuiTypography-body1 css-8fdayk-MuiTypography-root"
+>                                 ref={null}
+>                               >
+                            ...
+          ...
+
+[00:57:48.662] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <p>
+[00:57:48.662] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               cz-shortcut-listen="true"
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+                              >
+                ...
+
+[00:57:48.662] Browser WARN    Image with src "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjQkIyTH5fTxU7yP7hbuzAOWNV4ANaGBTUg&s" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:59:01.835] Server  LOG      ✓ Compiled in 205ms
+[00:59:01.968] Browser ERROR   ./src/app/(common)/campaigns/[id]/_components/test.tsx:624:29
+Parsing ecmascript source code failed
+  622 |                   </Box>
+  623 |                 </Box>
+> 624 |               </CardContent>
+      |                             ^
+> 625 |             </Card>
+      | ^^^^^^^^^^^^^
+  626 |           </Grid> */}
+  627 |         </Grid>
+  628 |
+
+Expected '</', got 'jsx text (
+            )'
+
+Import trace:
+  Server Component:
+    ./src/app/(common)/campaigns/[id]/_components/test.tsx
+    ./src/app/(common)/campaigns/[id]/page.tsx
+[00:59:39.056] Server  LOG      ✓ Compiled in 499ms
+[00:59:40.075] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:59:54.939] Server  LOG      ✓ Compiled in 451ms
+[01:09:10.318] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:09:10.919] Server  LOG      ✓ Compiled in 24ms
+[01:09:39.617] Server  LOG      ✓ Compiled in 221ms
+[01:10:10.854] Server  LOG      ✓ Compiled in 23ms
+[01:10:19.036] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:10:40.725] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:53:24.587] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:54:02.792] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:54:03.109] Server  ERROR    ⨯ ReferenceError: Card is not defined
+[03:54:03.780] Browser ERROR   uncaughtError: ReferenceError: Card is not defined
+[03:54:12.326] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:54:12.402] Server  ERROR    ⨯ ReferenceError: campaignData is not defined
+[03:54:14.471] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:54:15.653] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:54:15.739] Server  LOG      ✓ Compiled in 34ms
+[03:54:16.708] Browser ERROR   uncaughtError: ReferenceError: campaignData is not defined
+[03:55:30.662] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:55:30.748] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[03:55:32.753] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:55:34.069] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[03:56:20.414] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:56:22.073] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[03:56:22.137] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:56:23.585] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:56:23.656] Server  LOG      ✓ Compiled in 6ms
+[03:56:25.069] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[03:57:57.761] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:57:57.775] Server  LOG      ✓ Compiled in 247ms
+[03:57:58.422] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:57:59.668] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[03:58:00.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:58:02.069] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[03:59:26.796] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[03:59:26.855] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[03:59:28.303] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:28.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:28.961] Server  LOG      ✓ Compiled in 19ms
+[03:59:30.067] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:00:27.222] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:00:27.277] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:00:28.515] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:00:29.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:00:29.669] Server  LOG      ✓ Compiled in 8ms
+[04:00:31.079] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:00:59.160] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:00:59.201] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:01:01.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:01:02.069] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:03:53.004] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:03:53.043] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:03:53.963] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:03:55.934] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:03:58.067] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:05:02.962] Server  LOG      ✓ Compiled in 41ms
+[04:05:03.770] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:05:03.805] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:05:05.840] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:05:07.067] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:07:09.868] Server  LOG      ✓ Compiled in 222ms
+[04:07:10.354] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:07:10.392] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:07:13.831] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:07:15.070] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:07:57.086] Server  LOG      ✓ Compiled in 18ms
+[04:07:57.792] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:07:57.837] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:08:00.546] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:08:02.067] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[04:09:04.861] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:09:06.147] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {height: 8, borderRadius: 4, mb: 3, bgcolor: function bgcolor, & .MuiLinearProgress-bar: ...}
+                                               ^^^^^^^^^^^^^^^^
+[04:09:08.184] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {bgcolor: function bgcolor}
+            ^^^^^^^^^^^^^^^^
+[04:09:09.716] Server  LOG      ✓ Compiled in 0ms
+[04:09:11.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:09:13.089] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {bgcolor: function bgcolor}
+            ^^^^^^^^^^^^^^^^
+[04:10:23.135] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:10:23.230] Server  ERROR    ⨯ Error: Attempted to call useTheme() from the server but useTheme is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[04:10:23.863] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {height: 8, borderRadius: 4, mb: 3, bgcolor: function bgcolor, & .MuiLinearProgress-bar: ...}
+                                               ^^^^^^^^^^^^^^^^
+[04:10:24.385] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {bgcolor: function bgcolor}
+            ^^^^^^^^^^^^^^^^
+[04:10:25.428] Server  LOG      ✓ Compiled in 0ms
+[04:10:25.996] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:10:27.210] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:10:27.669] Browser ERROR   uncaughtError: Error: Attempted to call useTheme() from the server but useTheme is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[04:10:42.929] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:10:43.776] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {height: 8, borderRadius: 4, mb: 3, bgcolor: function bgcolor, & .MuiLinearProgress-bar: ...}
+                                               ^^^^^^^^^^^^^^^^
+[04:10:44.444] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {bgcolor: function bgcolor}
+            ^^^^^^^^^^^^^^^^
+[04:10:45.360] Server  LOG      ✓ Compiled in 0ms
+[04:10:45.394] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:10:46.407] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:10:46.747] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {bgcolor: function bgcolor}
+            ^^^^^^^^^^^^^^^^
+[04:13:22.005] Server  LOG      ✓ Compiled in 48ms
+[04:13:23.086] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:13:26.121] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/default-avatar.png" "received" null
+[04:13:26.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:13:27.555] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <p> p 
+
+  ...
+    <List>
+      <MuiList-root as="ul" className="MuiList-ro..." ref={null} ownerState={{children:[...], ...}}>
+        <Insertion>
+        <ul className="MuiList-ro..." ref={null}>
+          <ListItem alignItems="flex-start" sx={{px:0}}>
+            <MuiListItem-root as="li" ref={function useForkRef.useMemo} ownerState={{...}} className="MuiListIte..." ...>
+              <Insertion>
+              <li className="MuiListIte..." disabled={false} ref={function useForkRef.useMemo}>
+                <ListItemAvatar>
+                <ListItemText primary={<ForwardRef(Box)>} secondary={<Fragment>}>
+                  <MuiListItemText-root className="MuiListIte..." ownerState={{primary:true, ...}} ref={null}>
+                    <Insertion>
+                    <div className="MuiListIte..." ref={null}>
+                      <Typography>
+                      <Typography variant="body2" className="MuiListIte..." color="text.secon..." display="block">
+                        <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                          <Insertion>
+>                         <p
+>                           className="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1iak8ko-Mu..."
+>                           ref={null}
+>                         >
+                            <Typography variant="body1" sx={{mb:1}}>
+                              <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                                <Insertion>
+>                               <p
+>                                 className="MuiTypography-root MuiTypography-body1 css-8fdayk-MuiTypography-root"
+>                                 ref={null}
+>                               >
+                            ...
+          ...
+
+[04:13:27.555] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <p>
+[04:13:27.555] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               cz-shortcut-listen="true"
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[04:13:27.555] Browser WARN    Image with src "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjQkIyTH5fTxU7yP7hbuzAOWNV4ANaGBTUg&s" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:13:28.309] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/default-avatar.png" "received" null
+[04:13:35.979] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/default-avatar.png" "received" null
+[04:13:37.691] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/default-avatar.png" "received" null
+[04:14:10.987] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/default-avatar.png" "received" null
+[04:14:11.009] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/default-avatar.png" "received" null
+[04:15:39.406] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:15:41.047] Server  LOG      ✓ Compiled in 26ms
+[04:18:45.671] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:19:49.390] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:19:50.587] Server  LOG      ✓ Compiled in 40ms
+[04:21:56.859] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:21:57.703] Server  LOG      ✓ Compiled in 45ms
+[04:22:05.735] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[04:22:05.735] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[04:22:48.311] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:22:50.645] Server  LOG      ✓ Compiled in 42ms
+[04:22:50.977] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign1.jpg" "received" null
+[04:22:52.078] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign1.jpg" "received" null
+[04:22:52.135] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign2.jpg" "received" null
+[04:22:55.007] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign3.jpg" "received" null
+[04:26:13.365] Server  LOG      ✓ Compiled in 248ms
+[04:28:26.848] Server  LOG      ✓ Compiled in 285ms
+[04:28:43.161] Server  LOG      ✓ Compiled in 108ms
+[04:29:17.313] Server  LOG      ✓ Compiled in 181ms
+[04:31:02.945] Server  LOG      ✓ Compiled in 165ms
+[04:31:04.068] Browser ERROR   ./src/app/(common)/campaigns/[id]/_components/CampaignDetailed.tsx:330:32
+Parsing ecmascript source code failed
+  328 |         {/* Recent Donors */}
+  329 |               <Campa
+> 330 |         {/* Volunteer Signup */}
+      |                                ^
+  331 |         <CampaignDetailVolunteerJoinCard />
+  332 |       </Grid>
+  333 |     </Grid>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./src/app/(common)/campaigns/[id]/_components/CampaignDetailed.tsx
+    ./src/app/(common)/campaigns/[id]/page.tsx
+[04:31:16.765] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[04:31:33.057] Server  LOG      ✓ Compiled in 87ms
+[04:31:47.133] Server  LOG      ✓ Compiled in 489ms
+[04:33:28.260] Server  LOG      ✓ Compiled in 119ms
+[04:35:07.315] Server  LOG      ✓ Compiled in 313ms
+[04:36:15.588] Server  LOG      ✓ Compiled in 117ms
+[04:50:41.051] Server  LOG      ✓ Compiled in 1199ms
+[04:51:57.319] Server  LOG      ✓ Compiled in 50ms
+[04:52:22.428] Server  LOG      ✓ Compiled in 137ms
+[04:52:37.714] Server  LOG      ✓ Compiled in 450ms
+[04:53:12.603] Server  LOG      ✓ Compiled in 499ms
+[04:53:50.072] Server  LOG      ✓ Compiled in 40ms
+[04:57:43.946] Server  LOG      ✓ Compiled in 83ms
+[04:58:11.719] Server  LOG      ✓ Compiled in 63ms
+[04:59:23.163] Server  LOG      ✓ Compiled in 112ms
+[04:59:35.099] Server  LOG      ✓ Compiled in 779ms
+[04:59:36.069] Browser ERROR   ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx:3:10
+Ecmascript file had an error
+  1 | import { TabContext, TabList } from "@mui/lab";
+  2 | import { Box, Card, CardContent, Tab } from "@mui/material";
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 |
+  5 | type TTab = "story" | "update" | "comment";
+  6 |
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import trace:
+  Server Component:
+    ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx
+    ./src/app/(common)/campaigns/[id]/_components/CampaignDetailed.tsx
+    ./src/app/(common)/campaigns/[id]/page.tsx
+[05:00:26.408] Server  LOG      ✓ Compiled in 972ms
+[05:00:27.227] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:00:27.540] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:00:29.840] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign1.jpg" "received" null
+[05:00:31.182] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign2.jpg" "received" null
+[05:00:31.193] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign3.jpg" "received" null
+[05:00:31.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:00:33.067] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               cz-shortcut-listen="true"
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[05:00:33.067] Browser WARN    Image with src "/images/campaign1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:00:33.067] Browser WARN    Image with src "/images/campaign2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:00:33.067] Browser WARN    Image with src "/images/campaign3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:01:10.114] Server  LOG      ✓ Compiled in 81ms
+[05:01:33.040] Server  LOG      ✓ Compiled in 146ms
+[05:01:34.069] Browser ERROR   ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx:16:41
+Parsing ecmascript source code failed
+  14 |
+  15 | const tabContent = [
+> 16 |   { id: crypto.randomUUID(), component: , value: "story" },
+     |                                         ^
+  17 |   { id: crypto.randomUUID(), component: "Updates", value: "update" },
+  18 |   { id: crypto.randomUUID(), component: "Comments & Supports", value: "comment" },
+  19 | ];
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx
+    ./src/app/(common)/campaigns/[id]/_components/CampaignDetailed.tsx
+    ./src/app/(common)/campaigns/[id]/page.tsx
+[05:02:18.069] Browser ERROR   ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx:18:41
+Parsing ecmascript source code failed
+  16 |   { id: crypto.randomUUID(), component: <CampaignStory/> , value: "story" },
+  17 |   { id: crypto.randomUUID(), component: < "Updates", value: "update" },
+> 18 |   { id: crypto.randomUUID(), component: < "Comments & Supports", value: "comment" },
+     |                                         ^
+  19 | ];
+  20 | export default function CampignTabs() {
+  21 |   const [tab, setTab] = useState<TTab>("story");
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx
+    ./src/app/(common)/campaigns/[id]/_components/CampaignDetailed.tsx
+    ./src/app/(common)/campaigns/[id]/page.tsx
+[05:03:25.351] Server  LOG      ✓ Compiled in 965ms
+[05:03:25.888] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:04:24.339] Server  LOG      ✓ Compiled in 485ms
+[05:04:36.483] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <p> p 
+
+  ...
+    <List>
+      <MuiList-root as="ul" className="MuiList-ro..." ref={null} ownerState={{children:[...], ...}}>
+        <Insertion>
+        <ul className="MuiList-ro..." ref={null}>
+          <ListItem alignItems="flex-start" sx={{px:0}}>
+            <MuiListItem-root as="li" ref={function useForkRef.useMemo} ownerState={{...}} className="MuiListIte..." ...>
+              <Insertion>
+              <li className="MuiListIte..." disabled={false} ref={function useForkRef.useMemo}>
+                <ListItemAvatar>
+                <ListItemText primary={<ForwardRef(Box)>} secondary={<Fragment>}>
+                  <MuiListItemText-root className="MuiListIte..." ownerState={{primary:true, ...}} ref={null}>
+                    <Insertion>
+                    <div className="MuiListIte..." ref={null}>
+                      <Typography>
+                      <Typography variant="body2" className="MuiListIte..." color="text.secon..." display="block">
+                        <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                          <Insertion>
+>                         <p
+>                           className="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1iak8ko-Mu..."
+>                           ref={null}
+>                         >
+                            <Typography variant="body1" sx={{mb:1}}>
+                              <MuiTypography-root as="p" ref={null} ownerState={{variant:"b...", ...}} ...>
+                                <Insertion>
+>                               <p
+>                                 className="MuiTypography-root MuiTypography-body1 css-8fdayk-MuiTypography-root"
+>                                 ref={null}
+>                               >
+                            ...
+          ...
+
+[05:04:36.483] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <p>
+[05:05:12.568] Server  LOG      ✓ Compiled in 169ms
+[05:05:12.693] Browser ERROR   ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx:32:11
+Parsing ecmascript source code failed
+  30 |   return (
+  31 |     <TabContext value={tab}></TabContext>
+> 32 |     <Card sx={{ mb: 4 }}>
+     |           ^^
+  33 |       <CardContent sx={{ py: 2 }}>
+  34 |         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+  35 |
+
+Expected ',', got 'sx'
+
+Import trace:
+  Server Component:
+    ./src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx
+    ./src/app/(common)/campaigns/[id]/_components/CampaignDetailed.tsx
+    ./src/app/(common)/campaigns/[id]/page.tsx
+[05:05:21.443] Server  LOG      ✓ Compiled in 112ms
+[05:05:22.152] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:05:40.382] Server  LOG      ✓ Compiled in 91ms
+[05:06:14.076] Server  LOG      ✓ Compiled in 101ms
+[05:06:30.124] Server  LOG      ✓ Compiled in 85ms
+[05:08:06.246] Server  LOG      ✓ Compiled in 88ms

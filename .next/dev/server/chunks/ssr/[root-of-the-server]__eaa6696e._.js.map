@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/suju/level2/help_link_updated/helpLink/src/app/%28common%29/campaigns/%5Bid%5D/page.tsx"],"sourcesContent":["// export async function generateStaticParams() {\n//   // In a real application, you would fetch these IDs from a database or API.\n//   // For demonstration, we're providing a static list.\n//   const campaignIds = [\"campaign1\", \"campaign2\", \"campaign3\"];\n\n//   return campaignIds.map((id) => ({\n//     id: id,\n//   }));\n// }\n\nexport default async function page({ params }: { params: { id: string } }) {\n  const id = await params.id;\n\n  console.log({ id });\n  return <div>{/* <CampaignDetailPage /> */}</div>;\n}\n"],"names":[],"mappings":"AAAA,iDAAiD;AACjD,gFAAgF;AAChF,yDAAyD;AACzD,iEAAiE;AAEjE,sCAAsC;AACtC,cAAc;AACd,SAAS;AACT,IAAI;;;;;;;AAEW,eAAe,KAAK,EAAE,MAAM,EAA8B;IACvE,MAAM,KAAK,MAAM,OAAO,EAAE;IAE1B,QAAQ,GAAG,CAAC;QAAE;IAAG;IACjB,qBAAO,8OAAC;;;;;AACV","debugId":null}}]
+}

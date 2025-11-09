@@ -7,6 +7,4 @@ export interface IThemeContext {
   handleTheme: (value: TThemeMode) => void;
 }
 
-const ThemeContext = createContext<IThemeContext | null>(null);
-
-export default ThemeContext;
+export const ThemeContext = createContext<IThemeContext | null>(null);

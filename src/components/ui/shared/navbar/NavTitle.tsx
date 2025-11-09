@@ -1,9 +1,8 @@
 import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
-
+import Link from "next/link";
 export default function NavTitle() {
   return (
-    <Link to={"/"}>
+    <Link href={"/"}>
       <Button
         sx={{
           color: "text.primary",

@@ -1,13 +1,10 @@
+import useThemeContext from "@/hooks/useThemeContext";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { Box } from "@mui/material";
-import { useContext } from "react";
-import {
-  TThemeValue,
-  ThemeContext,
-} from "../../../../provider/ThemeContextProvider";
 
 export default function ToggleButton({ hide }: { hide: boolean }) {
-  const { handleTheme, mode } = useContext(ThemeContext) as TThemeValue;
+  const { handleTheme, mode } = useThemeContext();
+
   return (
     <Box
       sx={{ color: "text.primary" }}

@@ -1,17 +1,15 @@
+"use client";
 import { theme } from "@/constants/theme.constants";
-import ThemeContext, {
+import {
   IThemeContext,
+  ThemeContext,
   TThemeMode,
 } from "@/contexts/ThemeContext";
 import useLocalStorage from "@/hooks/useLocalStorage";
 import { ThemeProvider } from "@emotion/react";
 import { ReactElement } from "react";
 
-export default function ThemeContextProvider({
-  children,
-}: {
-  children: ReactElement;
-}) {
+export function ThemeContextProvider({ children }: { children: ReactElement }) {
   // custom hook for sync with localstorage
   const [value, setValue] = useLocalStorage<TThemeMode>("theme", "light");
 

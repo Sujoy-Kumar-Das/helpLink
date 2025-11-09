@@ -1,4 +1,5 @@
-import { Box, Drawer, IconButton } from "@mui/material";
+"use client";
+import { Box, IconButton } from "@mui/material";
 import { TDashboardPath, TRoutesItem } from "../../../../types";
 import Divider from "../Divider";
 import NavLinks from "./NavLinks";
@@ -75,7 +76,7 @@ export default function NavDrawer({
   );
   return (
     <nav>
-      <Drawer
+      {/* <Drawer
         container={container}
         variant="temporary"
         open={mobileOpen}
@@ -92,7 +93,7 @@ export default function NavDrawer({
         }}
       >
         {drawer}
-      </Drawer>
+      </Drawer> */}
     </nav>
   );
 }

@@ -1,24 +1,23 @@
 import { Box, Button } from "@mui/material";
-import { Link } from "react-router-dom";
-import { logout } from "../../../../redux/features/auth/auth.slice";
-import { useAppDispatch, useAppSelector } from "../../../../redux/redux.hooks";
+import Link from "next/link";
 import ToggleButton from "./ToggleButton";
 
 export default function NavToggleButton() {
   // user state
-  const token = useAppSelector((state) => state.auth.token);
-  const dispatch = useAppDispatch();
-  const handleLogout = () => {
-    dispatch(logout());
-  };
+  // const token = useAppSelector((state) => state.auth.token);
+  // const dispatch = useAppDispatch();
+  // const handleLogout = () => {
+  //   dispatch(logout());
+  // };
 
+  const token = "";
   return (
     <Box
       sx={{ display: "flex", alignItems: "center", gap: 1 }}
       flexDirection={{ xs: "column", md: "row" }}
     >
       {!token ? (
-        <Link to={"/auth/login"}>
+        <Link href={"/auth/login"}>
           <Button
             variant="contained"
             color="primary"
@@ -30,7 +29,7 @@ export default function NavToggleButton() {
         </Link>
       ) : (
         <Button
-          onClick={handleLogout}
+          // onClick={handleLogout}
           variant="contained"
           type="button"
           color="primary"

@@ -1,5 +1,5 @@
 import { Box, Button } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import { TDashboardPath, TRoutesItem } from "../../../../types";
 import Divider from "../Divider";
 
@@ -25,7 +25,7 @@ export default function NavLinks({
       {dashboard && (
         <>
           {dashboardItems?.map((item) => (
-            <NavLink key={item.path} to={item.path}>
+            <Link key={item.path} href={item.path}>
               <Button
                 sx={{
                   color: "text.primary",
@@ -33,7 +33,7 @@ export default function NavLinks({
               >
                 {item.name}
               </Button>
-            </NavLink>
+            </Link>
           ))}
           <Divider />
         </>
@@ -42,9 +42,9 @@ export default function NavLinks({
       {/* mapping for navbar */}
 
       {navItems.map((item) => (
-        <NavLink key={item.path} to={item.path}>
+        <Link key={item.path} href={item.path}>
           <Button sx={{ color: "text.primary" }}>{item.name}</Button>
-        </NavLink>
+        </Link>
       ))}
     </Box>
   );

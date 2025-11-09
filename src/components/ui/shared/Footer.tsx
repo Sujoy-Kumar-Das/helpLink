@@ -1,122 +1,145 @@
-import { Email, LinkedIn } from "@mui/icons-material";
-import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import CommonContainer from "@/components/shared/contaners/CommonContainer";
+import { VolunteerActivism } from "@mui/icons-material";
+import { Box, Divider, Grid, Link, Typography } from "@mui/material";
+import FooterBrandSection from "./FooterBrandSection";
+import FooterContactInfoList from "./FooterContactInfo";
+import FooterInfoLinks from "./FooterInfoLinks";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const quickLinks = [
+    { name: "About Us", href: "/about" },
+    { name: "Our Campaigns", href: "/campaigns" },
+    { name: "Impact Stories", href: "/stories" },
+    { name: "Volunteer", href: "/volunteer" },
+    { name: "Careers", href: "/careers" },
+    { name: "Financials", href: "/financials" },
+  ];
+
+  const resources = [
+    { name: "Blog & News", href: "/blog" },
+    { name: "Annual Reports", href: "/reports" },
+    { name: "Press Kit", href: "/press" },
+    { name: "Partnerships", href: "/partners" },
+    { name: "Resources", href: "/resources" },
+    { name: "FAQ", href: "/faq" },
+  ];
+
+  const legal = [
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
+    { name: "Cookie Policy", href: "/cookies" },
+    { name: "Disclaimer", href: "/disclaimer" },
+  ];
+
   return (
-    <Box
-      component={"footer"}
-      sx={{ backgroundColor: "background.paper", py: 15, mt: 10 }}
+    <CommonContainer
+      sx={{
+        background: "linear-gradient(135deg, #0A0F1C 0%, #1A2238 100%)",
+        color: "white",
+        pt: 8,
+        pb: 4,
+        mt: "auto",
+      }}
     >
-      <Container>
-        <Grid container textAlign={"center"}>
-          <Grid xs={12} md={4} item component={"div"}>
-            <Typography component={"h1"} variant="h5" color={"text.primary"}>
-              HopeLink
-            </Typography>
-            <Typography
-              component={"p"}
-              variant="body1"
-              my={2}
-              color={"text.secondary"}
-              textAlign={"justify"}
-            >
-              Bringing light to the homeless and hopeless. Together, we offer
-              support and build a caring community, one act of kindness at a
-              time.
-            </Typography>
-            <Box component={"div"}>
-              <IconButton color="primary" size="large">
-                <FaFacebook />
-              </IconButton>
-              <IconButton color="primary" size="large">
-                <LinkedIn />
-              </IconButton>
-              <IconButton color="primary" size="large">
-                <FaTwitter />
-              </IconButton>
-              <IconButton color="primary" size="large">
-                <FaYoutube />
-              </IconButton>
-            </Box>
-          </Grid>
-          <Grid xs={12} md={4} item component={"div"}>
-            <Typography component={"h1"} variant="h5" color={"text.primary"}>
-              Useful Links
-            </Typography>
-            <Box component={"div"}>
-              <Link to={"/"} style={{ textDecoration: "none" }}>
-                <Typography color={"text.secondary"}>Home</Typography>
-              </Link>
-              <Link to={"/"} style={{ textDecoration: "none" }}>
-                <Typography color={"text.secondary"}>About</Typography>
-              </Link>
-              <Link to={"/"} style={{ textDecoration: "none" }}>
-                <Typography color={"text.secondary"}>All Donation</Typography>
-              </Link>
-              <Link to={"/"} style={{ textDecoration: "none" }}>
-                <Typography color={"text.secondary"}>Blog</Typography>
-              </Link>
-              <Link to={"/"} style={{ textDecoration: "none" }}>
-                <Typography color={"text.secondary"}>Contact</Typography>
-              </Link>
-            </Box>
-          </Grid>
-          <Grid xs={12} md={4} item component={"div"} color={"text.secondary"}>
-            <Typography component={"h1"} variant="h5" color={"text.primary"}>
-              Contact
-            </Typography>
-            <Box
-              component={"div"}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 0.5,
-              }}
-              color={"text.secondary"}
-            >
-              <p>
-                <BsFillTelephoneFill />
-              </p>
-              <p>+88 01319263016</p>
-            </Box>
-            <Box
-              component={"div"}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 0.5,
-              }}
-              color={"text.secondary"}
-            >
-              <p>
-                <Email />
-              </p>
-              <p>sujoykumardas75@gmail.com</p>
-            </Box>
-            <Box
-              component={"div"}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 0.5,
-              }}
-              color={"text.secondary"}
-            >
-              <p>
-                <FaLocationDot />
-              </p>
-              <p>Puran Bazar,Chandpur</p>
-            </Box>
-          </Grid>
+      {/* Main Footer Content */}
+      <Grid container spacing={6}>
+        {/* Brand Column */}
+        <Grid item xs={12} md={4}>
+          <FooterBrandSection />
         </Grid>
-      </Container>
-    </Box>
+
+        <FooterInfoLinks />
+
+        {/* Contact Info */}
+        <Grid item xs={12} md={4}>
+          <FooterContactInfoList />
+        </Grid>
+      </Grid>
+
+      <Divider sx={{ my: 4, borderColor: "rgba(255, 255, 255, 0.1)" }} />
+
+      {/* Bottom Footer */}
+      <Grid container spacing={2} alignItems="center">
+        <Grid item xs={12} md={6}>
+          <Typography variant="body2" sx={{ opacity: 0.7 }}>
+            © {currentYear} HopeLink. All rights reserved. Making the world a
+            better place, one act of kindness at a time.
+          </Typography>
+        </Grid>
+
+        <Grid item xs={12} md={6}>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 2,
+              justifyContent: { md: "flex-end" },
+            }}
+          >
+            {legal.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                sx={{
+                  color: "rgba(255, 255, 255, 0.7)",
+                  textDecoration: "none",
+                  fontSize: "0.8rem",
+                  transition: "color 0.3s ease",
+                  "&:hover": {
+                    color: "#90CAF9",
+                  },
+                }}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </Box>
+        </Grid>
+      </Grid>
+
+      {/* Trust Badges */}
+      <Box
+        sx={{
+          mt: 4,
+          pt: 3,
+          borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+          textAlign: "center",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: 4,
+            alignItems: "center",
+          }}
+        >
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+            <VolunteerActivism sx={{ color: "#4CAF50" }} />
+            <Typography variant="body2" sx={{ opacity: 0.8 }}>
+              Verified Non-Profit
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+            <Typography variant="body2" sx={{ opacity: 0.8 }}>
+              🔒 Secure Donations
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+            <Typography variant="body2" sx={{ opacity: 0.8 }}>
+              ⭐ 4.9/5 Rating
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+            <Typography variant="body2" sx={{ opacity: 0.8 }}>
+              🌍 50+ Countries
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
+    </CommonContainer>
   );
 }
