@@ -24,7 +24,7 @@ const tabContent = [
 export default function CampignTabs() {
   const [tab, setTab] = useState<TTab>("story");
 
-  const handleChange = (event: React.SyntheticEvent, newValue: TTab) => {
+  const handleChange = (_: React.SyntheticEvent, newValue: TTab) => {
     setTab(newValue);
   };
 
@@ -43,7 +43,7 @@ export default function CampignTabs() {
       </Card>
 
       {tabContent.map((content) => (
-        <TabPanel key={content.id} value={content.value}>
+        <TabPanel key={content.id} value={content.value} sx={{ p: 0 }}>
           {content.component}
         </TabPanel>
       ))}

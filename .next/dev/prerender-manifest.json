@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/campaigns/campaign1":{},"/campaigns/campaign2":{},"/campaigns/campaign3":{}},"dynamicRoutes":{"/campaigns/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/campaigns/[id]","routeRegex":"^\\/campaigns\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"a6d8b1c747b5241012a25bff47c82f7d","previewModeSigningKey":"fe177051a270a7ac461dc9425f86e75e1f718f97e4101f3719b48b7e8af56f17","previewModeEncryptionKey":"97b9e57a99eddda8b992185ef0baa1d72a0b5eb5b0ff62025f0b0f920f814b9e"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "73485c6735086ced012ca3f34dc1c867",
+    "previewModeSigningKey": "3b71a00848ead4f76c2bebaeca4f548d856f1da6d72458081f3ac142c47461a7",
+    "previewModeEncryptionKey": "488288f8a3becc9c99dac1735d861ab45d87de96414b7d7c5d3abe4bf9492516"
+  }
+}

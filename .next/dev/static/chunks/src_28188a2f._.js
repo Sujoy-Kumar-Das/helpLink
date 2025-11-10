@@ -51,7 +51,7 @@ const PageHeader = ({ title, subtitle, sx })=>{
     const pathNamesArray = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$pathLinksArray$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(pathName);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            py: 4,
+            py: 8,
             borderBottom: `1px solid`,
             backgroundColor: "primary.main"
         },
@@ -810,7 +810,7 @@ const tabContent = [
 function CampignTabs() {
     _s();
     const [tab, setTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("story");
-    const handleChange = (event, newValue)=>{
+    const handleChange = (_, newValue)=>{
         setTab(newValue);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$lab$2f$TabContext$2f$TabContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TabContext$3e$__["TabContext"], {
@@ -859,6 +859,9 @@ function CampignTabs() {
             }, this),
             tabContent.map((content)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$lab$2f$TabPanel$2f$TabPanel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TabPanel$3e$__["TabPanel"], {
                     value: content.value,
+                    sx: {
+                        p: 0
+                    },
                     children: content.component
                 }, content.id, false, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/CampignTabs.tsx",

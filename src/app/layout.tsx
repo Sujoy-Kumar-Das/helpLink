@@ -1,10 +1,10 @@
 import Footer from "@/components/ui/shared/Footer";
 import Navbar from "@/components/ui/shared/navbar/Navbar";
 import { Provider } from "@/provider";
-import "../global.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "../global.css";
 
 export const metadata = {
   title: "HelpLink",
@@ -20,7 +20,7 @@ export default function RootLayout({
     <Provider>
       <html lang="en">
         <body>
-          {/* <Navbar /> */}
+          <Navbar />
           <main>{children}</main>
           <Footer />
         </body>

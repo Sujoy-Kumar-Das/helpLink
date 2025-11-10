@@ -17,7 +17,7 @@ const PageHeader = ({ title, subtitle, sx }: PageHeaderProps) => {
   return (
     <Box
       sx={{
-        py: 4,
+        py: 8,
         borderBottom: `1px solid`,
         backgroundColor: "primary.main",
       }}
