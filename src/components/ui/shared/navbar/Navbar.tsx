@@ -12,17 +12,12 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import React, { useState } from "react";
+import { useState } from "react";
 import NavDrawer from "./NavDrawer";
 import NavLinks from "./NavLinks";
 import ToggleThemeButton from "./ToogleThemeButton";
 
-interface NavbarProps {
-  mode: "light" | "dark";
-  onThemeChange: (mode: "light" | "dark") => void;
-}
-
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));

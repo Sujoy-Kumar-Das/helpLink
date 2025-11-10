@@ -4986,3 +4986,948 @@ It can also happen if the client has a browser extension installed which messes 
                               >
                 ...
 
+[04:56:20.931] Browser WARN    MUI: You have provided an out-of-range value `undefined` for the select component.
+Consider providing a value that matches one of the available options or ''.
+The available values are `Field Support`, `Fundraising`, `Social Media Advocacy`, `Logistics`.
+[04:56:20.931] Browser WARN    MUI: You have provided an out-of-range value `undefined` for the select component.
+Consider providing a value that matches one of the available options or ''.
+The available values are `1-2`, `3-4`, `weekends`, `flexible`.
+[04:56:37.353] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:56:37.353] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[04:56:37.658] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/events" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[04:57:25.724] Browser LOG     Registration submitted: {"comments":"00000","email":"dfafsf","event":{"attendees":80,"category":"Health","date":"2024-12-05","description":"Learn about mental health awareness, nutrition, and fitness from certified professionals.","id":3,"image":"/events/wellness.jpg","location":"Community Health Center","tags":["Workshop","Educational","Free"],"time":"14:00 - 17:00","title":"Health & Wellness Workshop"},"name":"gggggggggggggggggg","phone":"00000"}
+[04:57:25.724] Browser LOG     Registration submitted: {"comments":"","email":"","event":{"attendees":80,"category":"Health","date":"2024-12-05","description":"Learn about mental health awareness, nutrition, and fitness from certified professionals.","id":3,"image":"/events/wellness.jpg","location":"Community Health Center","tags":["Workshop","Educational","Free"],"time":"14:00 - 17:00","title":"Health & Wellness Workshop"},"name":"","phone":""}
+[05:06:19.323] Server  LOG      ✓ Compiled in 909ms
+[05:07:48.564] Server  LOG      ✓ Compiled in 20ms
+[05:09:04.411] Server  LOG      ✓ Compiled in 189ms
+[05:09:43.923] Server  LOG      ✓ Compiled in 184ms
+[05:09:44.071] Browser ERROR   ./src/app/(common)/events/page.tsx:265:28
+Parsing ecmascript source code failed
+  263 |       {/* Event Filters */}
+  264 |         <EventFilte
+> 265 |       {/* Featured Event */}
+      |                            ^
+  266 |       {featuredEvent && (
+  267 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  268 |           <Card
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:09:44.930] Browser ERROR   ./src/app/(common)/events/page.tsx:265:28
+Parsing ecmascript source code failed
+  263 |       {/* Event Filters */}
+  264 |         <EventFilte
+> 265 |       {/* Featured Event */}
+      |                            ^
+  266 |       {featuredEvent && (
+  267 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  268 |           <Card
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:10:03.825] Server  LOG      ✓ Compiled in 271ms
+[05:10:04.166] Browser ERROR   uncaughtError: ReferenceError: Container is not defined
+[05:10:22.794] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:10:22.826] Server  LOG      ✓ Compiled in 127ms
+[05:10:23.695] Server  ERROR    ⨯ ReferenceError: selectedCategory is not defined
+[05:10:23.728] Browser ERROR   uncaughtError: ReferenceError: selectedCategory is not defined
+[05:10:25.128] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:10:25.546] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:10:25.930] Browser ERROR   uncaughtError: ReferenceError: selectedCategory is not defined
+[05:11:18.687] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:11:18.713] Server  LOG      ✓ Compiled in 39ms
+[05:11:22.991] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:11:25.131] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:11:25.131] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/events" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               cz-shortcut-listen="true"
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[05:12:10.757] Server  LOG      ✓ Compiled in 209ms
+[05:14:13.591] Server  LOG      ✓ Compiled in 458ms
+[05:14:13.733] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:5:20
+Parsing ecmascript source code failed
+  3 | export default function Events() {
+  4 |   return (
+> 5 |     {featuredEvent && (
+    |                    ^^
+  6 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  7 |           <Card
+  8 |             sx={{
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:13.733] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:5:20
+Parsing ecmascript source code failed
+  3 | export default function Events() {
+  4 |   return (
+> 5 |     {featuredEvent && (
+    |                    ^^
+  6 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  7 |           <Card
+  8 |             sx={{
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:13.931] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:5:20
+Parsing ecmascript source code failed
+  3 | export default function Events() {
+  4 |   return (
+> 5 |     {featuredEvent && (
+    |                    ^^
+  6 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  7 |           <Card
+  8 |             sx={{
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:13.931] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:5:20
+Parsing ecmascript source code failed
+  3 | export default function Events() {
+  4 |   return (
+> 5 |     {featuredEvent && (
+    |                    ^^
+  6 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  7 |           <Card
+  8 |             sx={{
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:30.255] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:85:20
+Parsing ecmascript source code failed
+  83 | export default function Events() {
+  84 |   return (
+> 85 |     {featuredEvent && (
+     |                    ^^
+  86 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  87 |           <Card
+  88 |             sx={{
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:30.255] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:85:20
+Parsing ecmascript source code failed
+  83 | export default function Events() {
+  84 |   return (
+> 85 |     {featuredEvent && (
+     |                    ^^
+  86 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  87 |           <Card
+  88 |             sx={{
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:30.932] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:85:20
+Parsing ecmascript source code failed
+  83 | export default function Events() {
+  84 |   return (
+> 85 |     {featuredEvent && (
+     |                    ^^
+  86 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  87 |           <Card
+  88 |             sx={{
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:30.932] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:85:20
+Parsing ecmascript source code failed
+  83 | export default function Events() {
+  84 |   return (
+> 85 |     {featuredEvent && (
+     |                    ^^
+  86 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  87 |           <Card
+  88 |             sx={{
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:56.601] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:120:20
+Parsing ecmascript source code failed
+  118 | export default function Events() {
+  119 |   return (
+> 120 |     {featuredEvent && (
+      |                    ^^
+  121 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  122 |           <Card
+  123 |             sx={{
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:56.601] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:120:20
+Parsing ecmascript source code failed
+  118 | export default function Events() {
+  119 |   return (
+> 120 |     {featuredEvent && (
+      |                    ^^
+  121 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  122 |           <Card
+  123 |             sx={{
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:56.933] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:120:20
+Parsing ecmascript source code failed
+  118 | export default function Events() {
+  119 |   return (
+> 120 |     {featuredEvent && (
+      |                    ^^
+  121 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  122 |           <Card
+  123 |             sx={{
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:14:56.933] Browser ERROR   ./src/app/(common)/events/_components/Events.tsx:120:20
+Parsing ecmascript source code failed
+  118 | export default function Events() {
+  119 |   return (
+> 120 |     {featuredEvent && (
+      |                    ^^
+  121 |         <Container maxWidth="lg" sx={{ py: 6 }}>
+  122 |           <Card
+  123 |             sx={{
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/_components/Events.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:15:15.491] Server  LOG      ✓ Compiled in 410ms
+[05:15:16.282] Browser ERROR   uncaughtError: ReferenceError: featuredEvent is not defined
+[05:16:05.720] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:16:06.174] Server  LOG      ✓ Compiled in 179ms
+[05:16:06.535] Server  ERROR    ⨯ ReferenceError: featuredEvent is not defined
+[05:16:06.594] Browser ERROR   uncaughtError: ReferenceError: featuredEvent is not defined
+[05:16:08.024] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:16:08.573] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:16:08.573] Browser ERROR   uncaughtError: ReferenceError: featuredEvent is not defined
+[05:17:16.166] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:17:16.184] Server  LOG      ✓ Compiled in 60ms
+[05:17:16.929] Server  ERROR    ⨯ ReferenceError: featuredEvent is not defined
+[05:17:17.767] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:17:18.938] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:17:18.938] Browser ERROR   uncaughtError: ReferenceError: featuredEvent is not defined
+[05:18:18.148] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:18:18.157] Server  LOG      ✓ Compiled in 40ms
+[05:18:18.963] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:18:22.387] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:18:22.729] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:18:22.729] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:18:23.673] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/events" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               cz-shortcut-listen="true"
+                              >
+                ...
+
+[05:19:03.237] Server  LOG      ✓ Compiled in 52ms
+[05:20:29.500] Server  LOG      ✓ Compiled in 60ms
+[05:20:39.625] Server  LOG      ✓ Compiled in 52ms
+[05:22:05.444] Server  LOG      ✓ Compiled in 347ms
+[05:22:51.688] Server  LOG      ✓ Compiled in 243ms
+[05:22:52.348] Browser ERROR   uncaughtError: ReferenceError: Box is not defined
+[05:23:01.395] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:23:01.425] Server  LOG      ✓ Compiled in 164ms
+[05:23:02.546] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:23:02.878] Server  ERROR    ⨯ ReferenceError: filteredEvents is not defined
+[05:23:03.906] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:23:04.553] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:23:04.553] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:23:05.192] Browser ERROR   uncaughtError: ReferenceError: filteredEvents is not defined
+[05:23:31.017] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:23:31.042] Server  LOG      ✓ Compiled in 40ms
+[05:23:31.560] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:23:31.690] Server  ERROR    ⨯ ReferenceError: getCategoryIcon is not defined
+[05:23:32.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:23:32.728] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:23:32.728] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:23:33.285] Browser ERROR   uncaughtError: ReferenceError: getCategoryIcon is not defined
+[05:26:34.897] Server  LOG      ✓ Compiled in 573ms
+[05:26:34.903] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:26:35.735] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:26:38.969] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:26:39.225] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:26:39.895] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:26:40.549] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/events" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               cz-shortcut-listen="true"
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[05:27:08.725] Server  LOG      ✓ Compiled in 233ms
+[05:27:17.527] Server  LOG      ✓ Compiled in 109ms
+[05:49:58.497] Server  LOG      ✓ Compiled in 259ms
+[05:51:07.146] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:51:08.134] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign1.jpg" "received" null
+[05:51:08.426] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign2.jpg" "received" null
+[05:51:08.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:51:09.565] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:51:10.087] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/campaigns..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[05:51:10.087] Browser WARN    Image with src "/images/campaign1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:51:10.087] Browser WARN    Image with src "/images/campaign2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:51:13.707] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign3.jpg" "received" null
+[05:51:20.829] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:51:20.963] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:51:21.059] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:51:25.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:51:25.710] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:51:26.257] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               cz-shortcut-listen="true"
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[05:52:49.911] Server  LOG      ✓ Compiled in 123ms
+[05:52:50.148] Browser ERROR   ./src/app/(common)/events/page.tsx:272:24
+Parsing ecmascript source code failed
+  270 |       {/* Past Events & Testimonials */}
+  271 |         <Complet
+> 272 |       {/* CTA Footer */}
+      |                        ^
+  273 |       <Box
+  274 |         sx={{
+  275 |           background: "linear-gradient(135deg, #1E6DC6 0%, #2E8B57 100%)",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:52:50.933] Browser ERROR   ./src/app/(common)/events/page.tsx:272:24
+Parsing ecmascript source code failed
+  270 |       {/* Past Events & Testimonials */}
+  271 |         <Complet
+> 272 |       {/* CTA Footer */}
+      |                        ^
+  273 |       <Box
+  274 |         sx={{
+  275 |           background: "linear-gradient(135deg, #1E6DC6 0%, #2E8B57 100%)",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:52:50.937] Browser ERROR   ./src/app/(common)/events/page.tsx:272:24
+Parsing ecmascript source code failed
+  270 |       {/* Past Events & Testimonials */}
+  271 |         <Complet
+> 272 |       {/* CTA Footer */}
+      |                        ^
+  273 |       <Box
+  274 |         sx={{
+  275 |           background: "linear-gradient(135deg, #1E6DC6 0%, #2E8B57 100%)",
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(common)/events/page.tsx [Client Component Browser]
+    ./src/app/(common)/events/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(common)/events/page.tsx [Client Component SSR]
+    ./src/app/(common)/events/page.tsx [Server Component]
+[05:53:08.627] Server  LOG      ✓ Compiled in 303ms
+[05:53:09.578] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[05:53:09.981] Browser ERROR   uncaughtError: ReferenceError: Container is not defined
+[05:53:47.882] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:53:47.891] Server  LOG      ✓ Compiled in 309ms
+[05:53:49.078] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:53:49.737] Server  ERROR    ⨯ ReferenceError: Container is not defined
+[05:53:51.259] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:53:51.858] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:53:51.858] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:53:52.586] Browser ERROR   uncaughtError: ReferenceError: Container is not defined
+[05:53:53.955] Server  LOG      ✓ Compiled in 188ms
+[05:53:53.959] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:53:54.710] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:53:55.180] Server  ERROR    ⨯ ReferenceError: pastEvents is not defined
+[05:53:55.921] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:53:57.571] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:53:57.571] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:53:57.571] Browser ERROR   uncaughtError: ReferenceError: pastEvents is not defined
+[05:54:16.135] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:54:16.156] Server  LOG      ✓ Compiled in 33ms
+[05:54:16.717] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:54:17.038] Server  ERROR    ⨯ ReferenceError: testimonials is not defined
+[05:54:18.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:54:19.557] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:54:19.557] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:54:19.557] Browser ERROR   uncaughtError: ReferenceError: testimonials is not defined
+[05:54:33.175] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:54:33.196] Server  LOG      ✓ Compiled in 114ms
+[05:54:33.918] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[05:54:36.566] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:54:37.114] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[05:54:37.239] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[05:54:38.560] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/events" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               data-new-gr-c-s-check-loaded="14.1261.0"
+-                               data-gr-ext-installed=""
+-                               data-gr-ext-disabled="forever"
+                              >
+                ...
+
+[05:56:34.262] Server  LOG      ✓ Compiled in 110ms
+[05:56:57.710] Server  LOG      ✓ Compiled in 435ms
+[05:57:50.718] Server  LOG      ✓ Compiled in 69ms
+[05:58:00.321] Server  LOG      ✓ Compiled in 165ms
+[05:58:06.591] Server  LOG      ✓ Compiled in 162ms
+[06:00:49.930] Server  LOG      ✓ Compiled in 239ms
+[06:09:54.255] Server  LOG      ✓ Compiled in 206ms
+[06:10:14.839] Server  LOG      ✓ Compiled in 43ms
+[06:10:30.652] Server  LOG      ✓ Compiled in 196ms
+[06:10:52.981] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:10:55.912] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <... variant=... size="large" onClick={function onClick} sx=... children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[06:10:55.933] Server  ERROR    ⨯ Error: Attempted to call alpha() from the server but alpha is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[06:10:57.854] Browser ERROR   uncaughtError: Error: Attempted to call alpha() from the server but alpha is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
+[06:10:57.913] Server  LOG      ✓ Compiled in 69ms
+[06:11:42.703] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:11:43.056] Server  LOG      ✓ Compiled in 1209ms
+[06:11:43.948] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <... variant=... size="large" onClick={function onClick} sx=... children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[06:11:44.361] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[06:11:45.776] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:11:46.694] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[06:11:46.694] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <... variant=... size="large" onClick={function onClick} sx=... children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[06:12:20.224] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:12:20.235] Server  LOG      ✓ Compiled in 61ms
+[06:12:21.550] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <... variant=... size="large" onClick={function onClick} sx=... children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[06:12:23.512] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[06:12:26.385] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:12:26.947] Browser ERROR   Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.
+[06:12:26.947] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <... variant=... size="large" onClick={function onClick} sx=... children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[06:12:28.252] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <... variant=... size="large" onClick={function onClick} sx=... children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[06:12:28.577] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:29.201] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[06:12:30.141] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:30.714] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:30.906] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:12:31.258] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:31.338] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <... variant=... size="large" onClick={function onClick} sx=... children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[06:12:31.582] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:31.957] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:33.068] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign1.jpg" "received" null
+[06:12:33.069] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign2.jpg" "received" null
+[06:12:33.083] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/campaign3.jpg" "received" null
+[06:12:33.418] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:33.997] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:12:34.060] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:13:15.935] Server  LOG      ✓ Compiled in 26ms
+[06:13:17.428] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `MuiContainerRoot`. It was passed a child from Events. See https://react.dev/link/warning-keys for more information.
+[06:13:18.908] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:13:21.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:13:22.747] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `MuiContainerRoot`.  It was passed a child from Events.
+[06:13:23.761] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/events" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <Provider>
+                        <ThemeContextProvider>
+                          <ThemeProvider theme={{...}}>
+                            <html lang="en">
+                              <body
+-                               cz-shortcut-listen="true"
+                              >
+                ...
+
+[06:13:38.288] Server  LOG      ✓ Compiled in 25ms
+[06:13:39.584] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:14:02.551] Server  LOG      ✓ Compiled in 16ms
+[06:14:04.501] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:14:31.307] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[06:15:06.731] Server  WARN    Error: Route "/campaigns/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
