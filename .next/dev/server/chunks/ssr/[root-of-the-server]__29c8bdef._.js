@@ -18,24 +18,24 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
     palette: {
         mode: "light",
         primary: {
-            main: "#1976D2",
-            light: "#42A5F5",
-            dark: "#1565C0",
+            main: "#1E6DC6",
+            light: "#4A90E2",
+            dark: "#1557A3",
             contrastText: "#FFFFFF"
         },
         secondary: {
-            main: "#FF9800",
-            light: "#FFB74D",
-            dark: "#F57C00",
-            contrastText: "#212121"
+            main: "#2E8B57",
+            light: "#4CAF7A",
+            dark: "#1F6B41",
+            contrastText: "#FFFFFF"
         },
         background: {
-            default: "linear-gradient(135deg, #FAFAFA 0%, #F5F7FA 100%)",
+            default: "linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%)",
             paper: "#FFFFFF"
         },
         text: {
-            primary: "#1A202C",
-            secondary: "#4A5568"
+            primary: "#1A2027",
+            secondary: "#5A6C7D"
         },
         success: {
             main: "#10B981",
@@ -43,9 +43,9 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             dark: "#059669"
         },
         error: {
-            main: "#EF4444",
-            light: "#F87171",
-            dark: "#DC2626"
+            main: "#DC3545",
+            light: "#E74C3C",
+            dark: "#C53030"
         },
         warning: {
             main: "#F59E0B",
@@ -58,105 +58,117 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             dark: "#2563EB"
         },
         grey: {
-            50: "#F8FAFC",
-            100: "#F1F5F9",
-            200: "#E2E8F0",
-            300: "#CBD5E1",
-            400: "#94A3B8",
-            500: "#64748B",
-            600: "#475569",
-            700: "#334155",
-            800: "#1E293B",
-            900: "#0F172A"
+            50: "#F8F9FA",
+            100: "#E9ECEF",
+            200: "#DEE2E6",
+            300: "#CED4DA",
+            400: "#ADB5BD",
+            500: "#6C757D",
+            600: "#495057",
+            700: "#343A40",
+            800: "#212529",
+            900: "#1A1E21"
         }
     },
     typography: {
         fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
         h1: {
-            fontWeight: 800,
-            fontSize: "3.75rem",
-            lineHeight: 1.1,
-            letterSpacing: "-0.02em"
-        },
-        h2: {
             fontWeight: 700,
             fontSize: "3rem",
             lineHeight: 1.2,
+            letterSpacing: "-0.015em"
+        },
+        h2: {
+            fontWeight: 600,
+            fontSize: "2.5rem",
+            lineHeight: 1.3,
             letterSpacing: "-0.01em"
         },
         h3: {
-            fontWeight: 700,
-            fontSize: "2.25rem",
-            lineHeight: 1.3
+            fontWeight: 600,
+            fontSize: "2rem",
+            lineHeight: 1.4
         },
         h4: {
             fontWeight: 600,
-            fontSize: "1.875rem",
+            fontSize: "1.5rem",
             lineHeight: 1.4
         },
         h5: {
-            fontWeight: 600,
-            fontSize: "1.5rem",
+            fontWeight: 500,
+            fontSize: "1.25rem",
             lineHeight: 1.5
         },
         h6: {
-            fontWeight: 600,
-            fontSize: "1.25rem",
+            fontWeight: 500,
+            fontSize: "1.125rem",
             lineHeight: 1.6
         },
         body1: {
-            fontSize: "1.125rem",
-            lineHeight: 1.7,
-            fontWeight: 400
-        },
-        body2: {
             fontSize: "1rem",
             lineHeight: 1.6,
-            fontWeight: 400
+            fontWeight: 400,
+            color: "#5A6C7D"
+        },
+        body2: {
+            fontSize: "0.875rem",
+            lineHeight: 1.5,
+            fontWeight: 400,
+            color: "#6C757D"
         },
         button: {
             fontWeight: 600,
             textTransform: "none",
-            letterSpacing: "0.025em"
+            letterSpacing: "0.02em"
+        },
+        subtitle1: {
+            fontSize: "1.125rem",
+            lineHeight: 1.5,
+            fontWeight: 500
         }
     },
     shape: {
-        borderRadius: 16
+        borderRadius: 12
     },
     shadows: [
         "none",
-        "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-        "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-        "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-        "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-        "0 32px 64px -12px rgba(0, 0, 0, 0.2)",
-        "0 40px 80px -16px rgba(0, 0, 0, 0.15)",
-        "0 50px 100px -20px rgba(0, 0, 0, 0.15)",
-        ...Array(15).fill("0 50px 100px -20px rgba(0, 0, 0, 0.15)")
+        "0 1px 2px 0 rgba(0, 0, 0, 0.03)",
+        "0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)",
+        "0 2px 6px -1px rgba(0, 0, 0, 0.05), 0 1px 3px -1px rgba(0, 0, 0, 0.03)",
+        "0 8px 15px -3px rgba(0, 0, 0, 0.05), 0 3px 6px -2px rgba(0, 0, 0, 0.03)",
+        "0 15px 20px -5px rgba(0, 0, 0, 0.06), 0 5px 10px -5px rgba(0, 0, 0, 0.02)",
+        "0 20px 25px -5px rgba(0, 0, 0, 0.08)",
+        "0 25px 50px -12px rgba(0, 0, 0, 0.12)",
+        ...Array(17).fill("0 25px 50px -12px rgba(0, 0, 0, 0.12)")
     ],
     components: {
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    background: "linear-gradient(135deg, #FAFAFA 0%, #F5F7FA 100%)",
-                    backgroundAttachment: "fixed"
+                    background: "linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%)",
+                    backgroundAttachment: "fixed",
+                    fontFeatureSettings: "'cv11', 'ss01'",
+                    fontVariationSettings: "'opsz' 32"
+                },
+                html: {
+                    scrollBehavior: "smooth"
                 }
             }
         },
         MuiButton: {
             styleOverrides: {
                 root: {
-                    borderRadius: 14,
-                    padding: "14px 36px",
-                    fontWeight: 700,
+                    borderRadius: 12,
+                    padding: "14px 32px",
+                    fontWeight: 600,
                     textTransform: "none",
-                    fontSize: "1.1rem",
-                    letterSpacing: "0.025em",
+                    fontSize: "1rem",
+                    letterSpacing: "0.02em",
                     transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                     position: "relative",
                     overflow: "hidden",
+                    border: "none",
+                    minWidth: "120px",
                     "&::before": {
                         content: '""',
                         position: "absolute",
@@ -165,59 +177,178 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                         width: "100%",
                         height: "100%",
                         background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)",
-                        transition: "left 0.5s"
+                        transition: "left 0.6s ease-in-out"
                     },
                     "&:hover::before": {
                         left: "100%"
                     },
                     "&:hover": {
-                        transform: "translateY(-2px)",
-                        boxShadow: "0 12px 30px rgba(25, 118, 210, 0.3)"
+                        transform: "translateY(-2px)"
                     },
                     "&:active": {
                         transform: "translateY(0)"
+                    },
+                    "&.Mui-disabled": {
+                        background: "linear-gradient(135deg, #CED4DA 0%, #ADB5BD 100%)",
+                        color: "#6C757D",
+                        transform: "none",
+                        boxShadow: "none"
                     }
                 }
             },
             variants: [
+                // Primary Contained Button
                 {
                     props: {
                         variant: "contained",
                         color: "primary"
                     },
                     style: {
-                        background: "linear-gradient(135deg, #1976D2 0%, #42A5F5 100%)",
-                        boxShadow: "0 8px 25px rgba(25, 118, 210, 0.25)",
+                        background: "linear-gradient(135deg, #1E6DC6 0%, #4A90E2 100%)",
+                        boxShadow: "0 6px 20px rgba(30, 109, 198, 0.25)",
+                        color: "#FFFFFF",
                         "&:hover": {
-                            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 100%)",
-                            boxShadow: "0 12px 35px rgba(25, 118, 210, 0.4)"
+                            background: "linear-gradient(135deg, #1557A3 0%, #1E6DC6 100%)",
+                            boxShadow: "0 8px 25px rgba(30, 109, 198, 0.4)"
+                        },
+                        "&:focus": {
+                            boxShadow: "0 0 0 3px rgba(30, 109, 198, 0.2), 0 6px 20px rgba(30, 109, 198, 0.25)"
                         }
                     }
                 },
+                // Secondary Contained Button
                 {
                     props: {
                         variant: "contained",
                         color: "secondary"
                     },
                     style: {
-                        background: "linear-gradient(135deg, #FF9800 0%, #FFB74D 100%)",
-                        boxShadow: "0 8px 25px rgba(255, 152, 0, 0.25)",
+                        background: "linear-gradient(135deg, #2E8B57 0%, #4CAF7A 100%)",
+                        boxShadow: "0 6px 20px rgba(46, 139, 87, 0.25)",
+                        color: "#FFFFFF",
                         "&:hover": {
-                            background: "linear-gradient(135deg, #F57C00 0%, #FF9800 100%)",
-                            boxShadow: "0 12px 35px rgba(255, 152, 0, 0.4)"
+                            background: "linear-gradient(135deg, #1F6B41 0%, #2E8B57 100%)",
+                            boxShadow: "0 8px 25px rgba(46, 139, 87, 0.4)"
+                        },
+                        "&:focus": {
+                            boxShadow: "0 0 0 3px rgba(46, 139, 87, 0.2), 0 6px 20px rgba(46, 139, 87, 0.25)"
+                        }
+                    }
+                },
+                // Success Contained Button
+                {
+                    props: {
+                        variant: "contained",
+                        color: "success"
+                    },
+                    style: {
+                        background: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+                        boxShadow: "0 6px 20px rgba(16, 185, 129, 0.25)",
+                        color: "#FFFFFF",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, #059669 0%, #10B981 100%)",
+                            boxShadow: "0 8px 25px rgba(16, 185, 129, 0.4)"
+                        }
+                    }
+                },
+                // Error Contained Button
+                {
+                    props: {
+                        variant: "contained",
+                        color: "error"
+                    },
+                    style: {
+                        background: "linear-gradient(135deg, #DC3545 0%, #E74C3C 100%)",
+                        boxShadow: "0 6px 20px rgba(220, 53, 69, 0.25)",
+                        color: "#FFFFFF",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, #C53030 0%, #DC3545 100%)",
+                            boxShadow: "0 8px 25px rgba(220, 53, 69, 0.4)"
+                        }
+                    }
+                },
+                // Outlined Buttons
+                {
+                    props: {
+                        variant: "outlined",
+                        color: "primary"
+                    },
+                    style: {
+                        background: "transparent",
+                        border: "2px solid",
+                        borderColor: "#1E6DC6",
+                        color: "#1E6DC6",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, rgba(30, 109, 198, 0.08) 0%, rgba(74, 144, 226, 0.08) 100%)",
+                            borderColor: "#1557A3",
+                            color: "#1557A3"
                         }
                     }
                 },
                 {
                     props: {
-                        variant: "outlined"
+                        variant: "outlined",
+                        color: "secondary"
                     },
                     style: {
-                        borderWidth: "2px",
                         background: "transparent",
+                        border: "2px solid",
+                        borderColor: "#2E8B57",
+                        color: "#2E8B57",
                         "&:hover": {
-                            background: "rgba(25, 118, 210, 0.04)"
+                            background: "linear-gradient(135deg, rgba(46, 139, 87, 0.08) 0%, rgba(76, 175, 122, 0.08) 100%)",
+                            borderColor: "#1F6B41",
+                            color: "#1F6B41"
                         }
+                    }
+                },
+                // Text Buttons
+                {
+                    props: {
+                        variant: "text",
+                        color: "primary"
+                    },
+                    style: {
+                        background: "transparent",
+                        color: "#1E6DC6",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, rgba(30, 109, 198, 0.08) 0%, rgba(74, 144, 226, 0.08) 100%)"
+                        }
+                    }
+                },
+                {
+                    props: {
+                        variant: "text",
+                        color: "secondary"
+                    },
+                    style: {
+                        background: "transparent",
+                        color: "#2E8B57",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, rgba(46, 139, 87, 0.08) 0%, rgba(76, 175, 122, 0.08) 100%)"
+                        }
+                    }
+                },
+                // Size Variants
+                {
+                    props: {
+                        size: "small"
+                    },
+                    style: {
+                        padding: "8px 20px",
+                        fontSize: "0.875rem",
+                        borderRadius: 10
+                    }
+                },
+                {
+                    props: {
+                        size: "large"
+                    },
+                    style: {
+                        padding: "16px 40px",
+                        fontSize: "1.125rem",
+                        borderRadius: 14,
+                        fontWeight: 700
                     }
                 }
             ]
@@ -225,31 +356,14 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
         MuiCard: {
             styleOverrides: {
                 root: {
-                    borderRadius: 20,
-                    background: "linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%)",
-                    boxShadow: "0 10px 40px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04)",
-                    border: "1px solid rgba(255, 255, 255, 0.8)",
-                    backdropFilter: "blur(10px)",
-                    transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-                    position: "relative",
-                    overflow: "hidden",
-                    "&::before": {
-                        content: '""',
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        height: "4px",
-                        background: "linear-gradient(90deg, #1976D2, #FF9800)",
-                        transform: "scaleX(0)",
-                        transition: "transform 0.3s ease"
-                    },
+                    borderRadius: 16,
+                    background: "#FFFFFF",
+                    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.06)",
+                    border: "1px solid rgba(0, 0, 0, 0.05)",
+                    transition: "all 0.3s ease-in-out",
                     "&:hover": {
-                        transform: "translateY(-8px)",
-                        boxShadow: "0 25px 60px rgba(0, 0, 0, 0.15), 0 10px 30px rgba(0, 0, 0, 0.08)",
-                        "&::before": {
-                            transform: "scaleX(1)"
-                        }
+                        transform: "translateY(-2px)",
+                        boxShadow: "0 8px 30px rgba(0, 0, 0, 0.1)"
                     }
                 }
             }
@@ -257,9 +371,9 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
         MuiCardContent: {
             styleOverrides: {
                 root: {
-                    padding: "32px",
+                    padding: "24px",
                     "&:last-child": {
-                        paddingBottom: "32px"
+                        paddingBottom: "24px"
                     }
                 }
             }
@@ -267,10 +381,10 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
         MuiAppBar: {
             styleOverrides: {
                 root: {
-                    background: "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%)",
-                    backdropFilter: "blur(20px)",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.8)",
-                    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)"
+                    background: "rgba(255, 255, 255, 0.95)",
+                    backdropFilter: "blur(10px)",
+                    borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
+                    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.04)"
                 }
             }
         },
@@ -285,46 +399,62 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             styleOverrides: {
                 root: {
                     "& .MuiOutlinedInput-root": {
-                        borderRadius: 12,
+                        borderRadius: 8,
                         background: "rgba(255, 255, 255, 0.8)",
                         "&:hover .MuiOutlinedInput-notchedOutline": {
-                            borderColor: "#1976D2"
+                            borderColor: "#1E6DC6"
                         },
                         "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                            borderColor: "#1976D2",
+                            borderColor: "#1E6DC6",
                             borderWidth: "2px"
                         }
                     }
                 }
             }
+        },
+        MuiAlert: {
+            styleOverrides: {
+                root: {
+                    borderRadius: 8,
+                    border: "1px solid"
+                },
+                standardSuccess: {
+                    background: "rgba(16, 185, 129, 0.05)",
+                    borderColor: "rgba(16, 185, 129, 0.2)"
+                },
+                standardError: {
+                    background: "rgba(220, 53, 69, 0.05)",
+                    borderColor: "rgba(220, 53, 69, 0.2)"
+                }
+            }
         }
     }
 });
-//  Dark Theme
+// Dark Theme
 const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$createTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__createTheme$3e$__["createTheme"])({
     ...light,
     palette: {
         mode: "dark",
         primary: {
-            main: "#90CAF9",
-            light: "#E3F2FD",
-            dark: "#42A5F5",
-            contrastText: "#0A1929"
+            main: "#4A90E2",
+            light: "#6BA8F0",
+            dark: "#1E6DC6",
+            contrastText: "#FFFFFF"
         },
         secondary: {
-            main: "#FFB74D",
-            light: "#FFE082",
-            dark: "#FF9800",
-            contrastText: "#1A1200"
+            main: "#4CAF7A",
+            light: "#6BCF95",
+            dark: "#2E8B57",
+            contrastText: "#FFFFFF"
         },
         background: {
-            default: "linear-gradient(135deg, #0A0F1C 0%, #1A2238 100%)",
-            paper: "linear-gradient(135deg, #1A2238 0%, #243356 100%)"
+            default: "linear-gradient(135deg, #0F1419 0%, #1A2027 100%)",
+            paper: "rgba(30, 35, 42, 0.8)"
         },
         text: {
-            primary: "#F1F5F9",
-            secondary: "#CBD5E1",
-            disabled: "#64748B"
+            primary: "#F8F9FA",
+            secondary: "#ADB5BD",
+            disabled: "#6C757D"
         },
         success: {
             main: "#10B981",
@@ -332,9 +462,9 @@ const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
             dark: "#059669"
         },
         error: {
-            main: "#EF4444",
-            light: "#F87171",
-            dark: "#DC2626"
+            main: "#DC3545",
+            light: "#E74C3C",
+            dark: "#C53030"
         },
         warning: {
             main: "#F59E0B",
@@ -347,28 +477,28 @@ const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
             dark: "#2563EB"
         },
         grey: {
-            50: "#F8FAFC",
-            100: "#F1F5F9",
-            200: "#E2E8F0",
-            300: "#CBD5E1",
-            400: "#94A3B8",
-            500: "#64748B",
-            600: "#475569",
-            700: "#334155",
-            800: "#1E293B",
-            900: "#0F172A"
+            50: "#F8F9FA",
+            100: "#E9ECEF",
+            200: "#DEE2E6",
+            300: "#CED4DA",
+            400: "#ADB5BD",
+            500: "#6C757D",
+            600: "#495057",
+            700: "#343A40",
+            800: "#212529",
+            900: "#1A1E21"
         },
-        divider: "rgba(255, 255, 255, 0.12)",
+        divider: "rgba(255, 255, 255, 0.08)",
         action: {
-            active: "#F1F5F9",
-            hover: "rgba(144, 202, 249, 0.08)",
-            hoverOpacity: 0.08,
-            selected: "rgba(144, 202, 249, 0.16)",
-            selectedOpacity: 0.16,
+            active: "#F8F9FA",
+            hover: "rgba(255, 255, 255, 0.05)",
+            hoverOpacity: 0.05,
+            selected: "rgba(255, 255, 255, 0.08)",
+            selectedOpacity: 0.08,
             disabled: "rgba(255, 255, 255, 0.3)",
             disabledBackground: "rgba(255, 255, 255, 0.12)",
             disabledOpacity: 0.38,
-            focus: "rgba(144, 202, 249, 0.12)",
+            focus: "rgba(255, 255, 255, 0.12)",
             focusOpacity: 0.12,
             activatedOpacity: 0.24
         }
@@ -378,7 +508,7 @@ const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    background: "linear-gradient(135deg, #0A0F1C 0%, #1A2238 100%)",
+                    background: "linear-gradient(135deg, #0F1419 0%, #1A2027 100%)",
                     backgroundAttachment: "fixed"
                 }
             }
@@ -390,46 +520,135 @@ const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
                 }
             },
             variants: [
+                // Primary Contained Button - Dark
                 {
                     props: {
                         variant: "contained",
                         color: "primary"
                     },
                     style: {
-                        background: "linear-gradient(135deg, #90CAF9 0%, #42A5F5 100%)",
-                        boxShadow: "0 8px 25px rgba(144, 202, 249, 0.3)",
-                        color: "#0A1929",
+                        background: "linear-gradient(135deg, #4A90E2 0%, #1E6DC6 100%)",
+                        boxShadow: "0 6px 20px rgba(74, 144, 226, 0.3)",
+                        color: "#FFFFFF",
                         "&:hover": {
-                            background: "linear-gradient(135deg, #42A5F5 0%, #90CAF9 100%)",
-                            boxShadow: "0 12px 35px rgba(144, 202, 249, 0.5)"
+                            background: "linear-gradient(135deg, #1E6DC6 0%, #4A90E2 100%)",
+                            boxShadow: "0 8px 25px rgba(74, 144, 226, 0.5)"
+                        },
+                        "&:focus": {
+                            boxShadow: "0 0 0 3px rgba(74, 144, 226, 0.3), 0 6px 20px rgba(74, 144, 226, 0.3)"
                         }
                     }
                 },
+                // Secondary Contained Button - Dark
                 {
                     props: {
                         variant: "contained",
                         color: "secondary"
                     },
                     style: {
-                        background: "linear-gradient(135deg, #FFB74D 0%, #FF9800 100%)",
-                        boxShadow: "0 8px 25px rgba(255, 183, 77, 0.3)",
-                        color: "#1A1200",
+                        background: "linear-gradient(135deg, #4CAF7A 0%, #2E8B57 100%)",
+                        boxShadow: "0 6px 20px rgba(76, 175, 122, 0.3)",
+                        color: "#FFFFFF",
                         "&:hover": {
-                            background: "linear-gradient(135deg, #FF9800 0%, #FFB74D 100%)",
-                            boxShadow: "0 12px 35px rgba(255, 183, 77, 0.5)"
+                            background: "linear-gradient(135deg, #2E8B57 0%, #4CAF7A 100%)",
+                            boxShadow: "0 8px 25px rgba(76, 175, 122, 0.5)"
+                        },
+                        "&:focus": {
+                            boxShadow: "0 0 0 3px rgba(76, 175, 122, 0.3), 0 6px 20px rgba(76, 175, 122, 0.3)"
+                        }
+                    }
+                },
+                // Success Contained Button - Dark
+                {
+                    props: {
+                        variant: "contained",
+                        color: "success"
+                    },
+                    style: {
+                        background: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+                        boxShadow: "0 6px 20px rgba(16, 185, 129, 0.3)",
+                        color: "#FFFFFF",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, #059669 0%, #10B981 100%)",
+                            boxShadow: "0 8px 25px rgba(16, 185, 129, 0.5)"
+                        }
+                    }
+                },
+                // Error Contained Button - Dark
+                {
+                    props: {
+                        variant: "contained",
+                        color: "error"
+                    },
+                    style: {
+                        background: "linear-gradient(135deg, #DC3545 0%, #E74C3C 100%)",
+                        boxShadow: "0 6px 20px rgba(220, 53, 69, 0.3)",
+                        color: "#FFFFFF",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, #C53030 0%, #DC3545 100%)",
+                            boxShadow: "0 8px 25px rgba(220, 53, 69, 0.5)"
+                        }
+                    }
+                },
+                // Outlined Buttons - Dark
+                {
+                    props: {
+                        variant: "outlined",
+                        color: "primary"
+                    },
+                    style: {
+                        background: "transparent",
+                        border: "2px solid",
+                        borderColor: "#4A90E2",
+                        color: "#4A90E2",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(30, 109, 198, 0.1) 100%)",
+                            borderColor: "#6BA8F0",
+                            color: "#6BA8F0"
                         }
                     }
                 },
                 {
                     props: {
-                        variant: "outlined"
+                        variant: "outlined",
+                        color: "secondary"
                     },
                     style: {
-                        borderColor: "rgba(144, 202, 249, 0.5)",
-                        color: "#90CAF9",
+                        background: "transparent",
+                        border: "2px solid",
+                        borderColor: "#4CAF7A",
+                        color: "#4CAF7A",
                         "&:hover": {
-                            background: "rgba(144, 202, 249, 0.08)",
-                            borderColor: "#90CAF9"
+                            background: "linear-gradient(135deg, rgba(76, 175, 122, 0.1) 0%, rgba(46, 139, 87, 0.1) 100%)",
+                            borderColor: "#6BCF95",
+                            color: "#6BCF95"
+                        }
+                    }
+                },
+                // Text Buttons - Dark
+                {
+                    props: {
+                        variant: "text",
+                        color: "primary"
+                    },
+                    style: {
+                        background: "transparent",
+                        color: "#4A90E2",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(30, 109, 198, 0.1) 100%)"
+                        }
+                    }
+                },
+                {
+                    props: {
+                        variant: "text",
+                        color: "secondary"
+                    },
+                    style: {
+                        background: "transparent",
+                        color: "#4CAF7A",
+                        "&:hover": {
+                            background: "linear-gradient(135deg, rgba(76, 175, 122, 0.1) 0%, rgba(46, 139, 87, 0.1) 100%)"
                         }
                     }
                 }
@@ -438,15 +657,12 @@ const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
         MuiCard: {
             styleOverrides: {
                 root: {
-                    background: "linear-gradient(135deg, rgba(26, 34, 56, 0.8) 0%, rgba(36, 51, 86, 0.6) 100%)",
-                    border: "1px solid rgba(255, 255, 255, 0.1)",
-                    boxShadow: "0 20px 50px rgba(0, 0, 0, 0.4), 0 8px 25px rgba(0, 0, 0, 0.3)",
-                    backdropFilter: "blur(20px)",
-                    "&::before": {
-                        background: "linear-gradient(90deg, #90CAF9, #FFB74D)"
-                    },
+                    background: "rgba(30, 35, 42, 0.6)",
+                    border: "1px solid rgba(255, 255, 255, 0.08)",
+                    boxShadow: "0 8px 30px rgba(0, 0, 0, 0.3)",
+                    backdropFilter: "blur(10px)",
                     "&:hover": {
-                        boxShadow: "0 30px 70px rgba(0, 0, 0, 0.6), 0 15px 40px rgba(0, 0, 0, 0.4)"
+                        boxShadow: "0 12px 40px rgba(0, 0, 0, 0.4)"
                     }
                 }
             }
@@ -454,10 +670,10 @@ const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
         MuiAppBar: {
             styleOverrides: {
                 root: {
-                    background: "linear-gradient(135deg, rgba(26, 34, 56, 0.95) 0%, rgba(36, 51, 86, 0.9) 100%)",
-                    backdropFilter: "blur(20px)",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
-                    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.5)"
+                    background: "rgba(26, 32, 39, 0.9)",
+                    backdropFilter: "blur(10px)",
+                    borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+                    boxShadow: "0 2px 20px rgba(0, 0, 0, 0.3)"
                 }
             }
         },
@@ -465,14 +681,30 @@ const dark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
             styleOverrides: {
                 root: {
                     "& .MuiOutlinedInput-root": {
-                        background: "rgba(255, 255, 255, 0.05)",
+                        background: "rgba(255, 255, 255, 0.03)",
                         "&:hover .MuiOutlinedInput-notchedOutline": {
-                            borderColor: "#90CAF9"
+                            borderColor: "#4A90E2"
                         },
                         "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                            borderColor: "#90CAF9"
+                            borderColor: "#4A90E2"
                         }
                     }
+                }
+            }
+        },
+        MuiAlert: {
+            styleOverrides: {
+                root: {
+                    borderRadius: 8,
+                    border: "1px solid"
+                },
+                standardSuccess: {
+                    background: "rgba(16, 185, 129, 0.1)",
+                    borderColor: "rgba(16, 185, 129, 0.3)"
+                },
+                standardError: {
+                    background: "rgba(220, 53, 69, 0.1)",
+                    borderColor: "rgba(220, 53, 69, 0.3)"
                 }
             }
         }

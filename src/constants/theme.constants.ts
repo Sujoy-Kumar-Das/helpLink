@@ -144,54 +144,176 @@ const light = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 10,
-          padding: "12px 28px",
+          borderRadius: 12,
+          padding: "14px 32px",
           fontWeight: 600,
           textTransform: "none",
           fontSize: "1rem",
           letterSpacing: "0.02em",
-          transition: "all 0.2s ease-in-out",
+          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
           position: "relative",
           overflow: "hidden",
+          border: "none",
+          minWidth: "120px",
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: "-100%",
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)",
+            transition: "left 0.6s ease-in-out",
+          },
+          "&:hover::before": {
+            left: "100%",
+          },
           "&:hover": {
-            transform: "translateY(-1px)",
+            transform: "translateY(-2px)",
           },
           "&:active": {
             transform: "translateY(0)",
           },
+          "&.Mui-disabled": {
+            background: "linear-gradient(135deg, #CED4DA 0%, #ADB5BD 100%)",
+            color: "#6C757D",
+            transform: "none",
+            boxShadow: "none",
+          },
         },
       },
       variants: [
+        // Primary Contained Button
         {
           props: { variant: "contained", color: "primary" },
           style: {
             background: "linear-gradient(135deg, #1E6DC6 0%, #4A90E2 100%)",
-            boxShadow: "0 4px 12px rgba(30, 109, 198, 0.2)",
+            boxShadow: "0 6px 20px rgba(30, 109, 198, 0.25)",
+            color: "#FFFFFF",
             "&:hover": {
               background: "linear-gradient(135deg, #1557A3 0%, #1E6DC6 100%)",
-              boxShadow: "0 6px 16px rgba(30, 109, 198, 0.3)",
+              boxShadow: "0 8px 25px rgba(30, 109, 198, 0.4)",
+            },
+            "&:focus": {
+              boxShadow:
+                "0 0 0 3px rgba(30, 109, 198, 0.2), 0 6px 20px rgba(30, 109, 198, 0.25)",
             },
           },
         },
+        // Secondary Contained Button
         {
           props: { variant: "contained", color: "secondary" },
           style: {
             background: "linear-gradient(135deg, #2E8B57 0%, #4CAF7A 100%)",
-            boxShadow: "0 4px 12px rgba(46, 139, 87, 0.2)",
+            boxShadow: "0 6px 20px rgba(46, 139, 87, 0.25)",
+            color: "#FFFFFF",
             "&:hover": {
               background: "linear-gradient(135deg, #1F6B41 0%, #2E8B57 100%)",
-              boxShadow: "0 6px 16px rgba(46, 139, 87, 0.3)",
+              boxShadow: "0 8px 25px rgba(46, 139, 87, 0.4)",
+            },
+            "&:focus": {
+              boxShadow:
+                "0 0 0 3px rgba(46, 139, 87, 0.2), 0 6px 20px rgba(46, 139, 87, 0.25)",
+            },
+          },
+        },
+        // Success Contained Button
+        {
+          props: { variant: "contained", color: "success" },
+          style: {
+            background: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+            boxShadow: "0 6px 20px rgba(16, 185, 129, 0.25)",
+            color: "#FFFFFF",
+            "&:hover": {
+              background: "linear-gradient(135deg, #059669 0%, #10B981 100%)",
+              boxShadow: "0 8px 25px rgba(16, 185, 129, 0.4)",
+            },
+          },
+        },
+        // Error Contained Button
+        {
+          props: { variant: "contained", color: "error" },
+          style: {
+            background: "linear-gradient(135deg, #DC3545 0%, #E74C3C 100%)",
+            boxShadow: "0 6px 20px rgba(220, 53, 69, 0.25)",
+            color: "#FFFFFF",
+            "&:hover": {
+              background: "linear-gradient(135deg, #C53030 0%, #DC3545 100%)",
+              boxShadow: "0 8px 25px rgba(220, 53, 69, 0.4)",
+            },
+          },
+        },
+        // Outlined Buttons
+        {
+          props: { variant: "outlined", color: "primary" },
+          style: {
+            background: "transparent",
+            border: "2px solid",
+            borderColor: "#1E6DC6",
+            color: "#1E6DC6",
+            "&:hover": {
+              background:
+                "linear-gradient(135deg, rgba(30, 109, 198, 0.08) 0%, rgba(74, 144, 226, 0.08) 100%)",
+              borderColor: "#1557A3",
+              color: "#1557A3",
             },
           },
         },
         {
-          props: { variant: "outlined" },
+          props: { variant: "outlined", color: "secondary" },
           style: {
-            borderWidth: "1.5px",
             background: "transparent",
+            border: "2px solid",
+            borderColor: "#2E8B57",
+            color: "#2E8B57",
             "&:hover": {
-              background: "rgba(30, 109, 198, 0.04)",
+              background:
+                "linear-gradient(135deg, rgba(46, 139, 87, 0.08) 0%, rgba(76, 175, 122, 0.08) 100%)",
+              borderColor: "#1F6B41",
+              color: "#1F6B41",
             },
+          },
+        },
+        // Text Buttons
+        {
+          props: { variant: "text", color: "primary" },
+          style: {
+            background: "transparent",
+            color: "#1E6DC6",
+            "&:hover": {
+              background:
+                "linear-gradient(135deg, rgba(30, 109, 198, 0.08) 0%, rgba(74, 144, 226, 0.08) 100%)",
+            },
+          },
+        },
+        {
+          props: { variant: "text", color: "secondary" },
+          style: {
+            background: "transparent",
+            color: "#2E8B57",
+            "&:hover": {
+              background:
+                "linear-gradient(135deg, rgba(46, 139, 87, 0.08) 0%, rgba(76, 175, 122, 0.08) 100%)",
+            },
+          },
+        },
+        // Size Variants
+        {
+          props: { size: "small" },
+          style: {
+            padding: "8px 20px",
+            fontSize: "0.875rem",
+            borderRadius: 10,
+          },
+        },
+        {
+          props: { size: "large" },
+          style: {
+            padding: "16px 40px",
+            fontSize: "1.125rem",
+            borderRadius: 14,
+            fontWeight: 700,
           },
         },
       ],
@@ -364,36 +486,117 @@ const dark = createTheme({
         },
       },
       variants: [
+        // Primary Contained Button - Dark
         {
           props: { variant: "contained", color: "primary" },
           style: {
             background: "linear-gradient(135deg, #4A90E2 0%, #1E6DC6 100%)",
-            boxShadow: "0 4px 12px rgba(74, 144, 226, 0.25)",
+            boxShadow: "0 6px 20px rgba(74, 144, 226, 0.3)",
+            color: "#FFFFFF",
             "&:hover": {
               background: "linear-gradient(135deg, #1E6DC6 0%, #4A90E2 100%)",
-              boxShadow: "0 6px 16px rgba(74, 144, 226, 0.35)",
+              boxShadow: "0 8px 25px rgba(74, 144, 226, 0.5)",
+            },
+            "&:focus": {
+              boxShadow:
+                "0 0 0 3px rgba(74, 144, 226, 0.3), 0 6px 20px rgba(74, 144, 226, 0.3)",
             },
           },
         },
+        // Secondary Contained Button - Dark
         {
           props: { variant: "contained", color: "secondary" },
           style: {
             background: "linear-gradient(135deg, #4CAF7A 0%, #2E8B57 100%)",
-            boxShadow: "0 4px 12px rgba(76, 175, 122, 0.25)",
+            boxShadow: "0 6px 20px rgba(76, 175, 122, 0.3)",
+            color: "#FFFFFF",
             "&:hover": {
               background: "linear-gradient(135deg, #2E8B57 0%, #4CAF7A 100%)",
-              boxShadow: "0 6px 16px rgba(76, 175, 122, 0.35)",
+              boxShadow: "0 8px 25px rgba(76, 175, 122, 0.5)",
+            },
+            "&:focus": {
+              boxShadow:
+                "0 0 0 3px rgba(76, 175, 122, 0.3), 0 6px 20px rgba(76, 175, 122, 0.3)",
+            },
+          },
+        },
+        // Success Contained Button - Dark
+        {
+          props: { variant: "contained", color: "success" },
+          style: {
+            background: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+            boxShadow: "0 6px 20px rgba(16, 185, 129, 0.3)",
+            color: "#FFFFFF",
+            "&:hover": {
+              background: "linear-gradient(135deg, #059669 0%, #10B981 100%)",
+              boxShadow: "0 8px 25px rgba(16, 185, 129, 0.5)",
+            },
+          },
+        },
+        // Error Contained Button - Dark
+        {
+          props: { variant: "contained", color: "error" },
+          style: {
+            background: "linear-gradient(135deg, #DC3545 0%, #E74C3C 100%)",
+            boxShadow: "0 6px 20px rgba(220, 53, 69, 0.3)",
+            color: "#FFFFFF",
+            "&:hover": {
+              background: "linear-gradient(135deg, #C53030 0%, #DC3545 100%)",
+              boxShadow: "0 8px 25px rgba(220, 53, 69, 0.5)",
+            },
+          },
+        },
+        // Outlined Buttons - Dark
+        {
+          props: { variant: "outlined", color: "primary" },
+          style: {
+            background: "transparent",
+            border: "2px solid",
+            borderColor: "#4A90E2",
+            color: "#4A90E2",
+            "&:hover": {
+              background:
+                "linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(30, 109, 198, 0.1) 100%)",
+              borderColor: "#6BA8F0",
+              color: "#6BA8F0",
             },
           },
         },
         {
-          props: { variant: "outlined" },
+          props: { variant: "outlined", color: "secondary" },
           style: {
-            borderColor: "rgba(255, 255, 255, 0.2)",
-            color: "#F8F9FA",
+            background: "transparent",
+            border: "2px solid",
+            borderColor: "#4CAF7A",
+            color: "#4CAF7A",
             "&:hover": {
-              background: "rgba(255, 255, 255, 0.05)",
-              borderColor: "rgba(255, 255, 255, 0.3)",
+              background:
+                "linear-gradient(135deg, rgba(76, 175, 122, 0.1) 0%, rgba(46, 139, 87, 0.1) 100%)",
+              borderColor: "#6BCF95",
+              color: "#6BCF95",
+            },
+          },
+        },
+        // Text Buttons - Dark
+        {
+          props: { variant: "text", color: "primary" },
+          style: {
+            background: "transparent",
+            color: "#4A90E2",
+            "&:hover": {
+              background:
+                "linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(30, 109, 198, 0.1) 100%)",
+            },
+          },
+        },
+        {
+          props: { variant: "text", color: "secondary" },
+          style: {
+            background: "transparent",
+            color: "#4CAF7A",
+            "&:hover": {
+              background:
+                "linear-gradient(135deg, rgba(76, 175, 122, 0.1) 0%, rgba(46, 139, 87, 0.1) 100%)",
             },
           },
         },

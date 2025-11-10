@@ -1,24 +1,31 @@
 "use client";
 import getPathArray from "@/utils/pathLinksArray";
 import { Home, NavigateNext } from "@mui/icons-material";
-import { Box, Breadcrumbs, SxProps, Typography } from "@mui/material";
+import {
+  Box,
+  Breadcrumbs,
+  Container,
+  SxProps,
+  Typography,
+} from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ReactElement } from "react";
 interface PageHeaderProps {
   title: string;
   subtitle: string;
   sx?: SxProps;
+  children?: ReactElement;
 }
 
-const PageHeader = ({ title, subtitle, sx }: PageHeaderProps) => {
+const PageHeader = ({ title, subtitle, sx, children }: PageHeaderProps) => {
   const pathName = usePathname();
 
   const pathNamesArray = getPathArray(pathName);
   return (
     <Box
       sx={{
-        py: 8,
-        borderBottom: `1px solid`,
+        py: { xs: 10, md: 12 },
         backgroundColor: "primary.main",
       }}
     >
@@ -30,75 +37,79 @@ const PageHeader = ({ title, subtitle, sx }: PageHeaderProps) => {
           ...sx,
         }}
       >
-        {/* Title */}
-        <Typography
-          variant={"h2"}
-          component="h1"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            color: "primary.contrastText",
-            textAlign: "left",
-            mb: 4,
-          }}
-        >
-          {title}
-        </Typography>
-
-        {/* Subtitle */}
-        <Typography
-          variant={"body1"}
-          color={"primary.contrastText"}
-          sx={{
-            textAlign: "left",
-            lineHeight: 1.6,
-          }}
-        >
-          {subtitle}
-        </Typography>
-
-        <Breadcrumbs
-          separator={
-            <NavigateNext
-              fontSize="small"
-              sx={{ color: "primary.contrastText" }}
-            />
-          }
-          sx={{
-            mt: 1,
-            "& .MuiBreadcrumbs-ol": {
-              justifyContent: "flex-start",
-            },
-          }}
-        >
+        <Container maxWidth="lg">
           <Typography
-            href="/"
-            component={Link}
+            variant="h1"
             sx={{
-              display: "flex",
-              alignItems: "center",
-              textDecoration: "none",
+              mb: 3,
+              fontSize: { xs: "2.5rem", md: "3.5rem" },
+              fontWeight: 700,
+              textAlign: "center",
               color: "primary.contrastText",
             }}
           >
-            <Home sx={{ mr: 0.5, fontSize: "1rem" }} />
-            Home
+            {title}
           </Typography>
-          {pathNamesArray.map((item) => (
+          <Typography
+            variant="h5"
+            sx={{
+              mb: 4,
+              maxWidth: "600px",
+              mx: "auto",
+              opacity: 0.9,
+              fontWeight: 400,
+              textAlign: "center",
+              color: "primary.contrastText",
+            }}
+          >
+            {subtitle}
+          </Typography>
+
+          <Breadcrumbs
+            separator={
+              <NavigateNext
+                fontSize="small"
+                sx={{ color: "primary.contrastText" }}
+              />
+            }
+            sx={{
+              mt: 1,
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Typography
+              href="/"
               component={Link}
-              key={item.id}
-              href={item.link}
               sx={{
+                display: "flex",
+                alignItems: "center",
                 textDecoration: "none",
                 color: "primary.contrastText",
-                textTransform: "capitalize",
               }}
             >
-              {item.text}
+              <Home sx={{ mr: 0.5, fontSize: "1rem" }} />
+              Home
             </Typography>
-          ))}
-        </Breadcrumbs>
+
+            {pathNamesArray.map((item) => (
+              <Typography
+                component={Link}
+                key={item.id}
+                href={item.link}
+                sx={{
+                  textDecoration: "none",
+                  color: "primary.contrastText",
+                  textTransform: "capitalize",
+                }}
+              >
+                {item.text}
+              </Typography>
+            ))}
+          </Breadcrumbs>
+
+          {children && children}
+        </Container>
       </Box>
     </Box>
   );

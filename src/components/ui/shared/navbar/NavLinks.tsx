@@ -10,6 +10,8 @@ type INavLinksProps = {
 const navigationItems = [
   { label: "Home", href: "/" },
   { label: "Campaigns", href: "/campaigns" },
+  { label: "Volunteer", href: "/volunteer" },
+  { label: "Events", href: "/events" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
