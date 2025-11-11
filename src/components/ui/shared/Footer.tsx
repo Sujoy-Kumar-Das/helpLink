@@ -8,24 +8,6 @@ import FooterInfoLinks from "./FooterInfoLinks";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
-    { name: "About Us", href: "/about" },
-    { name: "Our Campaigns", href: "/campaigns" },
-    { name: "Impact Stories", href: "/stories" },
-    { name: "Volunteer", href: "/volunteer" },
-    { name: "Careers", href: "/careers" },
-    { name: "Financials", href: "/financials" },
-  ];
-
-  const resources = [
-    { name: "Blog & News", href: "/blog" },
-    { name: "Annual Reports", href: "/reports" },
-    { name: "Press Kit", href: "/press" },
-    { name: "Partnerships", href: "/partners" },
-    { name: "Resources", href: "/resources" },
-    { name: "FAQ", href: "/faq" },
-  ];
-
   const legal = [
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },

@@ -801,7 +801,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$common$292f$
 ;
 ;
 ;
-function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
+function ProgressSection({ raised, goal, donors, daysLeft }) {
     const progress = Math.min(raised / goal * 100, 100);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Card$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Card$3e$__["Card"], {
         elevation: 4,
@@ -821,7 +821,7 @@ function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
                     progress: progress
                 }, void 0, false, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                    lineNumber: 49,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -837,7 +837,7 @@ function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                    lineNumber: 52,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -852,7 +852,7 @@ function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                    lineNumber: 55,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$LinearProgress$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__LinearProgress$3e$__["LinearProgress"], {
@@ -869,7 +869,7 @@ function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                    lineNumber: 60,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$common$292f$campaigns$2f5b$id$5d2f$_components$2f$DonorCount$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -878,12 +878,12 @@ function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
                     progress: progress
                 }, void 0, false, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                    lineNumber: 75,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$common$292f$campaigns$2f5b$id$5d2f$_components$2f$DonateButton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                    lineNumber: 78,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -898,13 +898,13 @@ function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
                             fullWidth: true,
                             startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$Favorite$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                                lineNumber: 82,
+                                lineNumber: 80,
                                 columnNumber: 59
                             }, void 0),
                             children: "Save"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                            lineNumber: 82,
+                            lineNumber: 80,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -912,30 +912,30 @@ function ProgressSection({ raised, goal, donors, daysLeft, organizer }) {
                             fullWidth: true,
                             startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$Share$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                                lineNumber: 85,
+                                lineNumber: 83,
                                 columnNumber: 59
                             }, void 0),
                             children: "Share"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                            lineNumber: 85,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-                    lineNumber: 81,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-            lineNumber: 48,
+            lineNumber: 46,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/(common)/campaigns/[id]/_components/ProgressSection.tsx",
-        lineNumber: 39,
+        lineNumber: 37,
         columnNumber: 5
     }, this);
 }
@@ -1028,7 +1028,7 @@ function CampaignDetailHeader() {
 
 __turbopack_context__.s([
     "default",
-    ()=>page
+    ()=>CampaignDetailPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$commonHeader$2f$PageHeader$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/shared/commonHeader/PageHeader.tsx [app-rsc] (ecmascript)");
@@ -1071,8 +1071,7 @@ const campaignData = {
     ],
     impact: "1,200 families supported with essential supplies"
 };
-async function page({ params }) {
-    const id = await params.id;
+async function CampaignDetailPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         component: "section",
         children: [
@@ -1081,7 +1080,7 @@ async function page({ params }) {
                 subtitle: campaignData.impact
             }, void 0, false, {
                 fileName: "[project]/src/app/(common)/campaigns/[id]/page.tsx",
-                lineNumber: 37,
+                lineNumber: 35,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$contaners$2f$CommonContainer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1091,24 +1090,24 @@ async function page({ params }) {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$common$292f$campaigns$2f5b$id$5d2f$_components$2f$CampaignDetailHeader$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/(common)/campaigns/[id]/page.tsx",
-                        lineNumber: 40,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$common$292f$campaigns$2f5b$id$5d2f$_components$2f$CampaignDetailed$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/(common)/campaigns/[id]/page.tsx",
-                        lineNumber: 41,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(common)/campaigns/[id]/page.tsx",
-                lineNumber: 39,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(common)/campaigns/[id]/page.tsx",
-        lineNumber: 36,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }

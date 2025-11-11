@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Box,
   Button,
@@ -7,8 +8,8 @@ import {
   Chip,
   Typography,
 } from "@mui/material";
-
-export default function NewsCard({ news }) {
+// todo add news type
+export default function NewsCard({ news }: { news: any }) {
   return (
     <Card
       sx={{

@@ -5,7 +5,7 @@ export default function JoinAsVolunteer() {
     <Box
       sx={{
         background: "linear-gradient(135deg, #1E6DC6 0%, #2E8B57 100%)",
-        color: "white",
+        color: "primary.contrastText",
         py: 8,
         textAlign: "center",
       }}

@@ -1,7 +1,7 @@
 "use client";
 import useThemeContext from "@/hooks/useThemeContext";
 import { Brightness4, Brightness7 } from "@mui/icons-material";
-import { IconButton, alpha } from "@mui/material";
+import { IconButton } from "@mui/material";
 
 export default function ToggleThemeButton() {
   const { mode, handleTheme } = useThemeContext();

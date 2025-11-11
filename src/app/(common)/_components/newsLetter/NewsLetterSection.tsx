@@ -44,7 +44,6 @@ export default function NewsletterSection() {
                 fullWidth
                 placeholder="Enter your email address"
                 variant="outlined"
-                size="large"
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     bgcolor: "background.paper",

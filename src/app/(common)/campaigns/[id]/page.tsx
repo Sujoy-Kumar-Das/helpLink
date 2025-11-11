@@ -29,9 +29,7 @@ const campaignData = {
   impact: "1,200 families supported with essential supplies",
 };
 
-export default async function page({ params }: { params: { id: string } }) {
-  const id = await params.id;
-
+export default async function CampaignDetailPage() {
   return (
     <Box component="section">
       <PageHeader title={campaignData.title} subtitle={campaignData.impact} />

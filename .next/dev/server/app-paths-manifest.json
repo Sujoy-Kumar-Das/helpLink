@@ -1,8 +1,6 @@
 {
   "/(common)/campaigns/[id]/page": "app/(common)/campaigns/[id]/page.js",
-  "/(common)/campaigns/page": "app/(common)/campaigns/page.js",
-  "/(common)/events/page": "app/(common)/events/page.js",
+  "/(common)/contact/page": "app/(common)/contact/page.js",
   "/(common)/page": "app/(common)/page.js",
-  "/(common)/volunteer/page": "app/(common)/volunteer/page.js",
   "/_not-found/page": "app/_not-found/page.js"
 }

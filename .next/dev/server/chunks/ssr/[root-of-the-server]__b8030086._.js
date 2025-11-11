@@ -1308,7 +1308,6 @@ function NewsletterSection() {
                                     fullWidth: true,
                                     placeholder: "Enter your email address",
                                     variant: "outlined",
-                                    size: "large",
                                     sx: {
                                         "& .MuiOutlinedInput-root": {
                                             bgcolor: "background.paper",
@@ -1340,12 +1339,12 @@ function NewsletterSection() {
                                     children: "Subscribe"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(common)/_components/newsLetter/NewsLetterSection.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 56,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/(common)/_components/newsLetter/NewsLetterSection.tsx",
-                                lineNumber: 56,
+                                lineNumber: 55,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -1363,7 +1362,7 @@ function NewsletterSection() {
                         children: "✨ Join 50,000+ subscribers. We respect your privacy and never spam."
                     }, void 0, false, {
                         fileName: "[project]/src/app/(common)/_components/newsLetter/NewsLetterSection.tsx",
-                        lineNumber: 71,
+                        lineNumber: 70,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1387,7 +1386,7 @@ function NewsletterSection() {
 "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-__turbopack_context__.s([
+/* eslint-disable @typescript-eslint/no-explicit-any */ __turbopack_context__.s([
     "default",
     ()=>NewsCard
 ]);
@@ -1421,7 +1420,7 @@ function NewsCard({ news }) {
                 alt: news.title
             }, void 0, false, {
                 fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CardContent$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__CardContent$3e$__["CardContent"], {
@@ -1443,12 +1442,12 @@ function NewsCard({ news }) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                            lineNumber: 33,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1458,7 +1457,7 @@ function NewsCard({ news }) {
                         children: news.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1470,7 +1469,7 @@ function NewsCard({ news }) {
                         children: news.excerpt
                     }, void 0, false, {
                         fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1490,7 +1489,7 @@ function NewsCard({ news }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                                lineNumber: 56,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1499,25 +1498,25 @@ function NewsCard({ news }) {
                                 children: "Read More"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(common)/_components/newsSection/NewsCard.tsx",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 }
@@ -1609,35 +1608,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$common$292f$
 ;
 ;
 ;
-const news = [
-    {
-        id: 1,
-        title: "HopeLink Expands to Support 10 New Communities",
-        image: "/news/expansion.jpg",
-        excerpt: "Our recent expansion brings hope and support to 10 additional communities in need across Southeast Asia.",
-        category: "Updates",
-        date: "Dec 15, 2024",
-        readTime: "3 min read"
-    },
-    {
-        id: 2,
-        title: "How Your Donations Transformed Lives in 2024",
-        image: "/news/impact.jpg",
-        excerpt: "A comprehensive look at the incredible impact our community has made through generous donations this year.",
-        category: "Impact",
-        date: "Dec 8, 2024",
-        readTime: "5 min read"
-    },
-    {
-        id: 3,
-        title: "Volunteer Spotlight: Meet Sarah, Our Community Hero",
-        image: "/news/volunteer.jpg",
-        excerpt: "Discover how Sarah dedicated 500+ hours to helping communities access clean water and education.",
-        category: "Stories",
-        date: "Dec 1, 2024",
-        readTime: "4 min read"
-    }
-];
 function NewsSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$contaners$2f$CommonContainer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
         children: [
@@ -1646,12 +1616,12 @@ function NewsSection() {
                 subtitle: "Stay updated with our latest news and impact stories"
             }, void 0, false, {
                 fileName: "[project]/src/app/(common)/_components/newsSection/NewsSection.tsx",
-                lineNumber: 51,
+                lineNumber: 9,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f28$common$292f$_components$2f$newsSection$2f$NewsList$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/(common)/_components/newsSection/NewsSection.tsx",
-                lineNumber: 56,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1665,18 +1635,18 @@ function NewsSection() {
                     children: "View All News"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(common)/_components/newsSection/NewsSection.tsx",
-                    lineNumber: 59,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(common)/_components/newsSection/NewsSection.tsx",
-                lineNumber: 58,
+                lineNumber: 16,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(common)/_components/newsSection/NewsSection.tsx",
-        lineNumber: 50,
+        lineNumber: 8,
         columnNumber: 5
     }, this);
 }

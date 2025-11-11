@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import DonateButton from "./DonateButton";
 import DonorCount from "./DonorCount";
-import OrganizerCard from "./OrganizerCard";
 
 interface Organizer {
   name: string;
@@ -31,7 +30,6 @@ export default function ProgressSection({
   goal,
   donors,
   daysLeft,
-  organizer,
 }: ProgressSectionProps) {
   const progress = Math.min((raised / goal) * 100, 100);
 
