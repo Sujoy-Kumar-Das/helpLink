@@ -9,7 +9,13 @@ export default function CommonHeader({
 }) {
   return (
     <Box sx={{ mb: 8 }}>
-      <Typography variant="h2" component="h2" textAlign="center" gutterBottom>
+      <Typography
+        color={"text.primary"}
+        variant="h2"
+        component="h2"
+        textAlign="center"
+        gutterBottom
+      >
         {title}
       </Typography>
       <Typography
