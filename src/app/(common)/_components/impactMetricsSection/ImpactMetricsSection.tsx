@@ -4,7 +4,7 @@ import MetricsList from "./MetricsList";
 
 export default function ImpactMetricsSection() {
   return (
-    <CommonContainer>
+    <CommonContainer sx={{ bgcolor: "background.default" }}>
       <CommonHeader
         title="Our Impact"
         subtitle="Making a real difference in communities worldwide"

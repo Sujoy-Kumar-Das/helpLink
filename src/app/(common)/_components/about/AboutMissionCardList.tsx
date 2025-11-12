@@ -9,7 +9,7 @@ export default function AboutMissionCardList() {
           <Card sx={{ textAlign: "center" }}>
             <CardContent>
               {<Icon sx={{ fontSize: 48, color }} />}
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" gutterBottom color={"text.primary"}>
                 {title}
               </Typography>
               <Typography variant="body2" color="text.secondary">

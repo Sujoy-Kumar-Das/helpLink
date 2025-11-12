@@ -11,7 +11,7 @@ export default function FooterLinkCompo({
     <Link
       href={link}
       style={{
-        color: "rgba(255, 255, 255, 0.7)",
+        color: "text.secondary",
         textDecoration: "none",
         fontSize: "0.9rem",
       }}

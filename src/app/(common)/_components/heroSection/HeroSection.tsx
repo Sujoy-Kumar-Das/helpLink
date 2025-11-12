@@ -1,33 +1,29 @@
-import { Box, Container, Grid } from "@mui/material";
+import CommonContainer from "@/components/shared/contaners/CommonContainer";
+import { Grid } from "@mui/material";
 import LeftHeroSection from "./LeftHeroSection";
 import RightHeroSection from "./RightHeroSection";
 
 export default function HeroSection() {
   return (
-    <Box
+    <CommonContainer
       sx={{
         position: "relative",
-        background: "linear-gradient(135deg, #1976D2 0%, #FF9800 100%)",
-        color: "white",
-        minHeight: "100vh",
+        minHeight: "80vh",
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
+        background: "var(--gradient)",
       }}
     >
-      <Container maxWidth="lg">
-        <Box>
-          <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={7}>
-              <LeftHeroSection />
-            </Grid>
+      <Grid container spacing={4} alignItems="center">
+        <Grid item xs={12} md={7}>
+          <LeftHeroSection />
+        </Grid>
 
-            <Grid item xs={12} md={5}>
-              <RightHeroSection />
-            </Grid>
-          </Grid>
-        </Box>
-      </Container>
-    </Box>
+        <Grid item xs={12} md={5}>
+          <RightHeroSection />
+        </Grid>
+      </Grid>
+    </CommonContainer>
   );
 }

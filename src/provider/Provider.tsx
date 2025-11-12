@@ -1,8 +1,8 @@
 "use client";
 
-import { ReactElement } from "react";
+import { ReactNode } from "react";
 import { ThemeContextProvider } from "./ThemeContextProvider";
 
-export function Provider({ children }: { children: ReactElement }) {
+export function Provider({ children }: { children: ReactNode }) {
   return <ThemeContextProvider>{children}</ThemeContextProvider>;
 }

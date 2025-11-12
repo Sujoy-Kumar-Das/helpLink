@@ -9,6 +9,7 @@ import {
   YouTube,
 } from "@mui/icons-material";
 import { Box, IconButton, Typography } from "@mui/material";
+import Link from "next/link";
 
 const socialLinks = [
   {
@@ -41,14 +42,20 @@ const socialLinks = [
 export default function FooterContactInfoList() {
   return (
     <>
-      <Typography variant="h6" sx={{ mb: 3, fontWeight: 600 }}>
+      <Typography
+        variant="h6"
+        sx={{ mb: 3, fontWeight: 600, color: "text.primary" }}
+      >
         Get In Touch
       </Typography>
 
       <Box sx={{ mb: 3 }}>
         <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-          <LocationOn sx={{ mr: 2, color: "#90CAF9", opacity: 0.8 }} />
-          <Typography variant="body2" sx={{ opacity: 0.8 }}>
+          <LocationOn sx={{ mr: 2, color: "primary.main", opacity: 0.8 }} />
+          <Typography
+            variant="body2"
+            sx={{ opacity: 0.8, color: "text.secondary" }}
+          >
             123 Hope Street
             <br />
             Compassion City, CC 12345
@@ -56,45 +63,53 @@ export default function FooterContactInfoList() {
         </Box>
 
         <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-          <Phone sx={{ mr: 2, color: "#90CAF9", opacity: 0.8 }} />
-          <Typography variant="body2" sx={{ opacity: 0.8 }}>
+          <Phone sx={{ mr: 2, color: "primary.main", opacity: 0.8 }} />
+          <Typography
+            variant="body2"
+            sx={{ opacity: 0.8, color: "text.secondary" }}
+          >
             +1 (555) 123-4567
           </Typography>
         </Box>
 
         <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-          <Email sx={{ mr: 2, color: "#90CAF9", opacity: 0.8 }} />
-          <Typography variant="body2" sx={{ opacity: 0.8 }}>
+          <Email sx={{ mr: 2, color: "primary.main", opacity: 0.8 }} />
+          <Typography
+            variant="body2"
+            sx={{ opacity: 0.8, color: "text.secondary" }}
+          >
             info@hopelink.org
           </Typography>
         </Box>
       </Box>
 
       <Box>
-        <Typography variant="h6" sx={{ mb: 2, fontWeight: 600 }}>
+        <Typography
+          variant="h6"
+          sx={{ mb: 2, fontWeight: 600, color: "text.primary" }}
+        >
           Follow Us
         </Typography>
         <Box sx={{ display: "flex", gap: 1 }}>
           {socialLinks.map((social) => (
-            <IconButton
-              key={social.name}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{
-                color: "rgba(255, 255, 255, 0.7)",
-                border: "1px solid rgba(255, 255, 255, 0.2)",
-                "&:hover": {
-                  color: "#90CAF9",
-                  borderColor: "#90CAF9",
-                  backgroundColor: "rgba(144, 202, 249, 0.1)",
-                  transform: "translateY(-2px)",
-                },
-                transition: "all 0.3s ease",
-              }}
-            >
-              {social.icon}
-            </IconButton>
+            <Link href={social.href} key={social.href} target="_blank">
+              <IconButton
+                sx={{
+                  color: "text.primary",
+                  border: "1px solid",
+                  borderColor: "primary.main",
+                  "&:hover": {
+                    color: "text.secondary",
+                    borderColor: "primary.light",
+                    backgroundColor: "primary.main",
+                    transform: "translateY(-2px)",
+                  },
+                  transition: "all 0.3s ease",
+                }}
+              >
+                {social.icon}
+              </IconButton>
+            </Link>
           ))}
         </Box>
       </Box>

@@ -1,13 +1,7 @@
 import CommonHeader from "@/components/shared/commonHeader/CommonHeader";
 import CommonContainer from "@/components/shared/contaners/CommonContainer";
-import {
-  Avatar,
-  Box,
-  Card,
-  CardContent,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -41,7 +35,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <CommonContainer>
+    <CommonContainer sx={{ bgcolor: "background.paper" }}>
       <CommonHeader
         title="What People Say"
         subtitle="Hear from our donors, volunteers, and partners"
@@ -54,9 +48,7 @@ export default function TestimonialsSection() {
               sx={{
                 height: "100%",
                 p: 3,
-                background:
-                  "linear-gradient(135deg, rgba(25, 118, 210, 0.05), rgba(255, 152, 0, 0.05))",
-                border: "1px solid rgba(25, 118, 210, 0.1)",
+                bgcolor: "background.default",
               }}
             >
               <CardContent sx={{ textAlign: "center" }}>
@@ -64,7 +56,10 @@ export default function TestimonialsSection() {
                   {"⭐".repeat(testimonial.rating)}
                 </Box>
 
-                <Typography variant="body1" sx={{ fontStyle: "italic", mb: 3 }}>
+                <Typography
+                  variant="body1"
+                  sx={{ fontStyle: "italic", color: "text.secondary", mb: 3 }}
+                >
                   "{testimonial.content}"
                 </Typography>
 
@@ -73,12 +68,17 @@ export default function TestimonialsSection() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
+                    gap: 5,
                   }}
                 >
-                  <Avatar
+                  <Image
                     src={testimonial.avatar}
-                    sx={{ width: 56, height: 56, mr: 2 }}
+                    alt="Reviewer image"
+                    height={56}
+                    width={56}
+                    style={{ borderRadius: "50%" }}
                   />
+
                   <Box>
                     <Typography variant="h6" component="div">
                       {testimonial.name}

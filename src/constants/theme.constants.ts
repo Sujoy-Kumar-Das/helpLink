@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { createTheme, ThemeOptions } from "@mui/material";
 
-// 🌞 LIGHT THEME
+// LIGHT THEME
 const light: ThemeOptions = createTheme({
   palette: {
     mode: "light",
@@ -17,7 +17,10 @@ const light: ThemeOptions = createTheme({
       dark: "#15803D",
       contrastText: "#fff",
     },
-    background: { default: "#F9FAFB", paper: "#FFFFFF" },
+    background: {
+      default: "#F9FAFB",
+      paper: "#FFFFFF",
+    },
     text: { primary: "#111827", secondary: "#4B5563" },
     success: { main: "#22C55E" },
     error: { main: "#EF4444" },
@@ -58,7 +61,11 @@ const light: ThemeOptions = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        body: { background: "#F9FAFB", backgroundAttachment: "fixed" },
+        body: {
+          background: "#F9FAFB",
+          backgroundAttachment: "fixed",
+          "--gradient": "linear-gradient(135deg, #60A5FA 0%, #86EFAC 100%)",
+        },
         html: { scrollBehavior: "smooth" },
       },
     },
@@ -143,7 +150,7 @@ const light: ThemeOptions = createTheme({
   },
 });
 
-// 🌙 DARK THEME
+//  DARK THEME
 const darkOverrides: ThemeOptions = {
   palette: {
     mode: "dark",
@@ -159,7 +166,10 @@ const darkOverrides: ThemeOptions = {
       dark: "#16A34A",
       contrastText: "#fff",
     },
-    background: { default: "#0F172A", paper: "#1E293B" },
+    background: {
+      default: "#0F172A",
+      paper: "#1E293B",
+    },
     text: { primary: "#F9FAFB", secondary: "#CBD5E1", disabled: "#6B7280" },
     divider: "rgba(255,255,255,0.1)",
     success: { main: "#22C55E" },
@@ -170,7 +180,12 @@ const darkOverrides: ThemeOptions = {
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        body: { background: "#0F172A", backgroundAttachment: "fixed" },
+        body: {
+          background: "#0F172A",
+          backgroundAttachment: "fixed",
+          "--gradient":
+            "linear-gradient(135deg, #0F1B4C 0%, #1D2951 50%, #064635 100%)",
+        },
       },
     },
     MuiButton: {

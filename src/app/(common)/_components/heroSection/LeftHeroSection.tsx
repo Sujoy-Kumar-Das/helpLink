@@ -8,8 +8,7 @@ export default function LeftHeroSection() {
         component={"h1"}
         sx={{
           mb: 3,
-          fontWeight: 700,
-          textShadow: "0 2px 4px rgba(0,0,0,0.3)",
+          color: "primary.contrastText",
         }}
       >
         Together, We Create Hope.
@@ -23,6 +22,7 @@ export default function LeftHeroSection() {
           opacity: 0.9,
           fontWeight: 300,
           maxWidth: "600px",
+          color: "primary.contrastText",
         }}
       >
         Empowering communities through compassion and action. Join us in making
@@ -43,9 +43,8 @@ export default function LeftHeroSection() {
         <Button
           variant="outlined"
           size="large"
+          color="secondary"
           sx={{
-            borderColor: "white",
-            color: "white",
             fontWeight: 600,
             transition: "all 0.3s ease",
           }}

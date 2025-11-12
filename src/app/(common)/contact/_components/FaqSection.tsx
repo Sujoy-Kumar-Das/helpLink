@@ -46,7 +46,7 @@ export default function FaqSection() {
       />
 
       <Box>
-        {faqData.map((faq, index) => (
+        {faqData.map((faq) => (
           <Accordion
             key={faq.question}
             sx={{

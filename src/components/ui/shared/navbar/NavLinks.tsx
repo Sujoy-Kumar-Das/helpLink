@@ -57,7 +57,7 @@ export default function NavLinks({ sx }: INavLinksProps) {
                 : "translateX(-50%) scaleX(0)",
               width: "60%",
               height: 2,
-              background: "linear-gradient(90deg, #1976D2, #FF9800)",
+              background: "linear-gradient(90deg, #1976D2, #4ADE80)",
               borderRadius: 2,
               transition: "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
             },

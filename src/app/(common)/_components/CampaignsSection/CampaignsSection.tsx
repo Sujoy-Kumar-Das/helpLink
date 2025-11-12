@@ -1,16 +1,16 @@
 import CommonHeader from "@/components/shared/commonHeader/CommonHeader";
 import CommonContainer from "@/components/shared/contaners/CommonContainer";
+import HandshakeIcon from "@mui/icons-material/Handshake";
 import {
   Box,
   Button,
   Card,
   CardContent,
-  CardMedia,
   Grid,
   LinearProgress,
   Typography,
 } from "@mui/material";
-
+import Image from "next/image";
 const campaigns = [
   {
     id: 1,
@@ -60,21 +60,21 @@ export default function CampaignsSection() {
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                "&:hover": {
-                  transform: "translateY(-8px)",
-                  boxShadow: 6,
-                },
               }}
             >
-              <CardMedia
-                component="img"
-                height="200"
-                image={campaign.image}
+              <Image
+                height={200}
+                width={200}
+                src={campaign.image}
                 alt={campaign.title}
               />
               <CardContent sx={{ flexGrow: 1, p: 3 }}>
-                <Typography variant="h5" component="h3" gutterBottom>
+                <Typography
+                  variant="h5"
+                  component="h3"
+                  gutterBottom
+                  color={"text.primary"}
+                >
                   {campaign.title}
                 </Typography>
                 <Typography
@@ -110,9 +110,10 @@ export default function CampaignsSection() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  sx={{ mb: 2 }}
+                  sx={{ mb: 2, display: "flex", alignItems: "center", gap: 1 }}
                 >
-                  🤝 {campaign.donors.toLocaleString()} donors
+                  <HandshakeIcon color="primary" />{" "}
+                  {campaign.donors.toLocaleString()} donors
                 </Typography>
 
                 <Button variant="contained" fullWidth size="large">

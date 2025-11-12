@@ -20,10 +20,7 @@ const MobileMenu = ({ onDrawerToggle }: MobileMenuProps) => {
       sx={{
         width: 280,
         height: "100%",
-        background:
-          mode === "light"
-            ? "linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(248,250,252,0.98) 100%)"
-            : "linear-gradient(135deg, rgba(26,34,56,0.98) 0%, rgba(36,51,86,0.95) 100%)",
+        background: "var(--gradient)",
         backdropFilter: "blur(20px)",
         display: "flex",
         flexDirection: "column",

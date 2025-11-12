@@ -7,9 +7,10 @@ import {
 } from "@/contexts/ThemeContext";
 import useLocalStorage from "@/hooks/useLocalStorage";
 import { ThemeProvider } from "@emotion/react";
-import { ReactElement } from "react";
+import { CssBaseline } from "@mui/material";
+import { ReactNode } from "react";
 
-export function ThemeContextProvider({ children }: { children: ReactElement }) {
+export function ThemeContextProvider({ children }: { children: ReactNode }) {
   // custom hook for sync with localstorage
   const [value, setValue] = useLocalStorage<TThemeMode>("theme", "light");
 
@@ -25,6 +26,7 @@ export function ThemeContextProvider({ children }: { children: ReactElement }) {
   return (
     <ThemeContext.Provider value={themeValue}>
       <ThemeProvider theme={value === "dark" ? theme.dark : theme.light}>
+        <CssBaseline />
         {children}
       </ThemeProvider>
     </ThemeContext.Provider>

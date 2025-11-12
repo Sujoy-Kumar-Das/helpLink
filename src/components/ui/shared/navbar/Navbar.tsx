@@ -8,7 +8,6 @@ import {
   Box,
   IconButton,
   Toolbar,
-  alpha,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -31,13 +30,10 @@ const Navbar = () => {
       position="sticky"
       elevation={0}
       sx={{
-        background:
-          theme.palette.mode === "light"
-            ? "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%)"
-            : "linear-gradient(135deg, rgba(26,34,56,0.95) 0%, rgba(36,51,86,0.9) 100%)",
-        backdropFilter: "blur(20px)",
-        borderBottom: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
-        color: theme.palette.text.primary,
+        background: "var(--gradient)",
+        backdropFilter: "blur(10px)",
+        color: "text.primary",
+        py: 1,
       }}
     >
       <Toolbar
@@ -65,12 +61,11 @@ const Navbar = () => {
             <IconButton
               onClick={handleDrawerToggle}
               sx={{
-                color: theme.palette.text.primary,
-                background: alpha(theme.palette.primary.main, 0.05),
+                color: "text.primary",
+                background: "primary.light",
                 "&:hover": {
-                  background: alpha(theme.palette.primary.main, 0.1),
+                  background: "primary.main",
                 },
-                transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
               }}
             >
               <MenuIcon />

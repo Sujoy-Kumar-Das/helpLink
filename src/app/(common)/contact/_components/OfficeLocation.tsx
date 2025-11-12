@@ -29,14 +29,14 @@ export default function OfficeLocation() {
           <Typography variant="body2" color="text.secondary">
             123 Hope Avenue, San Francisco, CA 94102
           </Typography>
-          <Button
-            variant="outlined"
-            sx={{ mt: 2 }}
-            component={Link}
-            href="https://maps.google.com/"
-            target="_blank"
-          >
-            Open in Google Maps
+          <Button variant="outlined" sx={{ mt: 2 }}>
+            <Link
+              style={{ textDecoration: "none" }}
+              href="https://maps.google.com/"
+              target="_blank"
+            >
+              Open in Google Maps
+            </Link>
           </Button>
         </Box>
       </Box>

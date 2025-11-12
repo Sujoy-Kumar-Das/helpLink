@@ -8,60 +8,53 @@
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$createTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__createTheme$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/styles/createTheme.js [app-client] (ecmascript) <export default as createTheme>");
 ;
+// LIGHT THEME
 const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$createTheme$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__createTheme$3e$__["createTheme"])({
     palette: {
         mode: "light",
         primary: {
-            main: "#1E6DC6",
-            light: "#4A90E2",
-            dark: "#1557A3",
-            contrastText: "#FFFFFF"
+            main: "#2563EB",
+            light: "#60A5FA",
+            dark: "#1E40AF",
+            contrastText: "#fff"
         },
         secondary: {
-            main: "#2E8B57",
-            light: "#4CAF7A",
-            dark: "#1F6B41",
-            contrastText: "#FFFFFF"
+            main: "#16A34A",
+            light: "#4ADE80",
+            dark: "#15803D",
+            contrastText: "#fff"
         },
         background: {
-            default: "linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%)",
+            default: "#F9FAFB",
             paper: "#FFFFFF"
         },
         text: {
-            primary: "#1A2027",
-            secondary: "#5A6C7D"
+            primary: "#111827",
+            secondary: "#4B5563"
         },
         success: {
-            main: "#10B981",
-            light: "#34D399",
-            dark: "#059669"
+            main: "#22C55E"
         },
         error: {
-            main: "#DC3545",
-            light: "#E74C3C",
-            dark: "#C53030"
+            main: "#EF4444"
         },
         warning: {
-            main: "#F59E0B",
-            light: "#FBBF24",
-            dark: "#D97706"
+            main: "#F59E0B"
         },
         info: {
-            main: "#3B82F6",
-            light: "#60A5FA",
-            dark: "#2563EB"
+            main: "#3B82F6"
         },
         grey: {
-            50: "#F8F9FA",
-            100: "#E9ECEF",
-            200: "#DEE2E6",
-            300: "#CED4DA",
-            400: "#ADB5BD",
-            500: "#6C757D",
-            600: "#495057",
-            700: "#343A40",
-            800: "#212529",
-            900: "#1A1E21"
+            50: "#F9FAFB",
+            100: "#F3F4F6",
+            200: "#E5E7EB",
+            300: "#D1D5DB",
+            400: "#9CA3AF",
+            500: "#6B7280",
+            600: "#4B5563",
+            700: "#374151",
+            800: "#1F2937",
+            900: "#111827"
         }
     },
     typography: {
@@ -100,12 +93,12 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
             fontSize: "1rem",
             lineHeight: 1.6,
             fontWeight: 400,
-            color: "#5A6C7D"
+            color: "#4B5563"
         },
         body2: {
             fontSize: "0.875rem",
             lineHeight: 1.5,
-            color: "#6C757D"
+            color: "#6B7280"
         },
         button: {
             fontWeight: 600,
@@ -116,15 +109,14 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
     shape: {
         borderRadius: 12
     },
-    shadows: Array(25).fill("0px 4px 8px rgba(0,0,0,0.1)"),
+    shadows: Array(25).fill("0px 4px 12px rgba(0,0,0,0.1)"),
     components: {
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    background: "linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%)",
+                    background: "#F9FAFB",
                     backgroundAttachment: "fixed",
-                    fontFeatureSettings: "'cv11', 'ss01'",
-                    fontVariationSettings: "'opsz' 32"
+                    "--gradient": "linear-gradient(135deg, #60A5FA 0%, #86EFAC 100%)"
                 },
                 html: {
                     scrollBehavior: "smooth"
@@ -137,11 +129,12 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                     borderRadius: 12,
                     padding: "14px 32px",
                     fontWeight: 600,
-                    textTransform: "none",
                     fontSize: "1rem",
-                    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                    textTransform: "none",
                     position: "relative",
                     overflow: "hidden",
+                    transition: "all 0.3s ease",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                     "&::before": {
                         content: '""',
                         position: "absolute",
@@ -149,7 +142,7 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                         left: "-100%",
                         width: "100%",
                         height: "100%",
-                        background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)",
+                        background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent)",
                         transition: "left 0.6s ease-in-out"
                     },
                     "&:hover::before": {
@@ -159,8 +152,39 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                         transform: "translateY(-2px)"
                     },
                     "&.Mui-disabled": {
-                        background: "linear-gradient(135deg, #CED4DA 0%, #ADB5BD 100%)",
-                        color: "#6C757D"
+                        background: "#E5E7EB",
+                        color: "#9CA3AF",
+                        boxShadow: "none"
+                    }
+                },
+                containedPrimary: {
+                    background: "linear-gradient(135deg, #1976D2 0%, #42A5F5 100%)",
+                    color: "#fff",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #1565C0 0%, #1E88E5 100%)"
+                    }
+                },
+                containedSecondary: {
+                    background: "linear-gradient(135deg, #16A34A 0%, #4ADE80 100%)",
+                    color: "#fff",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #15803D 0%, #22C55E 100%)"
+                    }
+                },
+                outlinedPrimary: {
+                    border: "2px solid #1976D2",
+                    color: "#1976D2",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #1976D2 0%, #42A5F5 100%)",
+                        color: "#fff"
+                    }
+                },
+                outlinedSecondary: {
+                    border: "2px solid #16A34A",
+                    color: "#16A34A",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #16A34A 0%, #4ADE80 100%)",
+                        color: "#fff"
                     }
                 }
             }
@@ -171,68 +195,115 @@ const light = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2
                     borderRadius: 16,
                     background: "#FFFFFF",
                     boxShadow: "0 4px 20px rgba(0, 0, 0, 0.06)",
-                    border: "1px solid rgba(0, 0, 0, 0.05)",
+                    border: "1px solid rgba(0,0,0,0.05)",
                     transition: "all 0.3s ease-in-out",
                     "&:hover": {
                         transform: "translateY(-2px)",
-                        boxShadow: "0 8px 30px rgba(0, 0, 0, 0.1)"
+                        boxShadow: "0 8px 30px rgba(0,0,0,0.1)"
                     }
                 }
             }
         }
     }
 });
+//  DARK THEME
 const darkOverrides = {
     palette: {
         mode: "dark",
         primary: {
-            main: "#4A90E2",
-            light: "#6BA8F0",
-            dark: "#1E6DC6",
-            contrastText: "#FFFFFF"
+            main: "#60A5FA",
+            light: "#93C5FD",
+            dark: "#1D4ED8",
+            contrastText: "#fff"
         },
         secondary: {
-            main: "#4CAF7A",
-            light: "#6BCF95",
-            dark: "#2E8B57",
-            contrastText: "#FFFFFF"
+            main: "#4ADE80",
+            light: "#86EFAC",
+            dark: "#16A34A",
+            contrastText: "#fff"
         },
         background: {
-            default: "linear-gradient(135deg, #0F1419 0%, #1A2027 100%)",
-            paper: "rgba(30, 35, 42, 0.8)"
+            default: "#0F172A",
+            paper: "#1E293B"
         },
         text: {
-            primary: "#F8F9FA",
-            secondary: "#ADB5BD",
-            disabled: "#6C757D"
+            primary: "#F9FAFB",
+            secondary: "#CBD5E1",
+            disabled: "#6B7280"
         },
-        divider: "rgba(255, 255, 255, 0.08)"
+        divider: "rgba(255,255,255,0.1)",
+        success: {
+            main: "#22C55E"
+        },
+        error: {
+            main: "#EF4444"
+        },
+        warning: {
+            main: "#FACC15"
+        },
+        info: {
+            main: "#38BDF8"
+        }
     },
     components: {
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    background: "linear-gradient(135deg, #0F1419 0%, #1A2027 100%)",
-                    backgroundAttachment: "fixed"
+                    background: "#0F172A",
+                    backgroundAttachment: "fixed",
+                    "--gradient": "linear-gradient(135deg, #0F1B4C 0%, #1D2951 50%, #064635 100%)"
                 }
             }
         },
         MuiButton: {
             styleOverrides: {
                 root: {
-                    color: "#fff"
+                    color: "#FFFFFF",
+                    "&:hover": {
+                        transform: "translateY(-2px)"
+                    }
+                },
+                containedPrimary: {
+                    background: "linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)"
+                    }
+                },
+                containedSecondary: {
+                    background: "linear-gradient(135deg, #4ADE80 0%, #16A34A 100%)",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #16A34A 0%, #22C55E 100%)"
+                    }
+                },
+                outlinedPrimary: {
+                    border: "2px solid #60A5FA",
+                    color: "#60A5FA",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)",
+                        color: "#fff"
+                    }
+                },
+                outlinedSecondary: {
+                    border: "2px solid #4ADE80",
+                    color: "#4ADE80",
+                    "&:hover": {
+                        background: "linear-gradient(135deg, #4ADE80 0%, #16A34A 100%)",
+                        color: "#fff"
+                    }
                 }
             }
         },
         MuiCard: {
             styleOverrides: {
                 root: {
-                    background: "rgba(30, 35, 42, 0.6)",
-                    border: "1px solid rgba(255, 255, 255, 0.08)",
-                    boxShadow: "0 8px 30px rgba(0, 0, 0, 0.3)",
+                    borderRadius: 16,
+                    background: "#1E293B",
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    boxShadow: "0 8px 30px rgba(0,0,0,0.3)",
                     backdropFilter: "blur(10px)",
+                    transition: "all 0.3s ease-in-out",
                     "&:hover": {
-                        boxShadow: "0 12px 40px rgba(0, 0, 0, 0.4)"
+                        boxShadow: "0 12px 40px rgba(0,0,0,0.4)"
                     }
                 }
             }
@@ -318,9 +389,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$theme$2e
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$contexts$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/contexts/ThemeContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useLocalStorage$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/hooks/useLocalStorage.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$dist$2f$emotion$2d$element$2d$43c6fea0$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__a__as__ThemeProvider$3e$__ = __turbopack_context__.i("[project]/node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js [app-client] (ecmascript) <export a as ThemeProvider>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CssBaseline$2f$CssBaseline$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CssBaseline$3e$__ = __turbopack_context__.i("[project]/node_modules/@mui/material/CssBaseline/CssBaseline.js [app-client] (ecmascript) <export default as CssBaseline>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -340,15 +413,22 @@ function ThemeContextProvider({ children }) {
         value: themeValue,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$emotion$2f$react$2f$dist$2f$emotion$2d$element$2d$43c6fea0$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__a__as__ThemeProvider$3e$__["ThemeProvider"], {
             theme: value === "dark" ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$theme$2e$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["theme"].dark : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$theme$2e$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["theme"].light,
-            children: children
-        }, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CssBaseline$2f$CssBaseline$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CssBaseline$3e$__["CssBaseline"], {}, void 0, false, {
+                    fileName: "[project]/src/provider/ThemeContextProvider.tsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this),
+                children
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/provider/ThemeContextProvider.tsx",
-            lineNumber: 27,
+            lineNumber: 28,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/provider/ThemeContextProvider.tsx",
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }

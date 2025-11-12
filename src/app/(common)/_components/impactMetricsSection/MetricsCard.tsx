@@ -23,7 +23,7 @@ export default function MetricsCard({ metric }: { metric: IMetrics }) {
           variant="h4"
           component="p"
           fontWeight="bold"
-          color="primary"
+          color="primary.main"
         >
           {value}+
         </Typography>

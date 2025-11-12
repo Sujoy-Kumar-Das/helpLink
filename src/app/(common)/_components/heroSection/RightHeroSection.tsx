@@ -1,103 +1,87 @@
-import { TrendingUp, VolunteerActivism } from "@mui/icons-material";
+import {
+  TrackChanges,
+  TrendingUp,
+  VolunteerActivism,
+} from "@mui/icons-material";
 import { Box, Grid, Paper, Typography } from "@mui/material";
+
+const stats = [
+  {
+    id: 1,
+    icon: <TrendingUp sx={{ fontSize: 48, color: "secondary.main", mb: 2 }} />,
+    value: "$250K+",
+    label: "Funds Raised",
+  },
+  {
+    id: 2,
+    icon: (
+      <VolunteerActivism
+        sx={{ fontSize: 48, color: "secondary.main", mb: 2 }}
+      />
+    ),
+    value: "5,000+",
+    label: "Volunteers",
+  },
+];
 
 export default function RightHeroSection() {
   return (
     <Paper
       sx={{
         p: 4,
-        background: "rgba(255,255,255,0.95)",
-        color: "#212121",
+        backgroundColor: "background.default",
         borderRadius: 4,
         backdropFilter: "blur(10px)",
-        border: "1px solid rgba(255,255,255,0.2)",
+        border: "1px solid var(--gradient)",
       }}
     >
       <Typography
         variant="h6"
         gutterBottom
         sx={{
-          color: "#1976D2",
-          fontWeight: 600,
+          color: "primary.main",
           textAlign: "center",
           mb: 3,
         }}
       >
         Live Impact Stats
       </Typography>
+
       <Grid container spacing={3}>
-        <Grid item xs={6}>
-          <Box sx={{ textAlign: "center" }}>
-            <TrendingUp
-              sx={{
-                fontSize: 48,
-                color: "#4CAF50",
-                mb: 2,
-              }}
-            />
-            <Typography
-              variant="h4"
-              fontWeight="bold"
-              color="#1976D2"
-              sx={{ mb: 1 }}
-            >
-              $250K+
-            </Typography>
-            <Typography
-              variant="body2"
-              color="#555555"
-              sx={{ fontWeight: 500 }}
-            >
-              Funds Raised
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={6}>
-          <Box sx={{ textAlign: "center" }}>
-            <VolunteerActivism
-              sx={{
-                fontSize: 48,
-                color: "#FF9800",
-                mb: 2,
-              }}
-            />
-            <Typography
-              variant="h4"
-              fontWeight="bold"
-              color="#1976D2"
-              sx={{ mb: 1 }}
-            >
-              5,000+
-            </Typography>
-            <Typography
-              variant="body2"
-              color="#555555"
-              sx={{ fontWeight: 500 }}
-            >
-              Volunteers
-            </Typography>
-          </Box>
-        </Grid>
+        {stats.map((item) => (
+          <Grid item xs={6} key={item.id}>
+            <Box sx={{ textAlign: "center" }}>
+              {item.icon}
+              <Typography variant="h4" color={"primary.main"} sx={{ mb: 1 }}>
+                {item.value}
+              </Typography>
+              <Typography variant="body2" color={"text.secondary"}>
+                {item.label}
+              </Typography>
+            </Box>
+          </Grid>
+        ))}
       </Grid>
 
-      {/* Progress indicator */}
       <Box
         sx={{
           mt: 3,
           p: 2,
           borderRadius: 2,
-          background:
-            "linear-gradient(45deg, rgba(25, 118, 210, 0.1), rgba(255, 152, 0, 0.1))",
-          border: "1px solid rgba(25, 118, 210, 0.2)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 1,
+          background: "var(--gradient)",
         }}
       >
+        <TrackChanges sx={{ color: "primary.main" }} />
         <Typography
           variant="body2"
-          color="#1976D2"
-          textAlign="center"
+          color="primary.main"
           sx={{ fontWeight: 600 }}
         >
-          🎯 Helping 50+ communities worldwide
+          Helping 50+ communities worldwide
         </Typography>
       </Box>
     </Paper>

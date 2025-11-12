@@ -5,8 +5,8 @@ import AboutRightSection from "./AboutRightSection";
 
 export default function AboutSection() {
   return (
-    <CommonContainer>
-      <Grid container spacing={6} alignItems="center">
+    <CommonContainer sx={{ bgcolor: "background.paper" }}>
+      <Grid container spacing={20} alignItems="center">
         <AboutLeftSection />
         <AboutRightSection />
       </Grid>

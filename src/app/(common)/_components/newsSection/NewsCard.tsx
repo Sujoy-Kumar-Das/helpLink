@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import CircleIcon from "@mui/icons-material/Circle";
 import {
   Box,
   Button,
   Card,
   CardContent,
-  CardMedia,
   Chip,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
 // todo add news type
 export default function NewsCard({ news }: { news: any }) {
   return (
@@ -16,19 +17,9 @@ export default function NewsCard({ news }: { news: any }) {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        transition: "transform 0.3s ease, box-shadow 0.3s ease",
-        "&:hover": {
-          transform: "translateY(-4px)",
-          boxShadow: 4,
-        },
       }}
     >
-      <CardMedia
-        component="img"
-        height="200"
-        image={news.image}
-        alt={news.title}
-      />
+      <Image width={200} height={200} src={news.image} alt={news.title} />
       <CardContent sx={{ flexGrow: 1, p: 3 }}>
         <Box sx={{ mb: 2 }}>
           <Chip
@@ -39,7 +30,12 @@ export default function NewsCard({ news }: { news: any }) {
           />
         </Box>
 
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography
+          variant="h5"
+          component="h3"
+          color={"text.primary"}
+          gutterBottom
+        >
           {news.title}
         </Typography>
 
@@ -55,7 +51,7 @@ export default function NewsCard({ news }: { news: any }) {
           }}
         >
           <Typography variant="caption" color="text.secondary">
-            {news.date} • {news.readTime}
+            {news.date} <CircleIcon sx={{ fontSize: 8 }} /> {news.readTime}
           </Typography>
           <Button variant="text" color="primary">
             Read More

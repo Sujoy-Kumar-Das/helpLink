@@ -5,7 +5,7 @@ import NewsList from "./NewsList";
 
 export default function NewsSection() {
   return (
-    <CommonContainer>
+    <CommonContainer sx={{ bgcolor: "background.default" }}>
       <CommonHeader
         title="Latest Stories"
         subtitle="Stay updated with our latest news and impact stories"

@@ -1,4 +1,3 @@
-import { CssBaseline } from "@mui/material";
 import AboutSection from "./_components/about/AboutSection";
 import CampaignsSection from "./_components/CampaignsSection/CampaignsSection";
 import HeroSection from "./_components/heroSection/HeroSection";
@@ -12,7 +11,6 @@ import VolunteerCTA from "./_components/VolunteerCTA/VolunteerCTASection";
 export default function HomePage() {
   return (
     <>
-      <CssBaseline />
       <HeroSection />
       <TrustedPartners />
       <AboutSection />
