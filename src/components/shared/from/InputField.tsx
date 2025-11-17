@@ -1,13 +1,28 @@
-import { Box, FormHelperText, TextField } from "@mui/material";
+"use client";
+import {
+  Box,
+  FormHelperText,
+  SxProps,
+  TextField,
+  TextFieldProps,
+} from "@mui/material";
 import { Controller, useFormContext } from "react-hook-form";
 
 type TInputField = {
   type: string;
   name: string;
   label: string;
-};
+  sx?: SxProps;
+  InputProps?: TextFieldProps["InputProps"];
+} & TextFieldProps;
 
-export default function InputField({ type, name, label }: TInputField) {
+export default function InputField({
+  type,
+  name,
+  label,
+  sx,
+  ...rest
+}: TInputField) {
   const {
     control,
     formState: { errors },
@@ -19,19 +34,15 @@ export default function InputField({ type, name, label }: TInputField) {
       control={control}
       defaultValue=""
       render={({ field }) => (
-        <Box
-          sx={{
-            width: "100%",
-          }}
-        >
+        <Box sx={{ width: "100%" }}>
           <TextField
             {...field}
             fullWidth
-            variant="outlined"
             label={label}
             type={type}
-            sx={{ mt: 2 }}
+            sx={{ mt: 2, ...sx }}
             error={!!errors[name]}
+            {...rest}
           />
           {errors[name] && (
             <FormHelperText

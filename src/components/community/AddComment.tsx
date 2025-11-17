@@ -5,9 +5,9 @@ import { useCreateCommentMutation } from "../../redux/features/community/createC
 import { useAppSelector } from "../../redux/redux.hooks";
 import toastMessage from "../../utils/toastMessage";
 import { ToastErrorMessage } from "../../utils/toastmessage";
-import From from "../from/From";
-import FromSubmit from "../from/FromSubmit";
-import FromTextArea from "../from/FromTextArea";
+import From from "../shared/from/From";
+import FromSubmit from "../shared/from/FromSubmit";
+import FromTextArea from "../shared/from/FromTextArea";
 
 export default function AddComment({ id }: { id: string }) {
   // redux hooks

@@ -56,7 +56,8 @@ const PageHeader = ({ title, subtitle, sx, children })=>{
                 xs: 10,
                 md: 12
             },
-            background: "var(--gradient)"
+            background: "var(--gradient)",
+            ...sx
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Container$2f$Container$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Container$3e$__["Container"], {
             maxWidth: "lg",
@@ -71,7 +72,7 @@ const PageHeader = ({ title, subtitle, sx, children })=>{
                     children: title
                 }, void 0, false, {
                     fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-                    lineNumber: 33,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -87,7 +88,7 @@ const PageHeader = ({ title, subtitle, sx, children })=>{
                     children: subtitle
                 }, void 0, false, {
                     fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-                    lineNumber: 43,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Breadcrumbs$2f$Breadcrumbs$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Breadcrumbs$3e$__["Breadcrumbs"], {
@@ -98,7 +99,7 @@ const PageHeader = ({ title, subtitle, sx, children })=>{
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-                        lineNumber: 59,
+                        lineNumber: 60,
                         columnNumber: 13
                     }, void 0),
                     sx: {
@@ -124,14 +125,14 @@ const PageHeader = ({ title, subtitle, sx, children })=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 81,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 "Home"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-                            lineNumber: 70,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         pathNamesArray.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -145,20 +146,20 @@ const PageHeader = ({ title, subtitle, sx, children })=>{
                                 children: item.text
                             }, item.id, false, {
                                 fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-                                lineNumber: 85,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 children && children
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/shared/commonHeader/PageHeader.tsx",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {

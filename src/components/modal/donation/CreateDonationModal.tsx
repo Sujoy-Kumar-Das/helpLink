@@ -6,8 +6,8 @@ import { useCreateDonationMutation } from "../../../redux/features/allDonations/
 import { useAppSelector } from "../../../redux/redux.hooks";
 import { ModalStyle } from "../../../styles";
 import TCreateDonationSchema from "../../../types/createDonation.type";
-import DonationFrom from "../../from/donationFrom/DonationFrom";
 import toastMessage from "../../../utils/toastMessage";
+import DonationFrom from "../../shared/from/donationFrom/DonationFrom";
 
 type TCreateDonationModal = {
   open: boolean;

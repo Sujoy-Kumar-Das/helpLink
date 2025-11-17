@@ -1,3 +1,4 @@
+import { VolunteerActivism } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import Link from "next/link";
 
@@ -18,16 +19,23 @@ export default function Logo() {
             width: 40,
             height: 40,
             background: "var(--gradient)",
-            borderRadius: 2,
+            borderRadius: "50%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             fontWeight: "bold",
             color: "primary.contrastText",
+            p: 3,
           }}
         >
-          HL
+          <VolunteerActivism
+            sx={{
+              fontSize: 30,
+              color: "text.primary",
+            }}
+          />
         </Box>
+
         <Box
           sx={{
             fontWeight: 800,

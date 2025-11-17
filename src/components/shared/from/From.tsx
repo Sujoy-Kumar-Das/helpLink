@@ -1,3 +1,5 @@
+"use client";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ReactNode } from "react";
 import {
@@ -10,18 +12,18 @@ import { AnyZodObject, z } from "zod";
 
 type TFrom = {
   children: ReactNode;
-  handler: SubmitHandler<FieldValues>;
+  onSubmit: SubmitHandler<FieldValues>;
   schema: AnyZodObject;
 };
 
-export default function From({ children, handler, schema }: TFrom) {
-  let methods = useForm<z.infer<typeof schema>>({
+export default function Form({ children, onSubmit, schema }: TFrom) {
+  const methods = useForm<z.infer<typeof schema>>({
     resolver: zodResolver(schema),
   });
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={methods.handleSubmit(handler)}>{children}</form>
+      <form onSubmit={methods.handleSubmit(onSubmit)}>{children}</form>
     </FormProvider>
   );
 }

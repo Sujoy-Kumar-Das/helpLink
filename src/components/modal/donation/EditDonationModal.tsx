@@ -7,7 +7,7 @@ import { ModalStyle } from "../../../styles";
 import { TDonationItem } from "../../../types";
 import TEditDonation from "../../../types/editDonation.type";
 import toastMessage from "../../../utils/toastMessage";
-import DonationFrom from "../../from/donationFrom/DonationFrom";
+import DonationFrom from "../../shared/from/donationFrom/DonationFrom";
 
 type TEditDonationModal = {
   open: boolean;
