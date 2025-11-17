@@ -9,8 +9,6 @@ export default function VolunteerCTA() {
       sx={{
         background: "var(--gradient)",
         textAlign: "center",
-        maxWidth: "lg",
-        mx: "auto",
       }}
     >
       <CommonHeader

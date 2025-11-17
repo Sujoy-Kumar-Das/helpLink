@@ -8,7 +8,7 @@ import UpcomingEvents from "./_components/UpcomingEvents";
 
 export default function EventsPage() {
   return (
-    <Box sx={{ py: 0 }}>
+    <Box>
       {/* events header */}
       <EventsHeader />
 

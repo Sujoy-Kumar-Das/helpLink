@@ -1,6 +1,5 @@
 import CommonHeader from "@/components/shared/commonHeader/CommonHeader";
-import CommonContainer from "@/components/shared/contaners/CommonContainer";
-import { Card, Grid, Typography } from "@mui/material";
+import { Box, Card, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 const teamMembers = [
@@ -43,7 +42,7 @@ const teamMembers = [
 ];
 export default function OurTeam() {
   return (
-    <CommonContainer>
+    <Box>
       <CommonHeader
         title="Meet Our Team"
         subtitle="Passionate leaders dedicated to creating lasting change"
@@ -113,6 +112,6 @@ export default function OurTeam() {
           </Grid>
         ))}
       </Grid>
-    </CommonContainer>
+    </Box>
   );
 }

@@ -16,15 +16,11 @@ const CampaignCard = ({ campaign }: { campaign: any }) => {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        background:
-          "linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%)",
+        backgroundColor: "background.default",
         backdropFilter: "blur(10px)",
-        border: "1px solid rgba(25, 118, 210, 0.1)",
         transition: "all 0.3s ease-in-out",
         "&:hover": {
-          transform: "translateY(-8px)",
-          boxShadow: "0 25px 50px rgba(25, 118, 210, 0.15)",
-          border: "1px solid rgba(25, 118, 210, 0.2)",
+          transform: "translateY(-5px)",
         },
       }}
     >
@@ -104,12 +100,7 @@ const CampaignCard = ({ campaign }: { campaign: any }) => {
           variant="h6"
           gutterBottom
           sx={{
-            fontWeight: 700,
-            lineHeight: 1.3,
-            background: "linear-gradient(135deg, #1976d2 0%, #9c27b0 100%)",
-            backgroundClip: "text",
-            WebkitBackgroundClip: "text",
-            color: "transparent",
+            background: "text.primary",
           }}
         >
           {campaign.title}
@@ -121,8 +112,6 @@ const CampaignCard = ({ campaign }: { campaign: any }) => {
           color="text.secondary"
           sx={{
             mb: 2,
-            flexGrow: 1,
-            lineHeight: 1.6,
           }}
         >
           {campaign.description}

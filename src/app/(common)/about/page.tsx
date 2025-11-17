@@ -1,4 +1,5 @@
-import { Box } from "@mui/material";
+import CommonContainer from "@/components/shared/contaners/CommonContainer";
+import { Box, Stack } from "@mui/material";
 import AboutCTA from "./_components/AboutCTA";
 import AboutPageHeader from "./_components/AboutPageHeader";
 import OurCoreValues from "./_components/OurCoreValues";
@@ -13,21 +14,24 @@ export default function AboutPage() {
       {/* Hero Section */}
       <AboutPageHeader />
 
-      {/* Mission Section */}
-      <OurMission />
+      <CommonContainer>
+        <Stack direction={"column"} spacing={10}>
+          {/* Mission Section */}
+          <OurMission />
 
-      {/* Impact section */}
-      <OurImpact />
+          {/* Impact section */}
+          <OurImpact />
 
-      {/* our journey Section */}
-      <OurJourney />
+          {/* our journey Section */}
+          <OurJourney />
 
-      {/* our team section */}
-      <OurTeam />
+          {/* our team section */}
+          <OurTeam />
 
-      {/* Core Values */}
-      <OurCoreValues />
-
+          {/* Core Values */}
+          <OurCoreValues />
+        </Stack>
+      </CommonContainer>
       {/* about CTA */}
 
       <AboutCTA />

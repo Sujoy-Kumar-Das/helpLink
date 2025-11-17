@@ -4,7 +4,7 @@ import { Button, Grid, Paper, TextField, Typography } from "@mui/material";
 
 export default function NewsletterSection() {
   return (
-    <CommonContainer sx={{ py: 10, bgcolor: "background.default" }}>
+    <CommonContainer sx={{ bgcolor: "background.default" }}>
       <Paper
         sx={{
           p: 6,
@@ -57,7 +57,7 @@ export default function NewsletterSection() {
         </Grid>
 
         <Typography variant="body2" color="text.secondary" sx={{ mt: 3 }}>
-          ✨ Join 50,000+ subscribers. We respect your privacy and never spam.
+          Join 50,000+ subscribers. We respect your privacy and never spam.
         </Typography>
       </Paper>
     </CommonContainer>

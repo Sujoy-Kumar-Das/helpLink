@@ -6,10 +6,8 @@ const CampaignsFilterSidebar = () => {
   return (
     <Card
       sx={{
-        background: `linear-gradient(135deg,background.paper 0%, `,
+        backgroundColor: `background.default`,
         backdropFilter: "blur(10px)",
-        border: `1px solid`,
-        borderColor: "primary.main",
       }}
     >
       <Box sx={{ p: 3 }}>
@@ -22,7 +20,7 @@ const CampaignsFilterSidebar = () => {
           }}
         >
           <Typography variant="h6" fontWeight={700}>
-            🔍 Filters
+            Filters
           </Typography>
 
           <Button

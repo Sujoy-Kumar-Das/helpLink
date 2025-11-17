@@ -5,7 +5,7 @@ import { Box, Button, Typography } from "@mui/material";
 import Link from "next/link";
 export default function OfficeLocation() {
   return (
-    <CommonContainer sx={{ py: 8, maxWidth: "lg", mx: "auto" }}>
+    <CommonContainer sx={{ bgcolor: "background.paper" }}>
       <CommonHeader
         title="Visit Our Headquarters"
         subtitle="Come see where the magic happens"
@@ -18,7 +18,6 @@ export default function OfficeLocation() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "grey.100",
         }}
       >
         <Box textAlign="center">
@@ -29,7 +28,7 @@ export default function OfficeLocation() {
           <Typography variant="body2" color="text.secondary">
             123 Hope Avenue, San Francisco, CA 94102
           </Typography>
-          <Button variant="outlined" sx={{ mt: 2 }}>
+          <Button variant="outlined" sx={{ mt: 2, color: "text.primary" }}>
             <Link
               style={{ textDecoration: "none" }}
               href="https://maps.google.com/"

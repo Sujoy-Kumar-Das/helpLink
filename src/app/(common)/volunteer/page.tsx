@@ -1,4 +1,3 @@
-import CommonContainer from "@/components/shared/contaners/CommonContainer";
 import { Box } from "@mui/material";
 import ImpactMetricsList from "../_components/impactMetricsSection/MetricsList";
 import JoinAsVolunteer from "./_components/JoinAsVolunteer";
@@ -15,9 +14,7 @@ export default function VolunteersPage() {
       <VolunteerHeader />
 
       {/* Impact Stats */}
-      <CommonContainer sx={{ py: 8, backgroundColor: "background.paper" }}>
-        <ImpactMetricsList />
-      </CommonContainer>
+      <ImpactMetricsList />
 
       {/* Volunteer opportunities */}
       <VolunteerOpportunities />

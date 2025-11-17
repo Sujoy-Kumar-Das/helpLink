@@ -6,7 +6,7 @@ export default function AboutCTA() {
     <CommonContainer
       sx={{
         textAlign: "center",
-        background: "linear-gradient(135deg, #1E6DC6 0%, #2E8B57 100%)",
+        background: "var(--gradient)",
         color: "primary.contrastText",
       }}
     >

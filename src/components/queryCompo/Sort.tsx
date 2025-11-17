@@ -28,7 +28,7 @@ export default function SortQuery({ title, queryOptions, sx }: SortQueryProps) {
           borderRadius: 2,
           background: "primary.main",
           "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "primary.main",
+            borderColor: "background.paper",
           },
           ...sx,
         }}

@@ -20,9 +20,7 @@ const partners = [
 
 export default function TrustedPartners() {
   return (
-    <CommonContainer
-      sx={{ maxWidth: "lg", py: 10, bgcolor: "background.default" }}
-    >
+    <CommonContainer sx={{ py: 10, bgcolor: "background.default" }}>
       <Typography
         variant="h5"
         textAlign="center"

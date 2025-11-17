@@ -39,7 +39,7 @@ const faqData = [
 
 export default function FaqSection() {
   return (
-    <CommonContainer sx={{ maxWidth: "lg", mx: "auto", py: 8 }}>
+    <CommonContainer sx={{ bgcolor: "background.main" }}>
       <CommonHeader
         title="Frequently Asked Questions"
         subtitle="Quick answers to common questions"
@@ -53,7 +53,7 @@ export default function FaqSection() {
               mb: 2,
               borderRadius: 2,
               border: "1px solid",
-              borderColor: "grey.200",
+              borderColor: "background.paper",
               "&:before": { display: "none" },
               "&.Mui-expanded": {
                 margin: "16px 0",
@@ -61,7 +61,7 @@ export default function FaqSection() {
             }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMore />}
+              expandIcon={<ExpandMore sx={{ color: "text.primary" }} />}
               sx={{
                 fontWeight: 600,
                 "& .MuiAccordionSummary-content": {
@@ -69,7 +69,7 @@ export default function FaqSection() {
                 },
               }}
             >
-              <Typography variant="h6" fontWeight={600}>
+              <Typography variant="h6" fontWeight={600} color={"text.primary"}>
                 {faq.question}
               </Typography>
             </AccordionSummary>

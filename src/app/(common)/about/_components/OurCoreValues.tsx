@@ -1,5 +1,4 @@
 import CommonHeader from "@/components/shared/commonHeader/CommonHeader";
-import CommonContainer from "@/components/shared/contaners/CommonContainer";
 import { Diversity3, Favorite, Visibility } from "@mui/icons-material";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import { Box, Card, Grid, Typography } from "@mui/material";
@@ -34,7 +33,7 @@ const coreValues = [
 
 export default function OurCoreValues() {
   return (
-    <CommonContainer>
+    <Box>
       <CommonHeader
         title="Our Core Values"
         subtitle="The principles that guide every decision and action we take"
@@ -83,6 +82,6 @@ export default function OurCoreValues() {
           </Grid>
         ))}
       </Grid>
-    </CommonContainer>
+    </Box>
   );
 }

@@ -1,4 +1,5 @@
 import CommonHeader from "@/components/shared/commonHeader/CommonHeader";
+import CommonContainer from "@/components/shared/contaners/CommonContainer";
 import {
   AccessTime,
   CalendarToday,
@@ -11,7 +12,6 @@ import {
   Card,
   CardContent,
   Chip,
-  Container,
   Grid,
   Typography,
 } from "@mui/material";
@@ -100,151 +100,150 @@ const upcomingEvents = [
 
 export default function UpcomingEvents() {
   return (
-    <Box sx={{ bgcolor: "grey.50", py: 8 }}>
-      <Container maxWidth="lg">
-        <CommonHeader
-          title="Upcoming Events"
-          subtitle="Discover opportunities to connect, learn, and make a difference in
+    <CommonContainer sx={{ bgcolor: "background.paper" }}>
+      <CommonHeader
+        title="Upcoming Events"
+        subtitle="Discover opportunities to connect, learn, and make a difference in
           your community"
-        />
+      />
 
-        <Grid container spacing={4}>
-          {upcomingEvents.map((event) => (
-            <Grid item xs={12} md={6} lg={4} key={event.id}>
-              <Card
+      <Grid container spacing={4}>
+        {upcomingEvents.map((event) => (
+          <Grid item xs={12} md={6} lg={4} key={event.id}>
+            <Card
+              sx={{
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Box
                 sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                  height: 200,
+                  background: `url(${event.image}) center/cover`,
+                  position: "relative",
+                  transition: "transform 0.3s ease",
                   "&:hover": {
-                    transform: "translateY(-8px)",
-                    boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)",
+                    transform: "scale(1.05)",
                   },
                 }}
+              />
+
+              <CardContent
+                sx={{
+                  p: 3,
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
               >
+                <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                  <Chip
+                    label={event.category}
+                    size="small"
+                    color="primary"
+                    variant="outlined"
+                  />
+                </Box>
+
+                <Typography
+                  variant="h6"
+                  fontWeight={600}
+                  gutterBottom
+                  color={"text.primary"}
+                >
+                  {event.title}
+                </Typography>
+
+                <Typography color="text.secondary" sx={{ mb: 2, flexGrow: 1 }}>
+                  {event.description}
+                </Typography>
+
+                <Box sx={{ mb: 2 }}>
+                  <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+                    <CalendarToday
+                      sx={{
+                        fontSize: 16,
+                        mr: 1,
+                        color: "text.secondary",
+                      }}
+                    />
+                    <Typography variant="body2" color="text.secondary">
+                      {new Date(event.date).toLocaleDateString()}
+                    </Typography>
+                  </Box>
+                  <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+                    <AccessTime
+                      sx={{
+                        fontSize: 16,
+                        mr: 1,
+                        color: "text.secondary",
+                      }}
+                    />
+                    <Typography variant="body2" color="text.secondary">
+                      {event.time}
+                    </Typography>
+                  </Box>
+                  <Box sx={{ display: "flex", alignItems: "center" }}>
+                    <LocationOn
+                      sx={{
+                        fontSize: 16,
+                        mr: 1,
+                        color: "text.secondary",
+                      }}
+                    />
+                    <Typography variant="body2" color="text.secondary">
+                      {event.location}
+                    </Typography>
+                  </Box>
+                </Box>
+
                 <Box
                   sx={{
-                    height: 200,
-                    background: `url(${event.image}) center/cover`,
-                    position: "relative",
-                    transition: "transform 0.3s ease",
-                    "&:hover": {
-                      transform: "scale(1.05)",
-                    },
-                  }}
-                />
-
-                <CardContent
-                  sx={{
-                    p: 3,
-                    flexGrow: 1,
                     display: "flex",
-                    flexDirection: "column",
+                    gap: 1,
+                    mb: 2,
+                    flexWrap: "wrap",
                   }}
                 >
-                  <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                  {event.tags.map((tag, index) => (
                     <Chip
-                      label={event.category}
-                      size="small"
-                      color="primary"
-                      variant="outlined"
-                    />
-                  </Box>
-
-                  <Typography variant="h6" fontWeight={600} gutterBottom>
-                    {event.title}
-                  </Typography>
-
-                  <Typography
-                    color="text.secondary"
-                    sx={{ mb: 2, flexGrow: 1 }}
-                  >
-                    {event.description}
-                  </Typography>
-
-                  <Box sx={{ mb: 2 }}>
-                    <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-                      <CalendarToday
-                        sx={{
-                          fontSize: 16,
-                          mr: 1,
-                          color: "text.secondary",
-                        }}
-                      />
-                      <Typography variant="body2">
-                        {new Date(event.date).toLocaleDateString()}
-                      </Typography>
-                    </Box>
-                    <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-                      <AccessTime
-                        sx={{
-                          fontSize: 16,
-                          mr: 1,
-                          color: "text.secondary",
-                        }}
-                      />
-                      <Typography variant="body2">{event.time}</Typography>
-                    </Box>
-                    <Box sx={{ display: "flex", alignItems: "center" }}>
-                      <LocationOn
-                        sx={{
-                          fontSize: 16,
-                          mr: 1,
-                          color: "text.secondary",
-                        }}
-                      />
-                      <Typography variant="body2">{event.location}</Typography>
-                    </Box>
-                  </Box>
-
-                  <Box
-                    sx={{
-                      display: "flex",
-                      gap: 1,
-                      mb: 2,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    {event.tags.map((tag, index) => (
-                      <Chip
-                        key={index}
-                        label={tag}
-                        size="small"
-                        variant="outlined"
-                        sx={{
-                          borderColor: "primary.main",
-                          color: "primary.main",
-                          fontSize: "0.75rem",
-                        }}
-                      />
-                    ))}
-                  </Box>
-
-                  <Box
-                    sx={{
-                      display: "flex",
-                      gap: 2,
-                      alignItems: "center",
-                      mt: "auto",
-                    }}
-                  >
-                    <Button variant="contained" fullWidth color="primary">
-                      Join Now
-                    </Button>
-                    <Chip
-                      icon={<People />}
-                      label={event.attendees}
+                      key={index}
+                      label={tag}
                       size="small"
                       variant="outlined"
+                      sx={{
+                        borderColor: "primary.main",
+                        color: "primary.main",
+                        fontSize: "0.75rem",
+                      }}
                     />
-                  </Box>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
-    </Box>
+                  ))}
+                </Box>
+
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: 2,
+                    alignItems: "center",
+                    mt: "auto",
+                  }}
+                >
+                  <Button variant="contained" fullWidth color="primary">
+                    Join Now
+                  </Button>
+                  <Chip
+                    icon={<People />}
+                    label={event.attendees}
+                    size="small"
+                    variant="outlined"
+                  />
+                </Box>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </CommonContainer>
   );
 }

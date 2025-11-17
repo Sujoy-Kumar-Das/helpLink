@@ -35,7 +35,7 @@ const volunteerStories = [
 
 export default function VolunteerStories() {
   return (
-    <CommonContainer sx={{ py: 8, bgcolor: "background.paper" }}>
+    <CommonContainer sx={{ bgcolor: "background.paper" }}>
       <CommonHeader
         title="Volunteer Stories"
         subtitle="Hear from our amazing volunteers making a difference"

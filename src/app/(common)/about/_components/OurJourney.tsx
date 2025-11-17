@@ -1,5 +1,4 @@
 import CommonHeader from "@/components/shared/commonHeader/CommonHeader";
-import CommonContainer from "@/components/shared/contaners/CommonContainer";
 import {
   Diversity3,
   LocalHospital,
@@ -46,7 +45,7 @@ const timelineData = [
 
 export default function OurJourney() {
   return (
-    <CommonContainer sx={{ py: 8 }}>
+    <Box>
       <CommonHeader
         title="Our Journey"
         subtitle="Milestones that shaped our mission and expanded our impact"
@@ -143,6 +142,6 @@ export default function OurJourney() {
           </Box>
         ))}
       </Box>
-    </CommonContainer>
+    </Box>
   );
 }

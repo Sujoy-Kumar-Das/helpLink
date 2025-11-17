@@ -99,152 +99,165 @@ const upcomingEvents = [
 
 export default function Events() {
   return (
-    <CommonContainer sx={{ py: 8 }}>
-      {upcomingEvents.map((event) => (
-        <Card
-          sx={{
-            backgroundColor: "background.default",
-            border: "2px solid",
-            borderColor: "primary.main",
-            borderRadius: 4,
-            overflow: "hidden",
-            position: "relative",
-          }}
-        >
-          <Grid container>
-            <Grid item xs={12} md={6}>
-              <Box
-                sx={{
-                  height: { xs: 300, md: 400 },
-                  background: `url(${event.image}) center/cover`,
-                  position: "relative",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <CardContent
-                sx={{
-                  p: 4,
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <Chip
-                  label="Featured Event"
-                  color="primary"
-                  sx={{ mb: 2, alignSelf: "flex-start", fontWeight: 600 }}
+    <CommonContainer sx={{ bgcolor: "background.primary" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+        {upcomingEvents.map((event) => (
+          <Card
+            sx={{
+              backgroundColor: "background.default",
+              border: "1px solid",
+              borderColor: "primary.main",
+              borderRadius: 4,
+              overflow: "hidden",
+              position: "relative",
+            }}
+          >
+            <Grid container>
+              <Grid item xs={12} md={6}>
+                <Box
+                  sx={{
+                    height: { xs: 300, md: 400 },
+                    background: `url(${event.image}) center/cover`,
+                    position: "relative",
+                  }}
                 />
-
-                <Typography variant="h3" gutterBottom fontWeight={700}>
-                  {event.title}
-                </Typography>
-
-                <Typography
-                  color="text.secondary"
-                  sx={{ mb: 3, lineHeight: 1.6 }}
-                >
-                  {event.description}
-                </Typography>
-
-                <Box
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <CardContent
                   sx={{
+                    p: 4,
+                    height: "100%",
                     display: "flex",
-                    alignItems: "center",
-                    gap: 1,
-                    mb: 1,
+                    flexDirection: "column",
                   }}
                 >
-                  <CalendarToday sx={{ color: "primary.main" }} />
-                  <Typography fontWeight={600}>
-                    {new Date(event.date).toLocaleDateString("en-US", {
-                      weekday: "long",
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </Typography>
-                </Box>
-
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 1,
-                    mb: 1,
-                  }}
-                >
-                  <AccessTime sx={{ color: "primary.main" }} />
-                  <Typography>{event.time}</Typography>
-                </Box>
-
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 1,
-                    mb: 3,
-                  }}
-                >
-                  <LocationOn sx={{ color: "primary.main" }} />
-                  <Typography>{event.location}</Typography>
-                </Box>
-
-                <Box sx={{ display: "flex", gap: 1, mb: 3, flexWrap: "wrap" }}>
-                  {event.tags.map((tag, index) => (
-                    <Chip
-                      key={index}
-                      label={tag}
-                      size="small"
-                      variant="outlined"
-                      sx={{
-                        borderColor: "primary.main",
-                        color: "primary.main",
-                      }}
-                    />
-                  ))}
-                </Box>
-
-                <Box
-                  sx={{
-                    mt: "auto",
-                    display: "flex",
-                    gap: 2,
-                    alignItems: "center",
-                  }}
-                >
-                  <Button
-                    variant="contained"
-                    size="large"
+                  <Chip
+                    label="Featured Event"
                     color="primary"
+                    sx={{ mb: 2, alignSelf: "flex-start", fontWeight: 600 }}
+                  />
+
+                  <Typography
+                    variant="h3"
+                    gutterBottom
+                    fontWeight={700}
+                    color={"text.primary"}
+                  >
+                    {event.title}
+                  </Typography>
+
+                  <Typography
+                    color="text.secondary"
+                    sx={{ mb: 3, lineHeight: 1.6 }}
+                  >
+                    {event.description}
+                  </Typography>
+
+                  <Box
                     sx={{
-                      flex: 1,
-                      py: 1.5,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1,
+                      mb: 1,
                     }}
                   >
-                    Register Now
-                  </Button>
-                  <Chip
-                    icon={<People />}
-                    label={`${event.attendees} attending`}
-                    variant="outlined"
-                  />
-                </Box>
+                    <CalendarToday sx={{ color: "primary.main" }} />
+                    <Typography fontWeight={600} color={"text.secondary"}>
+                      {new Date(event.date).toLocaleDateString("en-US", {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </Typography>
+                  </Box>
 
-                <Box sx={{ mt: 2, textAlign: "center" }}>
-                  <Typography
-                    variant="h6"
-                    color="primary.main"
-                    fontWeight={600}
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1,
+                      mb: 1,
+                    }}
                   >
-                    Starts in days
-                  </Typography>
-                </Box>
-              </CardContent>
+                    <AccessTime sx={{ color: "primary.main" }} />
+                    <Typography color={"text.secondary"}>
+                      {event.time}
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1,
+                      mb: 3,
+                    }}
+                  >
+                    <LocationOn sx={{ color: "primary.main" }} />
+                    <Typography color={"text.secondary"}>
+                      {event.location}
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    sx={{ display: "flex", gap: 1, mb: 3, flexWrap: "wrap" }}
+                  >
+                    {event.tags.map((tag, index) => (
+                      <Chip
+                        key={index}
+                        label={tag}
+                        size="small"
+                        variant="outlined"
+                        sx={{
+                          borderColor: "primary.main",
+                          color: "primary.main",
+                        }}
+                      />
+                    ))}
+                  </Box>
+
+                  <Box
+                    sx={{
+                      mt: "auto",
+                      display: "flex",
+                      gap: 2,
+                      alignItems: "center",
+                    }}
+                  >
+                    <Button
+                      variant="contained"
+                      size="large"
+                      color="primary"
+                      sx={{
+                        flex: 1,
+                        py: 1.5,
+                      }}
+                    >
+                      Register Now
+                    </Button>
+                    <Chip
+                      icon={<People />}
+                      label={`${event.attendees} attending`}
+                      variant="outlined"
+                    />
+                  </Box>
+
+                  <Box sx={{ mt: 2, textAlign: "center" }}>
+                    <Typography
+                      variant="h6"
+                      color="primary.main"
+                      fontWeight={600}
+                    >
+                      Starts in days
+                    </Typography>
+                  </Box>
+                </CardContent>
+              </Grid>
             </Grid>
-          </Grid>
-        </Card>
-      ))}
+          </Card>
+        ))}
+      </Box>
     </CommonContainer>
   );
 }

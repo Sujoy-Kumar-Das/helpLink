@@ -32,7 +32,7 @@ const pastEvents = [
 ];
 export default function CompletedEvents() {
   return (
-    <CommonContainer sx={{ py: 8 }}>
+    <CommonContainer>
       <CommonHeader
         title="Completed Events"
         subtitle="See the impact we've made together and hear from our community"
@@ -53,7 +53,12 @@ export default function CompletedEvents() {
                   }}
                 />
                 <Box>
-                  <Typography variant="h6" fontWeight={600} gutterBottom>
+                  <Typography
+                    variant="h6"
+                    fontWeight={600}
+                    gutterBottom
+                    color="text.primary"
+                  >
                     {event.title}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -62,7 +67,7 @@ export default function CompletedEvents() {
                   </Typography>
                 </Box>
               </Box>
-              <Typography color="text.secondary">
+              <Typography color="text.secondary" fontStyle="italic">
                 {event.description}
               </Typography>
             </Card>

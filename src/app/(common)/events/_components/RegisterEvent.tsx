@@ -3,18 +3,17 @@ export default function RegisterEvent() {
   return (
     <Box
       sx={{
-        background:
-          "linear-gradient(135deg, rgba(25, 118, 210, 0.9), rgba(255, 152, 0, 0.9))",
-        color: "white",
+        background: "var(--gradient)",
+        color: "text.primary",
         py: 8,
         textAlign: "center",
       }}
     >
       <Container maxWidth="md">
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h3" gutterBottom color="text.primary">
           Every small action counts.
         </Typography>
-        <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
+        <Typography variant="h5" sx={{ mb: 4 }} color="text.primary">
           Be part of the next event that changes lives.
         </Typography>
         <Button

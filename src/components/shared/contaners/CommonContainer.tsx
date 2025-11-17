@@ -9,12 +9,8 @@ export default function CommonContainer({
   children: ReactNode;
 }) {
   return (
-    <Box component="section">
-      <Container
-        component="div"
-        maxWidth="xl"
-        sx={{ px: { xs: 2, md: 10 }, py: 16, ...sx }}
-      >
+    <Box component="section" sx={{ px: { xs: 2, md: 0 }, py: 16, ...sx }}>
+      <Container component="div" maxWidth="xl">
         {children}
       </Container>
     </Box>

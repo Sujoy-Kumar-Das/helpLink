@@ -6,7 +6,7 @@ import OfficeLocation from "./_components/OfficeLocation";
 
 export default function ContactPage() {
   return (
-    <Box sx={{ py: 0 }}>
+    <Box>
       <PageHeader
         title="Get in Touch with HopeLink"
         subtitle="We'd love to hear from you. Whether you want to volunteer, donate, or partner with us — our team is ready to help."

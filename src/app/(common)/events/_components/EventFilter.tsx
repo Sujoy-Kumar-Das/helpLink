@@ -12,7 +12,7 @@ const eventCategories = [
 ];
 export default function EventFilter() {
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="lg" sx={{ pt: { xs: 4, md: 8 } }}>
       <Box
         sx={{
           display: "flex",

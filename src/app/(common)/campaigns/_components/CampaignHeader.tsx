@@ -17,7 +17,7 @@ export default function CampaignHeader() {
     >
       {/* Results Count */}
       <Box>
-        <Typography variant="h6" fontWeight={700} color="primary">
+        <Typography variant="h6" fontWeight={700} color="text.primary">
           {20} Campaigns
         </Typography>
         <Typography variant="body2" color="text.secondary">

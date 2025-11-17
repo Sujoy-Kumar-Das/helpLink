@@ -44,7 +44,12 @@ const socialMedia = [
 export default function ContactInfoSection() {
   return (
     <Box>
-      <Typography variant="h4" gutterBottom fontWeight={600}>
+      <Typography
+        variant="h4"
+        gutterBottom
+        fontWeight={600}
+        color={"text.primary"}
+      >
         Contact Information
       </Typography>
       <Typography color="text.secondary" sx={{ mb: 4 }}>
@@ -57,10 +62,6 @@ export default function ContactInfoSection() {
             key={info.title}
             sx={{
               p: 3,
-              "&:hover": {
-                transform: "translateY(-4px)",
-                boxShadow: "0 12px 30px rgba(0, 0, 0, 0.15)",
-              },
             }}
           >
             <CardContent sx={{ p: 0, "&:last-child": { pb: 0 } }}>
@@ -80,7 +81,7 @@ export default function ContactInfoSection() {
                   <info.icon sx={{ fontSize: 24 }} />
                 </Box>
                 <Box>
-                  <Typography variant="h6" gutterBottom>
+                  <Typography variant="h6" gutterBottom color={"text.primary"}>
                     {info.title}
                   </Typography>
                   <Typography
@@ -102,7 +103,12 @@ export default function ContactInfoSection() {
 
       {/* Social Media */}
       <Box sx={{ mt: 6 }}>
-        <Typography variant="h6" gutterBottom fontWeight={600}>
+        <Typography
+          variant="h6"
+          gutterBottom
+          fontWeight={600}
+          color={"text.primary"}
+        >
           Follow Our Journey
         </Typography>
         <Typography color="text.secondary" sx={{ mb: 3 }}>
@@ -120,8 +126,7 @@ export default function ContactInfoSection() {
                 transition: "all 0.3s ease",
                 "&:hover": {
                   bgcolor: "primary.main",
-                  color: "white",
-                  transform: "translateY(-2px)",
+                  color: "text.primary",
                 },
               }}
             >

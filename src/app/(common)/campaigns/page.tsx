@@ -1,7 +1,8 @@
 import PageHeader from "@/components/shared/commonHeader/PageHeader";
+import CommonContainer from "@/components/shared/contaners/CommonContainer";
 import CustomPagination from "@/components/shared/pagination/Pagination";
 import CampaignCardSkeleton from "@/components/skeleton/CampaignCardSkeleton";
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { Suspense } from "react";
 import CampaignsList from "./_components/CamaignsList";
 import CampaignHeader from "./_components/CampaignHeader";
@@ -15,7 +16,7 @@ const CampaignsPage = () => {
         subtitle="Explore all our current initiatives and projects. Join us in making a positive impact by supporting causes that matter."
       />
 
-      <Container maxWidth="xl" sx={{ py: 4, px: { xs: 0, md: 10 } }}>
+      <CommonContainer>
         <CampaignHeader />
 
         <Grid container spacing={2}>
@@ -34,7 +35,7 @@ const CampaignsPage = () => {
             </Suspense>
           </Grid>
         </Grid>
-      </Container>
+      </CommonContainer>
 
       {/* campaign page header */}
     </Box>

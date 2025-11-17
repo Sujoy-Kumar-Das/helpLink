@@ -46,7 +46,7 @@ const volunteerRoles = [
 
 export default function VolunteerOpportunities() {
   return (
-    <CommonContainer sx={{ bgcolor: "background.default", py: 8 }}>
+    <CommonContainer sx={{ bgcolor: "background.default" }}>
       <CommonHeader
         title="Volunteer Opportunities"
         subtitle="Find the perfect role that matches your skills and interests"

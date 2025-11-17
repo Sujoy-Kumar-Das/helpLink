@@ -1,4 +1,5 @@
-import { Avatar, Box, Card, Container, Grid, Typography } from "@mui/material";
+import CommonContainer from "@/components/shared/contaners/CommonContainer";
+import { Avatar, Box, Card, Grid, Typography } from "@mui/material";
 
 const testimonials = [
   {
@@ -23,8 +24,13 @@ const testimonials = [
 
 export default function VolunteerTestimonials() {
   return (
-    <Container maxWidth="lg" sx={{ py: 8 }}>
-      <Typography variant="h2" textAlign="center" gutterBottom>
+    <CommonContainer sx={{ bgcolor: "background.paper" }}>
+      <Typography
+        variant="h2"
+        textAlign="center"
+        gutterBottom
+        color={"text.primary"}
+      >
         What Volunteers Say
       </Typography>
       <Grid container spacing={4} sx={{ mt: 2 }}>
@@ -34,7 +40,9 @@ export default function VolunteerTestimonials() {
               <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
                 <Avatar src={testimonial.avatar} sx={{ mr: 2 }} />
                 <Box>
-                  <Typography fontWeight={600}>{testimonial.name}</Typography>
+                  <Typography fontWeight={600} color={"text.primary"}>
+                    {testimonial.name}
+                  </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {testimonial.role}
                   </Typography>
@@ -47,6 +55,6 @@ export default function VolunteerTestimonials() {
           </Grid>
         ))}
       </Grid>
-    </Container>
+    </CommonContainer>
   );
 }
