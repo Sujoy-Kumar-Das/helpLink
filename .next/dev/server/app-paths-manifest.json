@@ -2,5 +2,6 @@
   "/(auth)/register/page": "app/(auth)/register/page.js",
   "/(common)/campaigns/[id]/page": "app/(common)/campaigns/[id]/page.js",
   "/(common)/page": "app/(common)/page.js",
+  "/(private)/dashboard/page": "app/(private)/dashboard/page.js",
   "/_not-found/page": "app/_not-found/page.js"
 }

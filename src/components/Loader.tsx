@@ -1,7 +1,6 @@
 "use client";
 
-import { VolunteerActivism } from "@mui/icons-material";
-import { Box, CircularProgress, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 interface FullPageLoaderProps {
   message?: string;
@@ -20,7 +19,7 @@ export function FullPageLoader({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%)",
+        background: "var(--gradient)",
         position: "fixed",
         top: 0,
         left: 0,
@@ -39,7 +38,7 @@ export function FullPageLoader({
         }}
       >
         {/* Main Logo */}
-        <Box
+        {/* <Box
           sx={{
             width: "100%",
             height: "100%",
@@ -76,7 +75,7 @@ export function FullPageLoader({
               },
             }}
           />
-        </Box>
+        </Box> */}
 
         {/* Pulsing Ring */}
         <Box
@@ -109,16 +108,8 @@ export function FullPageLoader({
         variant="h4"
         sx={{
           fontWeight: 700,
-          background: "linear-gradient(135deg, #1E6DC6 0%, #2E8B57 100%)",
-          backgroundClip: "text",
-          WebkitBackgroundClip: "text",
-          color: "transparent",
-          mb: 2,
-          animation: "textGlow 2s ease-in-out infinite alternate",
-          "@keyframes textGlow": {
-            "0%": { opacity: 0.8 },
-            "100%": { opacity: 1 },
-          },
+          color: "text.primary",
+          mt: 3,
         }}
       >
         {message}
@@ -131,51 +122,10 @@ export function FullPageLoader({
           mb: 4,
           textAlign: "center",
           maxWidth: 300,
-          animation: "fadeInOut 3s ease-in-out infinite",
-          "@keyframes fadeInOut": {
-            "0%, 100%": { opacity: 0.6 },
-            "50%": { opacity: 1 },
-          },
         }}
       >
         {subtitle}
       </Typography>
-
-      {/* Progress Indicator */}
-      <CircularProgress
-        size={50}
-        thickness={5}
-        sx={{
-          color: "primary.main",
-          animation: "circularProgress 1.5s ease-in-out infinite",
-          "@keyframes circularProgress": {
-            "0%": { transform: "rotate(0deg)" },
-            "100%": { transform: "rotate(360deg)" },
-          },
-        }}
-      />
-
-      {/* Loading Steps */}
-      <Box sx={{ mt: 4, textAlign: "center" }}>
-        <Typography
-          variant="caption"
-          sx={{
-            color: "text.secondary",
-            display: "block",
-            mb: 1,
-            animation: "stepChange 6s ease-in-out infinite",
-            "@keyframes stepChange": {
-              "0%": { content: '"Initializing hope..."' },
-              "25%": { content: '"Loading compassion..."' },
-              "50%": { content: '"Connecting communities..."' },
-              "75%": { content: '"Preparing impact..."' },
-              "100%": { content: '"Almost ready..."' },
-            },
-          }}
-        >
-          Initializing hope...
-        </Typography>
-      </Box>
     </Box>
   );
 }
